@@ -1,0 +1,46 @@
+# SOCK SPY 🧦🕵️‍♂️
+
+A simple, open-source OSINT tool designed to help users **set up sock puppet accounts** and manage anonymous online personas for ethical intelligence gathering, digital investigations, or cybersecurity training.
+
+> **Warning:** This tool is intended for educational and ethical use only. See [DISCLAIMER.md](./DISCLAIMER.md) for details.
+
+---
+
+## 🧠 What is SOCK SPY?
+
+SOCK SPY is a lightweight Python (or your language here) utility that helps automate or semi-automate the setup of online identities ("sock puppets") for OSINT tasks.
+
+It’s designed to be:
+- 🔓 Open source
+- 🪶 Lightweight
+- 🛠️ Practical for field work
+- ⚙️ Easily modifiable for different use cases
+
+---
+
+## ✨ Features
+
+- 🔐 Generates realistic but fictional identity data
+- 🌐 Helps create email/social media accounts
+- 🧰 Tools for persona management
+- 📁 Organized project structure
+- 🧪 Ideal for cybersecurity training labs, red teaming, or journalists working on secure investigations
+
+<!-- Add or remove features as needed -->
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Requirements
+
+- Python 3.x
+- Requests
+- [Add other dependencies here]
+
+### 📥 Installation
+
+```bash
+git clone https://github.com/Kanarath/Sock_Spy.git
+cd Sock_Spy
+pip install -r requirements.txt
