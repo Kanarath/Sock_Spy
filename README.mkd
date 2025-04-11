@@ -1,4 +1,7 @@
-![Logo Sock Spy](./data/logo_sock_spy.svg)
+<p align="center">
+  <img src="./data/logo_sock_spy1.png" alt="Logo Sock Spy" width="400">
+</p>
+
 
 
 # SOCK SPY 🧦🕵️‍♂️
