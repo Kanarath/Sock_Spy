@@ -8,8 +8,6 @@
 
 A simple, open-source OSINT tool designed to help users **set up sock puppet accounts** and manage anonymous online personas for ethical intelligence gathering, digital investigations, or cybersecurity training.
 
-> **Warning:** Please read the [DISCLAIMER.txt](DISCLAIMER.txt) or [DISCLAIMER.md](DISCLAIMER.md)  file carefully before using this software. It outlines the ethical guidelines and limitations associated with its use.
-
 ---
 
 ## 🧠 What is SOCK SPY?
@@ -32,6 +30,19 @@ It’s designed to be:
 - 📁 Organized project structure.
 - 🧪 Ideal for cybersecurity training labs, red teaming, or journalists working on secure investigations.
 
+---
+
+### 🧭 Ethical Use Commitment
+
+Sock Spy is a tool crafted for ethical OSINT research and educational purposes. While it is open-source and freely available under the MIT License, we strongly encourage users to:
+
+- Use it responsibly and lawfully.
+- Respect the privacy and rights of others.
+- Avoid any activities that could cause harm or distress.
+
+For detailed guidelines, please refer to our [Ethical Use Policy](use_policy.txt) or [md format](use_policy.md).
+
+By promoting ethical usage, we aim to foster a community that values integrity and respect in digital research.
 
 ---
 
