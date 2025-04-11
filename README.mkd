@@ -1,3 +1,6 @@
+![Logo Sock Spy](./data/logo_sock_spy.svg)
+
+
 # SOCK SPY 🧦🕵️‍♂️
 
 A simple, open-source OSINT tool designed to help users **set up sock puppet accounts** and manage anonymous online personas for ethical intelligence gathering, digital investigations, or cybersecurity training.
