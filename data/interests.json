@@ -1,0 +1,44 @@
+{
+  "General": {
+    "Tecnología": ["Programación", "Desarrollo web", "Inteligencia artificial", "Ciberseguridad", "Blockchain", "Videojuegos", "Hardware", "Software", "Redes", "Bases de datos"],
+    "Arte y Cultura": ["Música", "Cine", "Literatura", "Pintura", "Escultura", "Fotografía", "Teatro", "Danza", "Arquitectura", "Diseño"],
+    "Deportes": ["Fútbol", "Baloncesto", "Tenis", "Natación", "Ciclismo", "Running", "Yoga", "Artes marciales", "Golf", "Escalada"],
+    "Ciencia": ["Física", "Química", "Biología", "Astronomía", "Matemáticas", "Medicina", "Psicología", "Neurociencia", "Ecología", "Geología"],
+    "Viajes": ["Turismo", "Mochilero", "Camping", "Senderismo", "Fotografía de viajes", "Gastronomía internacional", "Culturas del mundo", "Idiomas", "Historia local", "Arquitectura mundial"]
+  },
+  "Tecnología": {
+    "Programación": ["Python", "JavaScript", "Java", "C++", "Ruby", "Go", "Rust", "PHP", "Swift", "Kotlin"],
+    "Desarrollo web": ["Frontend", "Backend", "Fullstack", "Diseño web", "UX/UI", "Frameworks", "Responsive design", "SEO", "Hosting", "Dominios"],
+    "Inteligencia artificial": ["Machine Learning", "Deep Learning", "Redes neuronales", "Procesamiento de lenguaje natural", "Visión por computadora", "Robótica", "Sistemas expertos", "Algoritmos genéticos", "Lógica difusa", "Sistemas de recomendación"],
+    "Ciberseguridad": ["Hacking ético", "Pentesting", "Criptografía", "Seguridad de redes", "Malware", "Forense digital", "OSINT", "Seguridad web", "Privacidad", "Auditoría de seguridad"],
+    "Blockchain": ["Criptomonedas", "Smart contracts", "NFTs", "DeFi", "Web3", "Minería", "Consenso", "Wallets", "Exchanges", "Tokenomics"]
+  },
+  "Arte y Cultura": {
+    "Música": ["Rock", "Pop", "Jazz", "Clásica", "Hip hop", "Electrónica", "Folk", "Metal", "Indie", "R&B"],
+    "Cine": ["Películas de acción", "Comedias", "Dramas", "Ciencia ficción", "Terror", "Documentales", "Animación", "Cine independiente", "Cine clásico", "Directores"],
+    "Literatura": ["Novelas", "Poesía", "Ensayos", "Ciencia ficción", "Fantasía", "Misterio", "Romance", "Biografías", "Historia", "Filosofía"],
+    "Pintura": ["Óleo", "Acuarela", "Acrílico", "Abstracto", "Realismo", "Impresionismo", "Surrealismo", "Arte digital", "Retratos", "Paisajes"],
+    "Fotografía": ["Retratos", "Paisajes", "Urbana", "Macro", "Nocturna", "Documental", "Moda", "Deportiva", "Naturaleza", "Arquitectura"]
+  },
+  "Deportes": {
+    "Fútbol": ["Liga española", "Premier League", "Serie A", "Bundesliga", "Champions League", "Mundial", "Eurocopa", "Copa América", "Táctica", "Entrenamiento"],
+    "Baloncesto": ["NBA", "Euroliga", "ACB", "FIBA", "Técnica", "Estrategia", "Equipamiento", "Historia", "Jugadores legendarios", "Entrenamiento"],
+    "Tenis": ["Grand Slam", "ATP", "WTA", "Técnica", "Equipamiento", "Historia", "Jugadores legendarios", "Entrenamiento", "Tácticas", "Superficies"],
+    "Natación": ["Estilos", "Competiciones", "Técnica", "Entrenamiento", "Equipamiento", "Historia", "Nadadores famosos", "Aguas abiertas", "Triatlón", "Salud"],
+    "Ciclismo": ["Tour de France", "Giro de Italia", "Vuelta a España", "MTB", "BMX", "Ciclocross", "Equipamiento", "Entrenamiento", "Mecánica", "Rutas"]
+  },
+  "Ciencia": {
+    "Física": ["Mecánica", "Termodinámica", "Electromagnetismo", "Relatividad", "Física cuántica", "Astrofísica", "Física de partículas", "Física nuclear", "Física de estado sólido", "Física teórica"],
+    "Química": ["Química orgánica", "Química inorgánica", "Bioquímica", "Química analítica", "Química física", "Química computacional", "Química ambiental", "Química de materiales", "Química farmacéutica", "Química industrial"],
+    "Biología": ["Genética", "Ecología", "Evolución", "Microbiología", "Botánica", "Zoología", "Biología celular", "Biología molecular", "Anatomía", "Fisiología"],
+    "Astronomía": ["Sistema solar", "Estrellas", "Galaxias", "Cosmología", "Agujeros negros", "Exoplanetas", "Telescopios", "Misiones espaciales", "Astrofotografía", "Astrobiología"],
+    "Medicina": ["Cardiología", "Neurología", "Oncología", "Pediatría", "Cirugía", "Psiquiatría", "Dermatología", "Ginecología", "Traumatología", "Medicina preventiva"]
+  },
+  "Viajes": {
+    "Turismo": ["Europa", "Asia", "América", "África", "Oceanía", "Ciudades", "Playas", "Montañas", "Islas", "Parques nacionales"],
+    "Mochilero": ["Presupuesto", "Albergues", "Transporte", "Equipamiento", "Seguridad", "Comunidades", "Trabajo mientras viajas", "Voluntariado", "Visados", "Consejos"],
+    "Camping": ["Tiendas", "Equipamiento", "Lugares", "Supervivencia", "Cocina al aire libre", "Fogatas", "Acampada invernal", "Acampada en playa", "Acampada en montaña", "Glamping"],
+    "Senderismo": ["Rutas", "Equipamiento", "Técnicas", "Seguridad", "Orientación", "Montañismo", "Trekking", "Senderismo urbano", "Senderismo nocturno", "Senderismo con niños"],
+    "Gastronomía internacional": ["Cocina mediterránea", "Cocina asiática", "Cocina latinoamericana", "Cocina africana", "Cocina europea", "Street food", "Mercados locales", "Restaurantes", "Bebidas típicas", "Postres del mundo"]
+  }
+}
