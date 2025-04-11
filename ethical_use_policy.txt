@@ -1,3 +1,4 @@
+
 🛡️ Ethical Use Policy for Sock Spy
 Sock Spy is developed to support ethical Open Source Intelligence (OSINT) research, security analysis, and educational endeavors. While the software is released under the MIT License, which permits broad usage, we urge users to adhere to the following ethical guidelines:​
 
@@ -40,3 +41,18 @@ Users are solely responsible for ensuring their activities comply with all appli
 By using Sock Spy, you acknowledge and agree to abide by this Ethical Use Policy. If you do not agree with these terms, you are prohibited from using this software.
 
 Stay safe, stay ethical.
+
+Copyright (C) 2025 Kanarath.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.

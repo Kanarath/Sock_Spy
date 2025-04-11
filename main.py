@@ -2,6 +2,22 @@
 # -*- coding: utf-8 -*-
 
 """
+Copyright (C) 2025 Kanarath.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
 Sock Spy: CLI Tool for Generating OSINT Sock Puppets
 A tool to create realistic and customizable personas for OSINT investigations.
 """
@@ -70,9 +86,8 @@ TEXTS = {
         "invalid_choice": "Invalid choice. Please try again.",
         "program_info": """
 Sock Spy: CLI Tool for Generating OSINT Sock Puppets
-Version: 1.1
-Created for: Security researchers, OSINT investigators, and professionals
-Purpose: Create realistic online personas for research and analysis purposes.
+Sock Spy is Open Source and is licensed under the GNU General Public License v3.0.
+Version: 1.0
         """,
         "interests_select": "Select interests category:",
         "interests_subcategory": "Select interests subcategory:",
@@ -147,9 +162,8 @@ Purpose: Create realistic online personas for research and analysis purposes.
         "invalid_choice": "Opción inválida. Por favor intente de nuevo.",
         "program_info": """
 Sock Spy: Herramienta CLI para Generar Sock Puppets para OSINT
-Versión: 1.1
-Creado para: Investigadores de seguridad, investigadores OSINT y profesionales
-Propósito: Crear personas en línea realistas para fines de investigación y análisis.
+Sock Spy es Open Source y está bajo la licencia de la GNU General Public License v3.0.
+Version: 1.0
         """,
         "interests_select": "Seleccione categoría de intereses:",
         "interests_subcategory": "Seleccione subcategoría de intereses:",

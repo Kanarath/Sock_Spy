@@ -40,7 +40,7 @@ Sock Spy is a tool crafted for ethical OSINT research and educational purposes. 
 - Respect the privacy and rights of others.
 - Avoid any activities that could cause harm or distress.
 
-For detailed guidelines, please refer to our [Ethical Use Policy](ethical_use_policy.txt) or [md format](ethical_use_policy.md).
+For detailed guidelines, please refer to our [Ethical Use Policy](ethical_use_policy.txt).
 
 By promoting ethical usage, we aim to foster a community that values integrity and respect in digital research.
 
