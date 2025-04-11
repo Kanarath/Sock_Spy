@@ -27,12 +27,11 @@ It’s designed to be:
 ## ✨ Features
 
 - 🔐 Generates fictional identity data.
-- 🌐 Helps create data for the email/social media accounts but does not create them.
+- 🌐 Helps create data for the email/social media accounts but does not create them and doesn't interact with any social media web.
 - 🧰 Tools for persona management.
 - 📁 Organized project structure.
 - 🧪 Ideal for cybersecurity training labs, red teaming, or journalists working on secure investigations.
 
-<!-- Add or remove features as needed -->
 
 ---
 
