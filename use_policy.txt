@@ -38,3 +38,5 @@ Functions offline without requiring an internet connection.​
 Users are solely responsible for ensuring their activities comply with all applicable laws, regulations, and ethical standards. The developers and distributors of Sock Spy disclaim any liability for misuse or unethical conduct resulting from its use.​
 
 By using Sock Spy, you acknowledge and agree to abide by this Ethical Use Policy. If you do not agree with these terms, you are prohibited from using this software.
+
+Stay safe, stay ethical.
