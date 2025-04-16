@@ -3,11 +3,11 @@
 ![Educational Use Only](https://img.shields.io/badge/Educational--Only-important)
 ![Cybersecurity-Focused](https://img.shields.io/badge/Cybersecurity-Focused-green)
 ![Mock Identity Gen](https://img.shields.io/badge/Function-Mock%20ID%20Gen-yellow)
-![Version](https://img.shields.io/github/v/release/<https://github.com/Kanarath>/<https://github.com/Kanarath/Sock_Spy>?display_name=tag&label=Version)
-![Issues](https://img.shields.io/github/issues/<Kanarath>/<https://github.com/Kanarath/Sock_Spy>)
-![Contributors](https://img.shields.io/github/contributors/<Kanarath>/<https://github.com/Kanarath/Sock_Spy>)
-![Forks](https://img.shields.io/github/forks/<Kanarath>/<https://github.com/Kanarath/Sock_Spy>?style=social)
-![Stars](https://img.shields.io/github/stars/<Kanarath>/<https://github.com/Kanarath/Sock_Spy>?style=social)
+![Version](https://img.shields.io/github/v/release/<Kanarath>/<Sock_Spy>?display_name=tag&label=Version)
+![Issues](https://img.shields.io/github/issues/<Kanarath>/<Sock_Spy>)
+![Contributors](https://img.shields.io/github/contributors/<Kanarath>/<Sock_Spy>)
+![Forks](https://img.shields.io/github/forks/<Kanarath>/<Sock_Spy>?style=social)
+![Stars](https://img.shields.io/github/stars/<Kanarath>/<Sock_Spy>?style=social)
 
 
 <p align="center">
