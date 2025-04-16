@@ -61,7 +61,6 @@ TEXTS = {
         "password_prompt": "Enter a password for the persona:",
         "password_confirm": "Confirm password '{}'? (y/n):",
         "platforms_prompt": "Enter comma-separated list of platforms (e.g., Twitter, Facebook, Instagram):",
-        "add_errors_prompt": "Add profile errors? (y/n):",
         "add_picture_prompt": "Add profile picture? (y/n):",
         "add_phrases_prompt": "Add common phrases? (y/n):",
         "profile_preview": "Generated Profile Preview:",
@@ -137,7 +136,6 @@ Version: 1.0
         "password_prompt": "Ingrese una contraseña para la persona:",
         "password_confirm": "¿Confirmar contraseña '{}'? (s/n):",
         "platforms_prompt": "Ingrese lista de plataformas separadas por comas (ej., Twitter, Facebook, Instagram):",
-        "add_errors_prompt": "¿Añadir errores de perfil? (s/n):",
         "add_picture_prompt": "¿Añadir foto de perfil? (s/n):",
         "add_phrases_prompt": "¿Añadir frases comunes? (s/n):",
         "profile_preview": "Vista previa del perfil generado:",
@@ -291,7 +289,7 @@ class SockSpy:
         while True:
             try:
                 age = int(input(self.texts["age_prompt"] + " "))
-                if 0 <= age <= 120:
+                if 18 <= age <= 99:
                     self.profile["age"] = age
                     break
                 else:
@@ -335,11 +333,6 @@ class SockSpy:
         clear_screen()
         if input(self.texts["add_picture_prompt"] + " ").lower() in ["y", "yes", "s", "si", "sí"]:
             self.select_profile_picture()
-        
-        # Add profile errors if desired
-        clear_screen()
-        if input(self.texts["add_errors_prompt"] + " ").lower() in ["y", "yes", "s", "si", "sí"]:
-            self.add_profile_errors()
         
         # Preview profile
         self.preview_profile()
