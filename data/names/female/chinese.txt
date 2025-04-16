@@ -1,212 +1,100 @@
-Mei
-Xiu
-Ying
-Na
-Yan
-Hui
-Juan
-Li
-Xia
-Hong
-Jing
-Qian
-Min
-Lan
-Fang
-Yu
-Lin
-Zhen
-Xiuying
-Yumei
-Xiaohong
-Xiulan
-Guiying
-Chunmei
-Xiaomei
-Guilan
-Shufang
-Jinhua
-Huifang
-Lijuan
-Xiuzhen
-Shulan
-Guirong
-Yulian
-Guizhen
-Xiufang
-Jinfeng
-Lanying
-Guifang
-Xiurong
-Huilan
-Jumei
-Guihua
-Shuying
-Xiumei
-Huiying
-Jinying
-Xiulian
-Lifang
-Guiqin
-Chunhua
-Yanmei
-Xiuhua
-Jinlan
-Huiqin
-Guixiang
-Yufang
-Xiuqin
-Jianhua
-Huizhen
-Guiyun
-Yuhua
-Xiuzhi
-Jinxiu
-Huirong
-Guimei
-Yuzhen
-Xiuying
-Jinrong
-Huiyun
-Guifen
-Yurong
-Xiuping
-Jinmei
-Huixian
-Guihong
-Yulan
-Xiuying
-Jinzhen
-Huihua
-Guilan
-Yuxia
-Xiulan
-Jinyan
-Huijuan
-Guiping
-Yujuan
-Xiuying
-Jinping
-Huimin
-Guizhi
-Yuying
-Xiulan
-Jinxia
-Huiping
-Guiying
-Yufeng
-Xiuying
-Jinhua
-Huifen
-Guilan
-Yuhong
-Xiulan
-Jinying
-Huiying
-Guirong
-Yuqin
-Xiuying
-Jinlan
-Huilan
-Guizhen
-Yuzhi
-Xiulan
-Jinmei
-Huimei
-Guifang
-Yumei
-Xiuying
-Jinrong
-Huirong
-Guihua
-Yulian
-Xiulan
-Jinzhen
-Huizhen
-Guiying
-Yuhua
-Xiuying
-Jinyan
-Huiyan
-Guilan
-Yuxian
-Xiulan
-Jinping
-Huiping
-Guizhi
-Yuzhen
-Xiuying
-Jinxia
-Huixia
-Guifang
-Yufang
-Xiulan
-Jinhua
-Huihua
-Guiying
-Yuying
-Xiuying
-Jinying
-Huiying
-Guilan
-Yulian
-Xiulan
-Jinlan
-Huilan
-Guizhen
-Yuzhi
-Xiuying
-Jinmei
-Huimei
-Guifang
-Yumei
-Xiulan
-Jinrong
-Huirong
-Guihua
-Yulian
-Xiuying
-Jinzhen
-Huizhen
-Guiying
-Yuhua
-Xiulan
-Jinyan
-Huiyan
-Guilan
-Yuxian
-Xiuying
-Jinping
-Huiping
-Guizhi
-Yuzhen
-Xiulan
-Jinxia
-Huixia
-Guifang
-Yufang
-Xiuying
-Jinhua
-Huihua
-Guiying
-Yuying
-Xiulan
-Jinying
-Huiying
-Guilan
-Yulian
-Xiuying
-Jinlan
-Huilan
-Guizhen
-Yuzhi
-Xiulan
-Jinmei
-Huimei
-Guifang
-Yumei
-Xiuying
-Jinrong
-Huirong
-Guihua
-Yulian
+Li (丽/莉)
+Wei (薇)
+Fang (芳)
+Jing (静)
+Yan (艳/妍)
+Na (娜)
+Mei (梅)
+Hong (红)
+Ying (颖/英)
+Xin (馨/欣)
+Jie (洁)
+Min (敏)
+Juan (娟)
+Yu (玉)
+Lin (琳)
+Shu (淑)
+Hui (慧)
+Xia (霞)
+Dan (丹)
+Lei (蕾)
+Ting (婷)
+Feng (凤)
+Hua (花)
+Qin (琴)
+Shuang (霜)
+Wen (文)
+Xiao (晓)
+Yun (云)
+Zhen (珍)
+Zhu (珠)
+Bei (蓓)
+Cai (彩)
+Di (笛)
+Fan (梵)
+Ge (格)
+Han (涵)
+Jia (佳)
+Lan (蓝)
+Miao (妙)
+Ning (凝)
+Ou (欧)
+Pei (佩)
+Qi (琪)
+Rong (蓉)
+Song ( song)
+Tao (桃)
+Xian (娴)
+Xiang (香)
+Zhen (贞)
+Bo (波)
+Chen (chen)
+Fan (fan)
+Gong (宫)
+Hong (虹)
+Jia (嘉)
+Lei (镭)
+Meng (萌)
+Ping (萍)
+Qing (青)
+Shi (诗)
+Ting (亭)
+Wu (舞)
+Yuan (媛)
+Zhou (周)
+An (安)
+Chuang (窗)
+Da (达)
+Gao (高)
+Hou (候)
+Kai (凯)
+Liao (廖)
+Mu (沐)
+Pei (霈)
+Quan (泉)
+Shuang (双)
+Tong (桐)
+Xu (煦)
+Zhe (喆)
+Zhuang (庄)
+Ai (艾)
+Bi (碧)
+Cui (翠)
+Dong (冬)
+Er (尔)
+Feng (枫)
+Guan ( Guan)
+Hui (卉)
+Jin (瑾)
+Kan ( 阚)
+Luo ( 罗)
+Nuo ( 诺)
+Qian ( 茜)
+Ru (茹)
+Su (素)
+Wan (婉)
+Xi ( Xi)
+Yao (瑶)
+Ze (泽)
+Zhen (臻)
+Zhuo ( 卓)

@@ -1,184 +1,100 @@
-Wei
-Li
-Zhang
-Wang
-Chen
-Liu
-Yang
-Huang
-Zhao
-Wu
-Zhou
-Sun
-Ma
-Xu
-Zhu
-Guo
-He
-Gao
-Lin
-Luo
-Zheng
-Song
-Xie
-Han
-Tang
-Feng
-Yu
-Dong
-Xiao
-Cheng
-Cao
-Yuan
-Deng
-Xu
-Fu
-Shen
-Zeng
-Peng
-Liang
-Jiang
-Hu
-Yi
-Zhong
-Ye
-Qi
-Lu
-Shi
-Su
-Pan
-Ding
-Ren
-Yao
-Yin
-Cui
-Mao
-Qian
-Jia
-Tian
-Jiang
-Wei
-Xue
-Yan
-Zou
-Tan
-Jin
-Hao
-Kong
-Bai
-Fang
-Fan
-Dai
-Qin
-Long
-Tao
-Lei
-Shao
-Qiu
-Xia
-Lv
-Du
-Cai
-Ji
-Xiong
-Gu
-Kang
-Guan
-Hou
-Yan
-Wan
-Duan
-Jiao
-Qiao
-Lian
-Niu
-Bi
-Ruan
-Meng
-Fei
-Xing
-Wan
-Ling
-Huo
-Zhai
-Shan
-Sheng
-Zhuang
-Chu
-Dou
-Pang
-Teng
-Jian
-Xiang
-Shu
-Qu
-Xuan
-Ge
-Liao
-Mao
-Sha
-Weng
-Huang
-Jiang
-Wan
-Kuang
-Ji
-Jiang
-Yan
-Lai
-Zou
-Zou
-Zhuo
-Cui
-Dai
-Ding
-Jian
-Tan
-Shui
-Qin
-Qian
-Huang
-Zhao
-Pei
-Pan
-Qiu
-He
-Yi
-Xu
-Yue
-Yan
-Shi
-Qiao
-Qin
-Xing
-Guan
-Lan
-Yi
-Rong
-Chun
-Xiong
-Geng
-Pu
-Jiang
-Huang
-Xuan
-Mou
-Qiu
-Yan
-Zhu
-Meng
-Lei
-Yan
-Zu
-Yuan
-Jiang
-Shan
-Qi
-Tan
-Lian
-Ping
-Zhuan
-Xu
-Hui
-Zang
-Mian
+Wei (伟)
+Hao (浩)
+Jun (军/俊)
+Tao (涛)
+Bo (博)
+Lei (磊)
+Feng (峰/风)
+Yang (阳)
+Jie (杰)
+Li (力/立)
+Peng (鹏)
+Yu (宇)
+Bin (斌/彬)
+Qiang (强)
+Ming (明)
+Yong (勇)
+Chao (超)
+Zheng (政/正)
+Feng (丰)
+Rui (瑞)
+Xing (星/兴)
+Dong (东)
+Ning (宁)
+Kun (昆)
+Wei (威)
+Cheng (成/诚)
+Jian (建/健)
+Xiao (晓)
+Lin (林)
+Hua (华)
+Shan (山)
+Gang (刚)
+Xin (新)
+De (德)
+Long (龙)
+Zhi (志/智)
+Yan (岩/炎)
+Wen (文)
+Tian (天)
+Guang (光)
+Hai (海)
+Fang (方)
+Ke (科)
+Yi (毅/一)
+Jun (钧)
+Wei (巍)
+Fan (凡)
+Jin (金/锦)
+Lang (朗)
+Sen (森)
+Teng (腾)
+Ze (泽)
+Ang (昂)
+Ce (策)
+Di (迪)
+Fu (富)
+Geng (庚)
+Han (汉/翰)
+Kang (康)
+Mao (茂)
+Nan (楠)
+Ou (欧)
+Pan (盼)
+Qi (奇/祺)
+Rong (荣)
+Song (松)
+Tao (陶)
+Xian (贤)
+Xiang (翔)
+Zhen (镇)
+Bo (波)
+Chen (晨)
+Fan (帆)
+Gong (功)
+Hong (宏/洪)
+Jia (佳/家)
+Lei (镭)
+Meng (猛/梦)
+Ping (平)
+Qing (清)
+Shi (石/实)
+Ting (廷/挺)
+Wu (武/悟)
+Yuan (元/远)
+Zhou (舟)
+An (安)
+Chuang (闯)
+Da (达)
+Gao (高)
+Hou (厚)
+Kai (凯/恺)
+Liao (廖)
+Mu (牧)
+Pei (培)
+Quan (泉)
+Shuang (爽)
+Tong (同)
+Xu (旭/徐)
+Zhe (哲)
+Zhuang (壮)
