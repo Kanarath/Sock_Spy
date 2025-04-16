@@ -1,0 +1,50 @@
+Sock Spy Terms of Use and License Agreement
+
+1. License Grant:
+By installing, copying, or using Sock Spy, you agree to the terms of this Agreement. Sock Spy is licensed for non-commercial, educational, and research purposes only. Any modification or use of Sock Spy beyond the purposes stated herein is strictly prohibited without prior written consent from the author.
+
+2. Permitted Use:
+
+Sock Spy is intended to be used exclusively within controlled, simulated, or academic environments.
+
+The software is designed for demonstration, training, and research related to Open Source Intelligence (OSINT) and cybersecurity awareness.
+
+You may not use Sock Spy to engage in any activity that violates local, national, or international laws, or that breaches the Terms of Service of any third-party platform.
+
+3. Prohibited Activities:
+
+Creating and using fake profiles to deceive, harass, or unlawfully access information on social media platforms or any other online service.
+
+Conducting activities that compromise the privacy, data security, or legal rights of individuals or organizations.
+
+Distributing or using Sock Spy in a manner that promotes fraudulent or malicious activities.
+
+4. Disclaimer of Warranties:
+Sock Spy is provided "AS IS" without any express or implied warranties. The author disclaims all warranties, including but not limited to implied warranties of merchantability and fitness for a particular purpose. The entire risk arising out of the use or performance of the software remains with you.
+
+5. Limitation of Liability:
+Under no circumstances, including negligence, shall the author or distributors be liable for any direct, indirect, incidental, special, or consequential damages that result from the use of or inability to use Sock Spy, even if advised of the possibility of such damages.
+
+6. Indemnification:
+You agree to indemnify, defend, and hold harmless the author and any distributors from any claims, losses, liabilities, damages, or expenses (including legal fees) arising out of your use or misuse of Sock Spy, including any activities that violate this Agreement.
+
+7. Acceptance and Modifications:
+By using Sock Spy, you confirm that you have read, understood, and agree to be bound by the terms of this Agreement. If you do not agree with any part of this Agreement, you must cease using Sock Spy immediately. The author reserves the right to modify the terms of this Agreement at any time, with updates provided to users through appropriate channels.
+
+8. Governing Law:
+This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which the author operates, without regard to its conflict of law provisions.
+
+Copyright (C) 2025 Kanarath.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.

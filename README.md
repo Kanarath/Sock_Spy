@@ -1,48 +1,60 @@
+![Made with ❤️ for OSINT](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20for%20OSINT-blue)
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![Educational Use Only](https://img.shields.io/badge/Educational--Only-important)
+![Cybersecurity-Focused](https://img.shields.io/badge/Cybersecurity-Focused-green)
+![Mock Identity Gen](https://img.shields.io/badge/Function-Mock%20ID%20Gen-yellow)
+![Version](https://img.shields.io/github/v/release/<YOUR_GITHUB_USER>/<YOUR_REPO_NAME>?display_name=tag&label=Version)
+![Issues](https://img.shields.io/github/issues/<YOUR_GITHUB_USER>/<YOUR_REPO_NAME>)
+![Contributors](https://img.shields.io/github/contributors/<YOUR_GITHUB_USER>/<YOUR_REPO_NAME>)
+![Forks](https://img.shields.io/github/forks/<YOUR_GITHUB_USER>/<YOUR_REPO_NAME>?style=social)
+![Stars](https://img.shields.io/github/stars/<YOUR_GITHUB_USER>/<YOUR_REPO_NAME>?style=social)
+
+
 <p align="center">
-  <img src="./data/logo_sock_spy1.png" alt="Logo Sock Spy" width="400">
+  <img src="./data/logo_sock_spy1.png" alt="Sock Spy Logo" width="400">
 </p>
 
+# 🧦 Sock Spy
 
-
-# SOCK SPY 🧦🕵️‍♂️
-
-A simple, open-source OSINT tool designed to help users **set up sock puppet accounts** and manage anonymous online personas for ethical intelligence gathering, digital investigations, or cybersecurity training.
+**Sock Spy** is an open-source tool designed for educational and awareness purposes. It assists users in understanding how easily fictitious online identities ("sock puppets") can be created, emphasizing the importance of vigilance in digital interactions.
 
 ---
 
-## 🧠 What is SOCK SPY?
+## 🧠 Purpose
 
-SOCK SPY is a lightweight Python utility that helps automate or semi-automate the setup of online identities ("sock puppets") for OSINT tasks.
+Sock Spy aims to:
 
-It’s designed to be:
-- 🔓 Open source.
-- 🪶 Lightweight.
-- 🛠️ Practical for field work.
-- ⚙️ Easily modifiable for different use cases.
+- Demonstrate the simplicity of creating fake online profiles.
+- Educate users on potential risks associated with accepting unknown contacts on social media.
+- Provide a resource for cybersecurity training and awareness programs.
 
 ---
 
 ## ✨ Features
 
 - 🔐 Generates fictional identity data.
-- 🌐 Helps create data for the email/social media accounts but does not create them and doesn't interact with any social media web.
-- 🧰 Tools for persona management.
-- 📁 Organized project structure.
-- 🧪 Ideal for cybersecurity training labs, red teaming, or journalists working on secure investigations.
+- 📁 Organized project structure for ease of use.
+- 🧪 Suitable for educational labs, awareness campaigns, and training exercises.
 
 ---
 
-### 🧭 Ethical Use Commitment
+## 🧭 Ethical Use Commitment
 
-Sock Spy is a tool crafted for ethical OSINT research and educational purposes. While it is open-source and freely available under the MIT License, we strongly encourage users to:
+Sock Spy is intended **strictly for educational and awareness purposes**. Users are encouraged to:
 
-- Use it responsibly and lawfully.
+- Utilize the tool responsibly and within legal boundaries.
 - Respect the privacy and rights of others.
 - Avoid any activities that could cause harm or distress.
 
-For detailed guidelines, please refer to our [Ethical Use Policy](ethical_use_policy.txt).
+**Disclaimer:** Sock Spy is provided "AS IS" for educational and awareness purposes only. The developers assume no responsibility for misuse of the software. Users are solely accountable for ensuring compliance with all applicable laws and regulations.
 
-By promoting ethical usage, we aim to foster a community that values integrity and respect in digital research.
+---
+
+## 🧭 Ethical Use Policy
+
+Sock Spy is intended strictly for educational and awareness purposes. Users must adhere to the guidelines outlined in our [Ethical Use Policy](ethical_use_policy.txt).
+
+By using this tool, you agree to comply with these terms. If you do not agree, you are prohibited from using Sock Spy.
 
 ---
 
@@ -52,11 +64,25 @@ By promoting ethical usage, we aim to foster a community that values integrity a
 
 - Python 3.x
 
-
-
 ### 📥 Installation
 
 ```bash
 git clone https://github.com/Kanarath/Sock_Spy.git
 cd Sock_Spy
 pip install -r requirements.txt
+
+
+```
+
+---
+
+### 📄 License
+Sock Spy is licensed under the GNU General Public License v3.0. You may use, modify, and distribute this software in accordance with the terms of the GNU GPL v3.0. For more details, please refer to the [LICENSE](license.md) file included with this project.
+
+### 🤝 Contributing
+Contributions to Sock Spy for furthering its educational purpose are welcome. If you wish to contribute, please adhere to the guidelines outlined in our [Contributing](contributing.md) and ensure that your additions align with the ethical use of this tool.
+
+### 📬 Contact
+For questions, suggestions, or more information about Sock Spy:
+
+GitHub: [Kanarath](https://github.com/Kanarath)
