@@ -1,0 +1,86 @@
+<!-- GitHub Pages portfolio for Sock Spy -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sock Spy | OSINT Training Tool</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f2f2f2;
+      color: #0f1117;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #ffffff;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #00a98f;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .badge {
+      display: inline-block;
+      margin: 0.5rem;
+    }
+    code {
+      background: #efefef;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+    }
+    .preview {
+      border-radius: 8px;
+      width: 100%;
+      max-width: 500px;
+      margin: 2rem auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sock Spy</h1>
+    <p>Educational OSINT Sock Puppet Generator</p>
+    <div>
+      <img class="badge" src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=flat-square" alt="License: GPL v3">
+      <img class="badge" src="https://img.shields.io/github/stars/yourusername/sock-spy?style=social" alt="GitHub Stars">
+      <img class="badge" src="https://img.shields.io/github/issues/yourusername/sock-spy?color=yellow&style=flat-square" alt="GitHub Issues">
+      <img class="badge" src="https://img.shields.io/badge/Made%20for-Education-lightgrey?style=flat-square" alt="Made for Education">
+    </div>
+  </header>
+
+  <div class="section">
+    <h2>✨ What is Sock Spy?</h2>
+    <p><strong>Sock Spy</strong> is a tool for educational use in OSINT and cybersecurity. It allows simulation of realistic fake profiles for awareness, training, and practical exercises in ethical hacking environments.</p>
+
+    <h2>🔎 Features</h2>
+    <ul>
+      <li>Localized identity generation (Arab, Spanish, Chinese, etc.)</li>
+      <li>Command-line driven batch profile output</li>
+      <li>Open-source and ethically licensed</li>
+    </ul>
+
+    <h2>📱 Preview</h2>
+    <img class="preview" src="./docs/screenshot_terminal.png" alt="Terminal Screenshot">
+
+    <h2>⚡ Quickstart</h2>
+    <pre><code>git clone https://github.com/yourusername/sock-spy.git
+cd sock-spy
+python generator/main.py --region=arab --amount=5</code></pre>
+
+    <h2>📄 License</h2>
+    <p>This project is licensed under the GNU General Public License v3.0.</p>
+  </div>
+</body>
+</html>
