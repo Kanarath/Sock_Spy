@@ -47,7 +47,7 @@ We are committed to fostering a welcoming and respectful community. By participa
 
 ## 📜 Licensing
 
-By contributing, you agree that your contributions will be licensed under the [GNU General Public License v3.0](./LICENSE), in line with the project's existing license.
+By contributing, you agree that your contributions will be licensed under the [GNU General Public License v3.0](license.md), in line with the project's existing license.
 
 ---
 
@@ -71,6 +71,3 @@ Thank you for your interest in contributing to Sock Spy. Your efforts help impro
 
 If you have any questions or need further clarification, please open an issue on the repository or contact the maintainers.
 
----
-
-*This Contribution Policy is intended to support the responsible development and maintenance of Sock Spy as an educational tool. All contributors are expected to review and abide by these guidelines before making any submissions.*

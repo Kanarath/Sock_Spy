@@ -52,7 +52,7 @@ Sock Spy is intended **strictly for educational and awareness purposes**. Users 
 
 ## 🧭 Ethical Use Policy
 
-Sock Spy is intended strictly for educational and awareness purposes. Users must adhere to the guidelines outlined in our [Ethical Use Policy](ethical_use_policy.txt).
+Sock Spy is intended strictly for educational and awareness purposes. Users must adhere to the guidelines outlined in our [Ethical Use Policy](ethical_use_policy.txt) also at your disposal there are the [Terms of use](terms_of_use.txt).
 
 By using this tool, you agree to comply with these terms. If you do not agree, you are prohibited from using Sock Spy.
 
