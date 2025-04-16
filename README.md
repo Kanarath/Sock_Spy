@@ -1,13 +1,14 @@
-![Made with ❤️ for OSINT](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F%20for%20OSINT-blue)
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![Educational Use Only](https://img.shields.io/badge/Educational--Only-important)
-![Cybersecurity-Focused](https://img.shields.io/badge/Cybersecurity-Focused-green)
-![Mock Identity Gen](https://img.shields.io/badge/Function-Mock%20ID%20Gen-yellow)
-![Version](https://img.shields.io/github/v/release/<Kanarath>/<Sock_Spy>?display_name=tag&label=Version)
-![Issues](https://img.shields.io/github/issues/<Kanarath>/<Sock_Spy>)
-![Contributors](https://img.shields.io/github/contributors/<Kanarath>/<Sock_Spy>)
-![Forks](https://img.shields.io/github/forks/<Kanarath>/<Sock_Spy>?style=social)
-![Stars](https://img.shields.io/github/stars/<Kanarath>/<Sock_Spy>?style=social)
+![License](https://img.shields.io/github/license/Kanarath/Sock_Spy)
+![Last Commit](https://img.shields.io/github/last-commit/Kanarath/Sock_Spy)
+![Repo Size](https://img.shields.io/github/repo-size/Kanarath/Sock_Spy)
+![Lines of Code](https://img.shields.io/tokei/lines/github/Kanarath/Sock_Spy)
+![Top Language](https://img.shields.io/github/languages/top/Kanarath/Sock_Spy)
+![Contributors](https://img.shields.io/github/contributors/Kanarath/Sock_Spy)
+![Issues](https://img.shields.io/github/issues/Kanarath/Sock_Spy)
+![Pull Requests](https://img.shields.io/github/issues-pr/Kanarath/Sock_Spy)
+![Status](https://img.shields.io/badge/status-beta-blue)
+![Use-Case](https://img.shields.io/badge/use-educational-important)
+
 
 
 <p align="center">
