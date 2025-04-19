@@ -1,6 +1,7 @@
 <div align="center">
   <img src="./data/logo_sock_spy1.png" alt="Sock Spy Logo" width="400">
 </div>
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![License](https://img.shields.io/github/license/Kanarath/Sock_Spy)
 ![Last Commit](https://img.shields.io/github/last-commit/Kanarath/Sock_Spy)
