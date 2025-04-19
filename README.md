@@ -69,7 +69,6 @@ You can check our Elite Agents in our [Espionage Elite](ESPIONAGE_ELITE.md) docu
 ## 📬 Contact Intelligence HQ
 [![Report Issues](https://img.shields.io/badge/File_Report-Issues-red?style=flat-square)](https://github.com/Kanarath/Sock_Spy/issues)
 [![Join Discussion](https://img.shields.io/badge/Debrief-Discussions-blue?style=flat-square)](https://github.com/Kanarath/Sock_Spy/discussions)
-[![Secure Comms](https://img.shields.io/badge/Encrypted_Contact-Email-success?style=flat-square)](mailto:kanarath@example.com)
 
 ---
 
