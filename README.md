@@ -43,12 +43,13 @@ Here you can check the [GNU v3.0 License](license.md) for Sock Spy.
 
 ---
 
-### 📥 Installation
+### 💻 Installation
 
+### Basic Usage (No Installation)
 ```bash
 git clone https://github.com/Kanarath/Sock_Spy.git
 cd Sock_Spy
-pip install -r requirements.txt
+python3 main.py
 ```
 
 ---
