@@ -2,16 +2,16 @@
   <img src="./data/logo_sock_spy1.png" alt="Sock Spy Logo" width="400">
 </div>
 
-![License](https://img.shields.io/github/license/Kanarath/Sock_Spy)
-![Last Commit](https://img.shields.io/github/last-commit/Kanarath/Sock_Spy)
-![Repo Size](https://img.shields.io/github/repo-size/Kanarath/Sock_Spy)
-![Top Language](https://img.shields.io/github/languages/top/Kanarath/Sock_Spy)
-![Contributors](https://img.shields.io/github/contributors/Kanarath/Sock_Spy)
 ![Stars](https://img.shields.io/github/stars/Kanarath/Sock_Spy?style=social)
-![Issues](https://img.shields.io/github/issues/Kanarath/Sock_Spy)
 ![Pull Requests](https://img.shields.io/github/issues-pr/Kanarath/Sock_Spy)
-![Status](https://img.shields.io/badge/status-beta-blue)
+![Top Language](https://img.shields.io/github/languages/top/Kanarath/Sock_Spy)
+![Repo Size](https://img.shields.io/github/repo-size/Kanarath/Sock_Spy)
 ![Use-Case](https://img.shields.io/badge/use-educational-important)
+![Contributors](https://img.shields.io/github/contributors/Kanarath/Sock_Spy)
+![Issues](https://img.shields.io/github/issues/Kanarath/Sock_Spy)
+![Status](https://img.shields.io/badge/status-beta-blue)
+![Last Commit](https://img.shields.io/github/last-commit/Kanarath/Sock_Spy)
+![License](https://img.shields.io/github/license/Kanarath/Sock_Spy)
 
 # 🧦 Sock Spy
 
