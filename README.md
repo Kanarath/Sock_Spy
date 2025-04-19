@@ -15,7 +15,9 @@
 
 # 🧦 Sock Spy
 
-Sock Spy aims to:
+Sock Spy is a tool for educational use in OSINT and cybersecurity. It allows simulation of realistic fake profiles for awareness, training, and practical exercises in ethical hacking environments.
+
+This software aims to:
 
 - Demonstrate the simplicity of creating fake online profiles.
 - Educate users on potential risks associated with accepting unknown contacts on social media.
