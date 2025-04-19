@@ -1,44 +1,257 @@
 {
-  "General": {
-    "Tecnología": ["Ingeniero de software", "Desarrollador web", "Especialista en ciberseguridad", "Científico de datos", "Administrador de sistemas", "Diseñador UX/UI", "Analista de TI", "Técnico de soporte", "Arquitecto de software", "Especialista en IA"],
-    "Salud": ["Médico", "Enfermero", "Fisioterapeuta", "Psicólogo", "Dentista", "Farmacéutico", "Nutricionista", "Terapeuta ocupacional", "Veterinario", "Técnico de laboratorio"],
-    "Educación": ["Profesor", "Maestro", "Tutor", "Director escolar", "Orientador educativo", "Formador", "Investigador académico", "Bibliotecario", "Educador especial", "Profesor universitario"],
-    "Negocios": ["Gerente", "Consultor", "Analista financiero", "Contador", "Especialista en marketing", "Recursos humanos", "Emprendedor", "Ejecutivo de ventas", "Director de operaciones", "Planificador estratégico"],
-    "Arte y Diseño": ["Diseñador gráfico", "Fotógrafo", "Artista", "Arquitecto", "Diseñador de interiores", "Ilustrador", "Diseñador de moda", "Animador", "Director creativo", "Artesano"]
+  "Healthcare": {
+    "Doctors": {
+      "General Practitioner": ["Family Doctor", "Primary Care Physician", "Community Health Doctor"],
+      "Surgeon": ["Neurosurgeon", "Cardiothoracic Surgeon", "Orthopedic Surgeon"],
+      "Specialist": ["Dermatologist", "Pediatrician", "Endocrinologist"]
+    },
+    "Nursing": {
+      "Registered Nurse": ["ICU Nurse", "Emergency Nurse", "Pediatric Nurse"],
+      "Nurse Practitioner": ["Family Nurse Practitioner", "Psychiatric Nurse Practitioner", "Acute Care Nurse Practitioner"],
+      "Licensed Practical Nurse": ["Home Health LPN", "Long-Term Care LPN", "Rehab LPN"]
+    },
+    "Therapy": {
+      "Physical Therapist": ["Orthopedic PT", "Geriatric PT", "Sports PT"],
+      "Occupational Therapist": ["Pediatric OT", "Mental Health OT", "Geriatric OT"],
+      "Speech Therapist": ["Pediatric Speech Therapist", "Aphasia Specialist", "Swallowing Therapist"]
+    }
   },
-  "Tecnología": {
-    "Desarrollo de Software": ["Desarrollador frontend", "Desarrollador backend", "Desarrollador fullstack", "Ingeniero DevOps", "Desarrollador móvil", "Desarrollador de videojuegos", "Ingeniero de QA", "Programador de sistemas embebidos", "Desarrollador blockchain", "Ingeniero de software"],
-    "Ciberseguridad": ["Analista de seguridad", "Pentester", "Forense digital", "Consultor de seguridad", "Ingeniero de seguridad", "Analista SOC", "Especialista en respuesta a incidentes", "Auditor de seguridad", "Arquitecto de seguridad", "Investigador de vulnerabilidades"],
-    "Datos": ["Científico de datos", "Analista de datos", "Ingeniero de datos", "Administrador de bases de datos", "Especialista en big data", "Analista de business intelligence", "Estadístico", "Especialista en machine learning", "Ingeniero de ETL", "Arquitecto de datos"],
-    "Infraestructura": ["Administrador de sistemas", "Ingeniero de redes", "Especialista en cloud computing", "Administrador de servidores", "Ingeniero DevOps", "Especialista en virtualización", "Administrador de bases de datos", "Arquitecto de infraestructura", "Especialista en almacenamiento", "Ingeniero de soporte técnico"],
-    "Diseño y UX": ["Diseñador UX", "Diseñador UI", "Diseñador de interacción", "Arquitecto de información", "Investigador UX", "Diseñador de producto", "Especialista en usabilidad", "Diseñador web", "Diseñador de interfaces", "Especialista en accesibilidad"]
+  "Technology": {
+    "Software Development": {
+      "Frontend Developer": ["React Developer", "Vue.js Developer", "Angular Developer"],
+      "Backend Developer": ["Node.js Developer", "Python Developer", "Java Developer"],
+      "Full Stack Developer": ["MERN Stack Developer", "MEAN Stack Developer", "Django + React Developer"]
+    },
+    "Data Science": {
+      "Data Analyst": ["Business Intelligence Analyst", "Marketing Analyst", "Operations Analyst"],
+      "Data Scientist": ["Machine Learning Engineer", "AI Researcher", "Computer Vision Engineer"],
+      "Data Engineer": ["ETL Developer", "Big Data Engineer", "Cloud Data Engineer"]
+    },
+    "Cybersecurity": {
+      "Security Analyst": ["SOC Analyst", "Incident Responder", "Vulnerability Analyst"],
+      "Security Engineer": ["Network Security Engineer", "Cloud Security Engineer", "Application Security Engineer"],
+      "Penetration Tester": ["Ethical Hacker", "Red Team Specialist", "Web App Pentester"]
+    }
   },
-  "Salud": {
-    "Medicina": ["Médico general", "Cirujano", "Pediatra", "Cardiólogo", "Neurólogo", "Psiquiatra", "Dermatólogo", "Ginecólogo", "Oftalmólogo", "Oncólogo"],
-    "Enfermería": ["Enfermero general", "Enfermero especialista", "Enfermero pediátrico", "Enfermero quirúrgico", "Enfermero de cuidados intensivos", "Enfermero de salud mental", "Enfermero geriátrico", "Enfermero de urgencias", "Enfermero de atención primaria", "Enfermero de salud pública"],
-    "Terapias": ["Fisioterapeuta", "Terapeuta ocupacional", "Logopeda", "Psicólogo clínico", "Terapeuta respiratorio", "Quiropráctico", "Osteópata", "Masajista terapéutico", "Terapeuta familiar", "Terapeuta de rehabilitación"],
-    "Salud Mental": ["Psicólogo", "Psiquiatra", "Terapeuta", "Consejero", "Trabajador social clínico", "Psicoanalista", "Neuropsicólogo", "Psicólogo infantil", "Psicólogo forense", "Psicólogo educativo"],
-    "Especialidades Técnicas": ["Técnico de laboratorio", "Técnico de radiología", "Técnico de farmacia", "Técnico dental", "Técnico de emergencias médicas", "Técnico quirúrgico", "Técnico de electrocardiograma", "Técnico de resonancia magnética", "Técnico de ultrasonido", "Técnico de optometría"]
+  "Education": {
+    "Primary and Secondary": {
+      "Elementary School Teacher": ["Kindergarten Teacher", "1st Grade Teacher", "5th Grade Teacher"],
+      "Middle School Teacher": ["Math Teacher", "Science Teacher", "Language Arts Teacher"],
+      "High School Teacher": ["Biology Teacher", "History Teacher", "Physics Teacher"]
+    },
+    "Higher Education": {
+      "University Professor": ["Philosophy Professor", "Computer Science Professor", "Economics Professor"],
+      "Lecturer": ["Adjunct Lecturer", "Guest Lecturer", "Senior Lecturer"],
+      "Researcher": ["Postdoctoral Researcher", "Lab Coordinator", "Research Fellow"]
+    },
+    "Specialized Instruction": {
+      "ESL Teacher": ["Online ESL Tutor", "IELTS Trainer", "K-12 ESL Teacher"],
+      "Special Education Teacher": ["Autism Specialist", "Speech and Language Specialist", "Behavioral Support Teacher"],
+      "Music Instructor": ["Piano Teacher", "Guitar Instructor", "Vocal Coach"]
+    }
   },
-  "Educación": {
-    "Educación Primaria": ["Maestro de primaria", "Maestro de educación infantil", "Maestro de educación especial", "Maestro de música", "Maestro de educación física", "Maestro de arte", "Maestro de idiomas", "Maestro de ciencias", "Maestro de matemáticas", "Maestro de tecnología"],
-    "Educación Secundaria": ["Profesor de matemáticas", "Profesor de ciencias", "Profesor de lengua", "Profesor de historia", "Profesor de geografía", "Profesor de idiomas", "Profesor de educación física", "Profesor de arte", "Profesor de música", "Profesor de tecnología"],
-    "Educación Superior": ["Profesor universitario", "Investigador académico", "Decano", "Rector", "Profesor asociado", "Profesor titular", "Profesor ayudante", "Profesor emérito", "Profesor visitante", "Tutor universitario"],
-    "Administración Educativa": ["Director de escuela", "Jefe de estudios", "Coordinador académico", "Inspector educativo", "Administrador escolar", "Gestor educativo", "Planificador curricular", "Evaluador educativo", "Supervisor escolar", "Consultor educativo"],
-    "Servicios Educativos": ["Orientador escolar", "Psicólogo educativo", "Pedagogo", "Logopeda escolar", "Bibliotecario escolar", "Trabajador social escolar", "Especialista en tecnología educativa", "Especialista en necesidades especiales", "Tutor personal", "Coordinador de actividades extraescolares"]
+  "Engineering": {
+    "Civil Engineering": {
+      "Structural Engineer": ["Bridge Engineer", "High-Rise Specialist", "Earthquake Safety Engineer"],
+      "Transportation Engineer": ["Highway Designer", "Urban Planner", "Rail Engineer"],
+      "Geotechnical Engineer": ["Soil Analyst", "Tunnel Engineer", "Foundation Specialist"]
+    },
+    "Mechanical Engineering": {
+      "Automotive Engineer": ["Powertrain Engineer", "Vehicle Dynamics Engineer", "Electric Vehicle Specialist"],
+      "Aerospace Engineer": ["Propulsion Engineer", "Flight Systems Engineer", "Aircraft Design Engineer"],
+      "HVAC Engineer": ["Heating Systems Engineer", "Ventilation Design Engineer", "Refrigeration Specialist"]
+    },
+    "Electrical Engineering": {
+      "Power Systems Engineer": ["Substation Designer", "Transmission Line Engineer", "Grid Modernization Engineer"],
+      "Electronics Engineer": ["PCB Designer", "Embedded Systems Engineer", "Analog Design Engineer"],
+      "Control Systems Engineer": ["Automation Engineer", "PLC Programmer", "Robotics Engineer"]
+    }
   },
-  "Negocios": {
-    "Finanzas": ["Analista financiero", "Contador", "Auditor", "Asesor financiero", "Gestor de inversiones", "Analista de riesgos", "Planificador financiero", "Tesorero", "Controller", "Especialista en impuestos"],
-    "Marketing": ["Especialista en marketing digital", "Gerente de marca", "Analista de mercado", "Especialista en SEO", "Gestor de redes sociales", "Especialista en publicidad", "Gerente de producto", "Especialista en relaciones públicas", "Especialista en marketing de contenidos", "Analista de CRM"],
-    "Ventas": ["Representante de ventas", "Gerente de ventas", "Ejecutivo de cuentas", "Consultor comercial", "Especialista en desarrollo de negocios", "Gerente de territorio", "Vendedor técnico", "Especialista en ventas internas", "Gerente de canal", "Especialista en telemarketing"],
-    "Recursos Humanos": ["Gerente de RRHH", "Reclutador", "Especialista en compensación y beneficios", "Gerente de talento", "Especialista en formación y desarrollo", "Consultor de RRHH", "Especialista en relaciones laborales", "Analista de RRHH", "Gerente de cultura organizacional", "Especialista en nómina"],
-    "Gestión": ["Director general", "Director de operaciones", "Director financiero", "Director de marketing", "Director de tecnología", "Director de recursos humanos", "Gerente de proyecto", "Gerente de producto", "Gerente de operaciones", "Consultor de gestión"]
+  "Creative Arts": {
+    "Visual Arts": {
+      "Graphic Designer": ["Logo Designer", "UI Designer", "Branding Specialist"],
+      "Illustrator": ["Children’s Book Illustrator", "Concept Artist", "Editorial Illustrator"],
+      "Photographer": ["Portrait Photographer", "Wildlife Photographer", "Product Photographer"]
+    },
+    "Performing Arts": {
+      "Actor": ["Stage Actor", "Film Actor", "Voice Actor"],
+      "Dancer": ["Ballet Dancer", "Contemporary Dancer", "Hip-Hop Dancer"],
+      "Musician": ["Violinist", "Jazz Pianist", "Singer-Songwriter"]
+    },
+    "Writing & Content": {
+      "Author": ["Fiction Writer", "Non-Fiction Author", "Children’s Book Author"],
+      "Copywriter": ["Marketing Copywriter", "SEO Content Writer", "Technical Copywriter"],
+      "Journalist": ["Investigative Reporter", "Sports Journalist", "Foreign Correspondent"]
+    }
   },
-  "Arte y Diseño": {
-    "Diseño Gráfico": ["Diseñador gráfico", "Director de arte", "Diseñador de logotipos", "Diseñador editorial", "Diseñador de packaging", "Diseñador de tipografía", "Ilustrador", "Diseñador de carteles", "Diseñador de identidad corporativa", "Maquetador"],
-    "Diseño Digital": ["Diseñador web", "Diseñador UX/UI", "Diseñador de aplicaciones", "Diseñador de interfaces", "Diseñador de juegos", "Animador digital", "Diseñador 3D", "Diseñador de realidad virtual", "Diseñador de efectos visuales", "Diseñador multimedia"],
-    "Bellas Artes": ["Pintor", "Escultor", "Grabador", "Ceramista", "Artista conceptual", "Artista de instalaciones", "Artista de performance", "Artista digital", "Artista de técnica mixta", "Muralista"],
-    "Diseño de Espacios": ["Arquitecto", "Diseñador de interiores", "Paisajista", "Escenógrafo", "Diseñador de exposiciones", "Diseñador de iluminación", "Diseñador de espacios comerciales", "Decorador", "Diseñador de muebles", "Planificador espacial"],
-    "Moda y Textil": ["Diseñador de moda", "Estilista", "Diseñador textil", "Patronista", "Sastre", "Diseñador de accesorios", "Diseñador de calzado", "Diseñador de joyería", "Diseñador de vestuario", "Especialista en tendencias"]
-  }
+    "Business": {
+      "Management": {
+        "Project Manager": ["IT Project Manager", "Construction Project Manager", "Agile Scrum Master"],
+        "Operations Manager": ["Logistics Manager", "Warehouse Manager", "Production Manager"],
+        "HR Manager": ["Talent Acquisition Manager", "Training Manager", "Compensation and Benefits Manager"]
+      },
+      "Marketing": {
+        "Digital Marketer": ["SEO Specialist", "Content Marketer", "Email Marketing Specialist"],
+        "Social Media Manager": ["Instagram Manager", "TikTok Strategist", "Community Manager"],
+        "Brand Manager": ["Product Branding", "Corporate Branding", "Rebranding Specialist"]
+      },
+      "Sales": {
+        "Sales Representative": ["B2B Sales", "Pharmaceutical Sales", "Retail Sales"],
+        "Account Manager": ["Key Account Manager", "Client Relationship Manager", "Enterprise Account Manager"],
+        "Sales Manager": ["Regional Sales Manager", "Inside Sales Manager", "Channel Sales Manager"]
+      }
+    },
+    "Law": {
+      "Legal Practice": {
+        "Lawyer": ["Criminal Lawyer", "Corporate Lawyer", "Family Lawyer"],
+        "Legal Advisor": ["Contract Advisor", "Regulatory Advisor", "Risk Compliance Advisor"],
+        "Public Defender": ["Juvenile Defender", "Felony Defender", "Domestic Violence Defender"]
+      },
+      "Judiciary": {
+        "Judge": ["Trial Judge", "Appellate Judge", "Administrative Law Judge"],
+        "Magistrate": ["Family Court Magistrate", "Traffic Court Magistrate", "Pretrial Magistrate"],
+        "Clerk of Court": ["Criminal Clerk", "Civil Clerk", "Family Court Clerk"]
+      },
+      "Legal Support": {
+        "Paralegal": ["Litigation Paralegal", "Corporate Paralegal", "Immigration Paralegal"],
+        "Legal Secretary": ["Court Filing Clerk", "Document Preparer", "Scheduling Secretary"],
+        "Court Reporter": ["Stenographer", "Realtime Reporter", "Transcriptionist"]
+      }
+    },
+    "Finance": {
+      "Accounting": {
+        "Accountant": ["Public Accountant", "Forensic Accountant", "Tax Accountant"],
+        "Auditor": ["Internal Auditor", "External Auditor", "IT Auditor"],
+        "Bookkeeper": ["Small Business Bookkeeper", "Payroll Clerk", "Accounts Payable Clerk"]
+      },
+      "Banking": {
+        "Bank Teller": ["Retail Teller", "Foreign Exchange Teller", "Senior Teller"],
+        "Loan Officer": ["Mortgage Loan Officer", "Personal Loan Officer", "Commercial Loan Officer"],
+        "Branch Manager": ["Urban Branch Manager", "Community Branch Manager", "Digital Branch Manager"]
+      },
+      "Investments": {
+        "Financial Analyst": ["Equity Analyst", "Credit Analyst", "Market Research Analyst"],
+        "Investment Advisor": ["Wealth Manager", "Retirement Planner", "Portfolio Consultant"],
+        "Trader": ["Stock Trader", "Forex Trader", "Crypto Trader"]
+      }
+    },
+    "Culinary Arts": {
+      "Chefs": {
+        "Executive Chef": ["Fine Dining Chef", "Hotel Executive Chef", "Resort Executive Chef"],
+        "Sous Chef": ["Bakery Sous Chef", "Grill Sous Chef", "Banquet Sous Chef"],
+        "Pastry Chef": ["Cake Decorator", "Chocolate Artist", "Bread Baker"]
+      },
+      "Kitchen Staff": {
+        "Line Cook": ["Grill Cook", "Prep Cook", "Fry Cook"],
+        "Kitchen Porter": ["Dishwasher", "Cleaner", "Stock Runner"],
+        "Food Prep": ["Vegetable Cutter", "Butcher Assistant", "Ingredient Preparer"]
+      },
+      "Food Service": {
+        "Waiter": ["Fine Dining Server", "Café Waiter", "Buffet Attendant"],
+        "Bartender": ["Cocktail Bartender", "Pub Bartender", "Mixologist"],
+        "Barista": ["Espresso Specialist", "Latte Artist", "Cold Brew Maker"]
+      }
+    },
+    "Construction": {
+      "Skilled Trades": {
+        "Electrician": ["Residential Electrician", "Industrial Electrician", "Solar Technician"],
+        "Plumber": ["Pipefitter", "Steamfitter", "Gas Fitter"],
+        "Carpenter": ["Framing Carpenter", "Finish Carpenter", "Rough Carpenter"]
+      },
+      "Heavy Equipment": {
+        "Crane Operator": ["Tower Crane Operator", "Mobile Crane Operator", "Overhead Crane Operator"],
+        "Excavator Operator": ["Backhoe Driver", "Bulldozer Operator", "Trencher Operator"],
+        "Forklift Operator": ["Warehouse Forklift", "Construction Loader", "Reach Truck Operator"]
+      },
+      "Project Management": {
+        "Construction Manager": ["Residential Construction", "Commercial Site Manager", "Infrastructure PM"],
+        "Site Supervisor": ["Concrete Works Supervisor", "Roofing Supervisor", "Demolition Supervisor"],
+        "Quantity Surveyor": ["Cost Estimator", "Contracts Surveyor", "Budget Planner"]
+      }
+    },
+    "Transportation": {
+      "Drivers": {
+        "Truck Driver": ["Long Haul Driver", "Local Delivery Driver", "Hazmat Driver"],
+        "Bus Driver": ["School Bus Driver", "City Transit Driver", "Coach Driver"],
+        "Taxi/Ride-Share": ["Uber Driver", "Airport Taxi", "Private Hire Driver"]
+      },
+      "Aviation": {
+        "Pilot": ["Commercial Airline Pilot", "Private Jet Pilot", "Cargo Pilot"],
+        "Air Traffic Controller": ["Tower Controller", "Approach Controller", "Enroute Controller"],
+        "Flight Attendant": ["Domestic Crew", "International Crew", "Business Class Host"]
+      },
+      "Maritime": {
+        "Ship Captain": ["Cargo Ship Captain", "Cruise Ship Captain", "Fishing Boat Captain"],
+        "Deckhand": ["Tugboat Deckhand", "Ferry Worker", "Dock Assistant"],
+        "Marine Engineer": ["Propulsion Engineer", "Engine Room Technician", "Ship Maintenance"]
+      }
+    },
+    "Agriculture": {
+      "Farm Work": {
+        "Crop Farmer": ["Corn Grower", "Wheat Farmer", "Organic Vegetable Farmer"],
+        "Livestock Farmer": ["Cattle Rancher", "Sheep Farmer", "Pig Farmer"],
+        "Greenhouse Worker": ["Hydroponic Technician", "Plant Nursery Worker", "Flower Grower"]
+      },
+      "Agribusiness": {
+        "Agricultural Technician": ["Soil Tester", "Pest Control Technician", "Field Surveyor"],
+        "Farm Manager": ["Organic Farm Manager", "Dairy Farm Supervisor", "Agroforestry Planner"],
+        "Agronomist": ["Crop Consultant", "Fertilizer Advisor", "Irrigation Planner"]
+      },
+      "Food Production": {
+        "Food Inspector": ["Quality Control Inspector", "Sanitation Auditor", "Label Compliance Checker"],
+        "Processing Plant Worker": ["Slaughterhouse Technician", "Packaging Operator", "Quality Control Worker"],
+        "Grain Elevator Operator": ["Wheat Storage", "Feed Mill Technician", "Silo Manager"]
+      }
+    },
+    "Military": {
+      "Army": {
+        "Infantry Soldier": ["Rifleman", "Sniper", "Recon Scout"],
+        "Combat Engineer": ["Demolitions Expert", "Bridge Builder", "Field Fortifications"],
+        "Artillery": ["Cannon Crew", "Mortar Operator", "Targeting Specialist"]
+      },
+      "Navy": {
+        "Sailor": ["Submarine Technician", "Sonar Operator", "Ship Navigator"],
+        "Naval Officer": ["Combat Systems Officer", "Naval Aviator", "Submarine Captain"],
+        "Marine": ["Amphibious Assault Specialist", "Combat Diver", "Sniper"]
+      },
+      "Air Force": {
+        "Airman": ["Aircraft Mechanic", "Radar Operator", "Loadmaster"],
+        "Pilot": ["Fighter Pilot", "Transport Pilot", "Drone Operator"],
+        "Ground Crew": ["Air Traffic Assistant", "Refueling Specialist", "Base Security"]
+      }
+    },
+    "Public Service": {
+      "Emergency Services": {
+        "Firefighter": ["Urban Firefighter", "Forest Firefighter", "Hazmat Responder"],
+        "Police Officer": ["Traffic Police", "SWAT", "Community Liaison Officer"],
+        "Paramedic": ["Ambulance Paramedic", "Flight Paramedic", "Rescue Technician"]
+      },
+      "Government Jobs": {
+        "City Official": ["City Planner", "Zoning Officer", "Public Works Director"],
+        "Postal Worker": ["Mail Carrier", "Sorting Clerk", "Delivery Driver"],
+        "Civil Registrar": ["Marriage Clerk", "Birth Records Officer", "Legal Document Specialist"]
+      },
+      "Social Services": {
+        "Social Worker": ["Child Welfare Worker", "Crisis Intervention", "School Social Worker"],
+        "Case Manager": ["Homeless Outreach", "Rehabilitation Caseworker", "Foster Care Manager"],
+        "Public Health Officer": ["Disease Prevention Specialist", "Vaccination Coordinator", "Community Outreach"]
+      }
+    },
+    "Sports": {
+      "Athletes": {
+        "Team Sports": ["Football Player", "Basketball Player", "Baseball Player"],
+        "Individual Sports": ["Tennis Player", "Track Athlete", "Boxer"],
+        "Extreme Sports": ["Skateboarder", "Surfer", "Snowboarder"]
+      },
+      "Coaching": {
+        "Team Coach": ["Soccer Coach", "Basketball Coach", "Baseball Coach"],
+        "Fitness Trainer": ["Personal Trainer", "CrossFit Instructor", "Strength Coach"],
+        "Youth Coach": ["Little League Coach", "High School Coach", "Development Academy Trainer"]
+      },
+      "Sports Support": {
+        "Physiotherapist": ["Injury Rehab Specialist", "Team Physio", "Athlete Recovery Coach"],
+        "Referee": ["Football Referee", "Basketball Umpire", "Boxing Judge"],
+        "Sports Analyst": ["Match Commentator", "Video Analyst", "Tactics Consultant"]
+      }
+    }
 }

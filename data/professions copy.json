@@ -1,0 +1,44 @@
+{
+  "General": {
+    "Tecnología": ["Ingeniero de software", "Desarrollador web", "Especialista en ciberseguridad", "Científico de datos", "Administrador de sistemas", "Diseñador UX/UI", "Analista de TI", "Técnico de soporte", "Arquitecto de software", "Especialista en IA"],
+    "Salud": ["Médico", "Enfermero", "Fisioterapeuta", "Psicólogo", "Dentista", "Farmacéutico", "Nutricionista", "Terapeuta ocupacional", "Veterinario", "Técnico de laboratorio"],
+    "Educación": ["Profesor", "Maestro", "Tutor", "Director escolar", "Orientador educativo", "Formador", "Investigador académico", "Bibliotecario", "Educador especial", "Profesor universitario"],
+    "Negocios": ["Gerente", "Consultor", "Analista financiero", "Contador", "Especialista en marketing", "Recursos humanos", "Emprendedor", "Ejecutivo de ventas", "Director de operaciones", "Planificador estratégico"],
+    "Arte y Diseño": ["Diseñador gráfico", "Fotógrafo", "Artista", "Arquitecto", "Diseñador de interiores", "Ilustrador", "Diseñador de moda", "Animador", "Director creativo", "Artesano"]
+  },
+  "Tecnología": {
+    "Desarrollo de Software": ["Desarrollador frontend", "Desarrollador backend", "Desarrollador fullstack", "Ingeniero DevOps", "Desarrollador móvil", "Desarrollador de videojuegos", "Ingeniero de QA", "Programador de sistemas embebidos", "Desarrollador blockchain", "Ingeniero de software"],
+    "Ciberseguridad": ["Analista de seguridad", "Pentester", "Forense digital", "Consultor de seguridad", "Ingeniero de seguridad", "Analista SOC", "Especialista en respuesta a incidentes", "Auditor de seguridad", "Arquitecto de seguridad", "Investigador de vulnerabilidades"],
+    "Datos": ["Científico de datos", "Analista de datos", "Ingeniero de datos", "Administrador de bases de datos", "Especialista en big data", "Analista de business intelligence", "Estadístico", "Especialista en machine learning", "Ingeniero de ETL", "Arquitecto de datos"],
+    "Infraestructura": ["Administrador de sistemas", "Ingeniero de redes", "Especialista en cloud computing", "Administrador de servidores", "Ingeniero DevOps", "Especialista en virtualización", "Administrador de bases de datos", "Arquitecto de infraestructura", "Especialista en almacenamiento", "Ingeniero de soporte técnico"],
+    "Diseño y UX": ["Diseñador UX", "Diseñador UI", "Diseñador de interacción", "Arquitecto de información", "Investigador UX", "Diseñador de producto", "Especialista en usabilidad", "Diseñador web", "Diseñador de interfaces", "Especialista en accesibilidad"]
+  },
+  "Salud": {
+    "Medicina": ["Médico general", "Cirujano", "Pediatra", "Cardiólogo", "Neurólogo", "Psiquiatra", "Dermatólogo", "Ginecólogo", "Oftalmólogo", "Oncólogo"],
+    "Enfermería": ["Enfermero general", "Enfermero especialista", "Enfermero pediátrico", "Enfermero quirúrgico", "Enfermero de cuidados intensivos", "Enfermero de salud mental", "Enfermero geriátrico", "Enfermero de urgencias", "Enfermero de atención primaria", "Enfermero de salud pública"],
+    "Terapias": ["Fisioterapeuta", "Terapeuta ocupacional", "Logopeda", "Psicólogo clínico", "Terapeuta respiratorio", "Quiropráctico", "Osteópata", "Masajista terapéutico", "Terapeuta familiar", "Terapeuta de rehabilitación"],
+    "Salud Mental": ["Psicólogo", "Psiquiatra", "Terapeuta", "Consejero", "Trabajador social clínico", "Psicoanalista", "Neuropsicólogo", "Psicólogo infantil", "Psicólogo forense", "Psicólogo educativo"],
+    "Especialidades Técnicas": ["Técnico de laboratorio", "Técnico de radiología", "Técnico de farmacia", "Técnico dental", "Técnico de emergencias médicas", "Técnico quirúrgico", "Técnico de electrocardiograma", "Técnico de resonancia magnética", "Técnico de ultrasonido", "Técnico de optometría"]
+  },
+  "Educación": {
+    "Educación Primaria": ["Maestro de primaria", "Maestro de educación infantil", "Maestro de educación especial", "Maestro de música", "Maestro de educación física", "Maestro de arte", "Maestro de idiomas", "Maestro de ciencias", "Maestro de matemáticas", "Maestro de tecnología"],
+    "Educación Secundaria": ["Profesor de matemáticas", "Profesor de ciencias", "Profesor de lengua", "Profesor de historia", "Profesor de geografía", "Profesor de idiomas", "Profesor de educación física", "Profesor de arte", "Profesor de música", "Profesor de tecnología"],
+    "Educación Superior": ["Profesor universitario", "Investigador académico", "Decano", "Rector", "Profesor asociado", "Profesor titular", "Profesor ayudante", "Profesor emérito", "Profesor visitante", "Tutor universitario"],
+    "Administración Educativa": ["Director de escuela", "Jefe de estudios", "Coordinador académico", "Inspector educativo", "Administrador escolar", "Gestor educativo", "Planificador curricular", "Evaluador educativo", "Supervisor escolar", "Consultor educativo"],
+    "Servicios Educativos": ["Orientador escolar", "Psicólogo educativo", "Pedagogo", "Logopeda escolar", "Bibliotecario escolar", "Trabajador social escolar", "Especialista en tecnología educativa", "Especialista en necesidades especiales", "Tutor personal", "Coordinador de actividades extraescolares"]
+  },
+  "Negocios": {
+    "Finanzas": ["Analista financiero", "Contador", "Auditor", "Asesor financiero", "Gestor de inversiones", "Analista de riesgos", "Planificador financiero", "Tesorero", "Controller", "Especialista en impuestos"],
+    "Marketing": ["Especialista en marketing digital", "Gerente de marca", "Analista de mercado", "Especialista en SEO", "Gestor de redes sociales", "Especialista en publicidad", "Gerente de producto", "Especialista en relaciones públicas", "Especialista en marketing de contenidos", "Analista de CRM"],
+    "Ventas": ["Representante de ventas", "Gerente de ventas", "Ejecutivo de cuentas", "Consultor comercial", "Especialista en desarrollo de negocios", "Gerente de territorio", "Vendedor técnico", "Especialista en ventas internas", "Gerente de canal", "Especialista en telemarketing"],
+    "Recursos Humanos": ["Gerente de RRHH", "Reclutador", "Especialista en compensación y beneficios", "Gerente de talento", "Especialista en formación y desarrollo", "Consultor de RRHH", "Especialista en relaciones laborales", "Analista de RRHH", "Gerente de cultura organizacional", "Especialista en nómina"],
+    "Gestión": ["Director general", "Director de operaciones", "Director financiero", "Director de marketing", "Director de tecnología", "Director de recursos humanos", "Gerente de proyecto", "Gerente de producto", "Gerente de operaciones", "Consultor de gestión"]
+  },
+  "Arte y Diseño": {
+    "Diseño Gráfico": ["Diseñador gráfico", "Director de arte", "Diseñador de logotipos", "Diseñador editorial", "Diseñador de packaging", "Diseñador de tipografía", "Ilustrador", "Diseñador de carteles", "Diseñador de identidad corporativa", "Maquetador"],
+    "Diseño Digital": ["Diseñador web", "Diseñador UX/UI", "Diseñador de aplicaciones", "Diseñador de interfaces", "Diseñador de juegos", "Animador digital", "Diseñador 3D", "Diseñador de realidad virtual", "Diseñador de efectos visuales", "Diseñador multimedia"],
+    "Bellas Artes": ["Pintor", "Escultor", "Grabador", "Ceramista", "Artista conceptual", "Artista de instalaciones", "Artista de performance", "Artista digital", "Artista de técnica mixta", "Muralista"],
+    "Diseño de Espacios": ["Arquitecto", "Diseñador de interiores", "Paisajista", "Escenógrafo", "Diseñador de exposiciones", "Diseñador de iluminación", "Diseñador de espacios comerciales", "Decorador", "Diseñador de muebles", "Planificador espacial"],
+    "Moda y Textil": ["Diseñador de moda", "Estilista", "Diseñador textil", "Patronista", "Sastre", "Diseñador de accesorios", "Diseñador de calzado", "Diseñador de joyería", "Diseñador de vestuario", "Especialista en tendencias"]
+  }
+}

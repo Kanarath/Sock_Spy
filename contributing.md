@@ -6,7 +6,7 @@
 
 ## 📚 Purpose & Scope
 
-Sock Spy is designed **strictly for educational and research purposes**. Its primary goal is to demonstrate how easily fake profiles ("sock puppets") can be created, thereby raising awareness about security vulnerabilities on social media platforms.
+Sock Spy is designed **strictly for educational and research purposes**. Its primary goal is to demonstrate how easily fake profiles ("sock puppets") can be created, thereby raising awareness about security vulnerabilities on social media platforms. It's secondary goal is to create fake data profiles for made up study cases, "boxes" or "rooms" to practice OSINT in and for the community.
 
 **Please ensure all contributions align with this mission.**
 
@@ -19,6 +19,30 @@ We are committed to fostering a welcoming and respectful community. By participa
 ---
 
 ## 🛠️ How to Contribute
+
+Help us make Sock Spy more realistic and educational!
+
+### 🌐 How to Contribute New Localizations
+
+We use .json files for most of the data and .txt files for names and last names.
+- for **names and last names** you have to separate them by gender and use only one column with every data key, no comas, no points just raw data in a column.
+- for **interests, professions and locations** you have to make a hierarquical key list like this example:
+
+```bash
+{
+  "Africa": {
+    "Nigeria": {
+      "Lagos": ["Ikeja", "Victoria Island", "Lekki", "Surulere", "Yaba"],
+      "Abuja": ["Garki", "Wuse", "Maitama", "Gwarinpa", "Utako"]
+    },
+        "South Africa": {
+      "Johannesburg": ["Sandton", "Soweto", "Rosebank", "Melville", "Maboneng"],
+      "Cape Town": ["Waterfront", "Camps Bay", "Woodstock", "Khayelitsha", "Sea Point"]
+    }
+  }
+
+```
+- When you send the contribution to "PR" make sure it's clear what type of data is it and where belongs.
 
 ### 🐛 Reporting Bugs
 
@@ -71,3 +95,23 @@ Thank you for your interest in contributing to Sock Spy. Your efforts help impro
 
 If you have any questions or need further clarification, please open an issue on the repository or contact the maintainers.
 
+## 🧵 Become a Digital Weaver
+
+Sock Spy needs your cultural expertise! Help us:
+- 🔍 Enhance OSINT investigation realism
+- 🎓 Create better educational resources
+- 🌐 Preserve digital diversity
+
+**Contributor Benefits:**
+
+✅ **Tangible:**
+- Permanent credit in [ESPIONAGE ELITE](ESPIONAGE_ELITE.md)
+- GitHub contribution graph recognition
+
+🎯 **Professional:**
+- Referenceable work in infosec/OSINT field
+- Demonstrable impact (Our user base: X monthly downloads)
+
+🌱 **Learning:**
+- Real-world experience
+- Python/JSON validation practice

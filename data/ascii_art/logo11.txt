@@ -9,6 +9,8 @@
 #  Mb.     .dM MMb     dMM MM.     .dM M  MMMMM  M    Mb.     .dM MM  MMMMMMMM MMMM  MMMM   #
 #  MMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMMM    MMMMMMMMMMM MMMMMMMMMMMM MMMMMMMMMM   #
 #                                                                                           #
-#                                                                                           #
+# Sock Spy v0.0.1                                                                           #
+# Made by G.M.S "Kanarath"                                                                  #
+# Under GNU v3.0 License                                                                    #
 #                                                                                           #
 #############################################################################################

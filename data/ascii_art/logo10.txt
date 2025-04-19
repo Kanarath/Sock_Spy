@@ -8,5 +8,8 @@
 #   88b    dP"888,_ _,88P`88bo,__,o,"888"88o,      88b    dP  888o       ,8P"`       #
 #    "YMmMY"   "YMMMMMP"   "YUMMMMMP"MMM "MMP"      "YMmMY"   YMMMb     mM"          #
 #                                                                                    #
+# Sock Spy v0.0.1                                                                    #
+# Made by G.M.S "Kanarath"                                                           #
+# Under GNU v3.0 License                                                             #
 #                                                                                    #
 ######################################################################################

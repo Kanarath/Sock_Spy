@@ -1,0 +1,83 @@
+{
+  "España": {
+    "Cataluña": {
+      "Barcelona": ["Gràcia", "El Raval", "Eixample", "Barceloneta", "Poblenou"],
+      "Tarragona": ["Parte Alta", "El Serrallo", "Eixample", "Camp Clar", "Bonavista"]
+    },
+    "Madrid": {
+      "Madrid": ["Salamanca", "Chamberí", "Malasaña", "Lavapiés", "La Latina"],
+      "Alcalá de Henares": ["Centro Histórico", "Ensanche", "Reyes Católicos", "El Val", "La Garena"]
+    },
+    "Andalucía": {
+      "Sevilla": ["Triana", "Santa Cruz", "Macarena", "Los Remedios", "Nervión"],
+      "Granada": ["Albaicín", "Sacromonte", "Realejo", "Centro", "Zaidín"]
+    }
+  },
+  "United Kingdom": {
+    "England": {
+      "London": ["Westminster", "Kensington", "Camden", "Shoreditch", "Notting Hill"],
+      "Manchester": ["Northern Quarter", "Ancoats", "Didsbury", "Chorlton", "Salford Quays"]
+    },
+    "Scotland": {
+      "Edinburgh": ["Old Town", "New Town", "Leith", "Stockbridge", "Morningside"],
+      "Glasgow": ["West End", "Merchant City", "Southside", "Finnieston", "Hillhead"]
+    },
+    "Wales": {
+      "Cardiff": ["Cardiff Bay", "Roath", "Canton", "Cathays", "Pontcanna"],
+      "Swansea": ["Maritime Quarter", "Uplands", "Mumbles", "Sketty", "Brynmill"]
+    }
+  },
+  "China": {
+    "Beijing": {
+      "Beijing": ["Dongcheng", "Xicheng", "Chaoyang", "Haidian", "Fengtai"]
+    },
+    "Shanghai": {
+      "Shanghai": ["Pudong", "Jing'an", "Huangpu", "Xuhui", "Hongkou"]
+    },
+    "Guangdong": {
+      "Guangzhou": ["Tianhe", "Yuexiu", "Liwan", "Haizhu", "Panyu"],
+      "Shenzhen": ["Futian", "Luohu", "Nanshan", "Bao'an", "Longgang"]
+    }
+  },
+  "Germany": {
+    "Bavaria": {
+      "Munich": ["Schwabing", "Maxvorstadt", "Haidhausen", "Au", "Bogenhausen"],
+      "Nuremberg": ["Altstadt", "Gostenhof", "St. Johannis", "Wöhrd", "Galgenhof"]
+    },
+    "Berlin": {
+      "Berlin": ["Mitte", "Kreuzberg", "Prenzlauer Berg", "Charlottenburg", "Neukölln"]
+    },
+    "North Rhine-Westphalia": {
+      "Cologne": ["Altstadt", "Ehrenfeld", "Nippes", "Lindenthal", "Sülz"],
+      "Düsseldorf": ["Altstadt", "Carlstadt", "Pempelfort", "Derendorf", "Oberkassel"]
+    }
+  },
+  "Japan": {
+    "Tokyo": {
+      "Tokyo": ["Shibuya", "Shinjuku", "Ginza", "Roppongi", "Akihabara"]
+    },
+    "Kansai": {
+      "Osaka": ["Umeda", "Namba", "Shinsekai", "Tennoji", "Amerikamura"],
+      "Kyoto": ["Gion", "Higashiyama", "Arashiyama", "Pontocho", "Shimogyo"]
+    },
+    "Hokkaido": {
+      "Sapporo": ["Susukino", "Odori", "Nakajima", "Maruyama", "Toyohira"]
+    }
+  },
+  "United States": {
+    "California": {
+      "Los Angeles": ["Hollywood", "Venice Beach", "Silver Lake", "Downtown", "Echo Park"],
+      "San Francisco": ["Mission District", "Castro", "North Beach", "SoMa", "Haight-Ashbury"]
+    },
+    "New York": {
+      "New York City": ["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"]
+    },
+    "Illinois": {
+      "Chicago": ["Loop", "Lincoln Park", "Wicker Park", "River North", "Hyde Park"]
+    },
+    "Texas": {
+      "Austin": ["Downtown", "South Congress", "East Austin", "Zilker", "Hyde Park"],
+      "Houston": ["Montrose", "The Heights", "Midtown", "Museum District", "Rice Village"]
+    }
+  }
+}
