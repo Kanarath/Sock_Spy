@@ -3,8 +3,8 @@
 </div>
 
 ![Stars](https://img.shields.io/github/stars/Kanarath/Sock_Spy?style=social)
-![Pull Requests](https://img.shields.io/github/issues-pr/Kanarath/Sock_Spy)
 ![Top Language](https://img.shields.io/github/languages/top/Kanarath/Sock_Spy)
+![Pull Requests](https://img.shields.io/github/issues-pr/Kanarath/Sock_Spy)
 ![Repo Size](https://img.shields.io/github/repo-size/Kanarath/Sock_Spy)
 ![Use-Case](https://img.shields.io/badge/use-educational-important)
 ![Contributors](https://img.shields.io/github/contributors/Kanarath/Sock_Spy)
