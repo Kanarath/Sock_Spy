@@ -41,18 +41,17 @@ from utils import (
     get_numeric_choice,
     generate_username_suggestions,
     get_current_year,
-    # load_hierarchical_data, # Likely not needed anymore, commenting out
+    # load_hierarchical_data, # Likely not needed anymore
     generate_random_password,
     get_random_hierarchical_item,
     handle_dynamic_list_selection,
 )
 
 # English texts ONLY
+# fmt: off
 TEXTS = {
     "en": {
         "welcome": "Welcome to Sock Spy: OSINT Sock Puppet Generator",
-        # "language_select": "Select language:", # Removed
-        # "language_options": ["English", "Spanish"], # Removed
         "gender_select": "Select gender for the persona:",
         "gender_options": ["Male", "Female"],
         "nationality_continent": "Select continent/region for nationality:",
@@ -64,14 +63,19 @@ TEXTS = {
         "username_suggestions": "Username suggestions:",
         "username_prompt": "Enter a username for the persona:",
         "username_confirm": "Confirm username '{}'? (y/n):",
+        "password_method_select": "How do you want to set the password?",
+        "password_method_options": ["1. Enter manually", "2. Generate random password"],
+        "password_length_select": "Select desired password length:",
+        "password_length_options": ["1. Standard (12 characters)", "2. Strong (24 characters)", "3. Very Strong (32 characters)"],
+        "password_generated_confirm": "Generated password: {} Confirm? (y/n):", # NOTE: Password isn't shown here, just confirmation text
         "password_prompt": "Enter a password for the persona:",
-        "password_confirm": "Confirm password '{}'? (y/n):",
+        "password_confirm": "Confirm password '{}'? (y/n):", # NOTE: Password shown as '*' here
         "platforms_prompt": "Enter comma-separated list of platforms (e.g., Twitter, Facebook, Instagram):",
         "add_picture_prompt": "Add profile picture? (y/n):",
         "add_phrases_prompt": "Add common phrases? (y/n):",
         "profile_preview": "Generated Profile Preview:",
         "edit_profile_prompt": "Do you want to edit any fields? (y/n):",
-        "edit_field_prompt": "Enter the number of the field to edit (or press Enter to finish):", # Changed for edit_profile
+        "edit_field_prompt": "Enter the number of the field to edit (or press Enter to finish):",
         "edit_value_prompt": "Enter the new value:",
         "add_appendix_prompt": "Do you want to add an appendix to the profile? (y/n):",
         "appendix_prompt": "Enter appendix text:",
@@ -80,96 +84,84 @@ TEXTS = {
         "export_success": "Profile exported to {}",
         "continue_prompt": "Press Enter to continue...",
         "main_menu": "Main Menu:",
-        "main_menu_options": [
-            "Create new persona",
-            "Create random persona", # Keep this
-            "Load existing persona",
-            "View program information",
-            "Exit"
-        ],
+        "main_menu_options": ["Create new persona", "Create random persona", "Load existing persona", "View program information", "Exit"],
         "random_level_select": "Select level of random persona detail:",
-        "random_level_options": [
-            "1. Minimal (Name, Gender, Age, Nationality, Profession)",
-            "2. Standard (Adds Basic Location, Username, Password)",
-            "3. Detailed (Adds Specific Location, Platforms, Interests)",
-            "4. Full (Adds Phrases, Picture)" # Simplified full
-        ],
-        "random_generating": "Generating {item}...", # For visual feedback
+        "random_level_options": ["1. Minimal (Name, Gender, Age, Nationality, Profession)", "2. Standard (Adds Basic Location, Username, Password)", "3. Detailed (Adds Specific Location, Platforms, Interests)", "4. Full (Adds Phrases, Picture)"],
+        "random_generating": "Generating {item}...",
         "random_generation_complete": "Random persona generation complete.",
         "confirm_save_random": "Do you want to save this generated profile? (y/n):",
         "back_option": "Back",
         "exit_option": "Exit",
         "invalid_choice": "Invalid choice. Please try again.",
-        "program_info": """
-Sock Spy: CLI Tool for Generating OSINT Sock Puppets
-Sock Spy is Open Source and is licensed under the GNU General Public License v3.0.
-Version: 1.0
-        """,
+        "program_info": "Sock Spy is a tool for educational use in OSINT and cybersecurity. \nIt allows simulation of realistic fake profiles for awareness, training, and practical exercises in ethical hacking environments.\nSock Spy is Open Source and is licensed under the GNU General Public License v3.0.\nActual Version: 1.0 \nStay dafe, stay Ethical.",
         "interests_select": "Select interests category:",
         "interests_subcategory": "Select interests subcategory:",
-        "interests_specific": "Select specific interests (enter numbers separated by commas, max 5, or choose an action):", # Updated prompt
+        "interests_specific": "Select specific interests (max 5):",
         "profession_category": "Select profession category:",
         "profession_subcategory": "Select profession subcategory:",
         "profession_specific": "Select a specific profession:",
-        "location_continent": "Select a continent:", # Added continent prompt
+        "location_continent": "Select a continent:",
         "location_country": "Select a country:",
         "location_region": "Select a region/state:",
         "location_city": "Select a city:",
         "location_neighborhood": "Select a neighborhood (Optional):",
-        "biography_prompt": "Enter a short biography (press Enter to generate automatically):", # Still here if needed
+        "biography_prompt": "Enter a short biography (press Enter to generate automatically):",
         "no_personas_found": "No saved personas found.",
         "select_persona": "Select a persona to load:",
         "persona_loaded": "Persona loaded successfully.",
         "persona_options": "Persona Options:",
-        "persona_options_list": [
-            "View persona details",
-            "Edit persona",
-            "Export persona (JSON)", # Clarified export type
-            "Export persona (TXT)",  # Clarified export type
-            "Delete persona",
-            "Back to main menu"
-        ],
+        "persona_options_list": ["View persona details", "Edit persona", "Export persona (JSON)", "Export persona (TXT)", "Delete persona", "Back to main menu"],
         "confirm_delete": "Are you sure you want to delete this persona? (y/n):",
         "deleted_success": "Persona deleted successfully.",
-        "common_phrases_select": "Select common phrases (enter numbers separated by commas, max 3, or choose an action):", # Updated prompt
+        "common_phrases_select": "Select common phrases (max 3):",
         "show_more_options": "Show More Options",
         "regenerate_options": "Show New Options (Regenerate List)",
-        "skip_level_and_continue": "Stop here and use current selection", # Simplified skip text
+        "skip_level_and_continue": "Stop here and use current selection",
         "select_or_action": "Select an item or choose an action:",
-        # Old yes/no prompts removed as they are replaced by numbered actions
     }
-    # NO "es": {} block anymore
 }
+# fmt: on
 
+# ==============================================================================
+# SockSpy Class Definition
+# ==============================================================================
 class SockSpy:
-    def __init__(self):
-        # self.language = "en" # No longer needed, hardcoded english
-        self.texts = TEXTS["en"] # Directly use english texts
-        self.profile = {}
-        self.data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
-        self.profiles_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "profiles")
-        self.exports_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "exports")
+    """Main class for the Sock Spy application."""
 
-        # Ensure directories exist
+    def __init__(self):
+        """Initialize paths, texts, and ensure directories exist."""
+        self.texts = TEXTS["en"]
+        self.profile = {}
+        # Determine base directory safely
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        self.data_dir = os.path.join(base_dir, "data")
+        self.profiles_dir = os.path.join(base_dir, "profiles")
+        self.exports_dir = os.path.join(base_dir, "exports")
+
+        # Ensure essential directories exist
         for directory in [self.profiles_dir, self.exports_dir]:
             if not os.path.exists(directory):
                 try:
                     os.makedirs(directory)
+                    print(f"Created directory: {directory}")
                 except OSError as e:
-                     print(f"Error creating directory {directory}: {e}. Profiles/Exports might not save.")
-                     input("Press Enter to acknowledge.") # Pause so user sees the error
+                    print(f"FATAL ERROR: Could not create directory {directory}: {e}")
+                    print("Please check permissions and run again.")
+                    sys.exit(1) # Exit if essential dirs can't be created
 
-    # --- REMOVED select_language method ---
+    # --------------------------------------------------------------------------
+    # Core Application Flow Methods
+    # --------------------------------------------------------------------------
 
     def display_welcome(self):
-        """Display welcome screen with ASCII art"""
+        """Display welcome screen with ASCII art."""
         clear_screen()
         display_ascii_art(self.data_dir)
         print(self.texts["welcome"])
         input(self.texts["continue_prompt"]) # Waits for Enter
 
     def main_menu(self):
-        """Display main menu and handle user choices"""
+        """Display main menu and handle user choices."""
         while True:
             clear_screen()
             print(self.texts["main_menu"])
@@ -178,1039 +170,1271 @@ class SockSpy:
                 print(f"{i}. {option}")
 
             choice = get_numeric_choice(1, len(options))
-            if choice is None: continue # Loop if user just presses Enter
+            if choice is None:
+                continue
 
-            if choice == 1: # Create new persona
+            if choice == 1:
                 self.create_persona()
-            elif choice == 2: # Create random persona
-                self.create_random_persona() # Call the correct method
-            elif choice == 3: # Load existing persona
-                self.load_persona()
-            elif choice == 4: # View program information
+            elif choice == 2:
+                self.create_random_persona()
+            elif choice == 3:
+                self.load_persona() # Assuming this method exists
+            elif choice == 4:
                 self.show_program_info()
             elif choice == 5: # Exit
-                print("Exiting Sock Spy. Goodbye!")
+                clear_screen()
+                display_ascii_art(self.data_dir)
+                print("\nThank you for using Sock Spy!")
+                print("We hope to see you back soon.")
+                print("\nExiting in 4 seconds...")
+                time.sleep(4)
+                clear_screen()
                 sys.exit(0)
 
     def create_persona(self):
-        """Guide user through persona creation process"""
-        self.profile = {} # Reset profile
+        """Guide user through persona creation process."""
+        self.profile = {}
         print("\n--- Starting New Persona Creation ---")
+        cancelled = False # Flag to check if any step is cancelled
 
-        # Select gender (Simple choice)
-        clear_screen()
+        # Use helper methods for each step, checking for cancellation
+        if not self._select_gender(): cancelled = True
+        if not cancelled and not self._select_nationality(): cancelled = True
+        if not cancelled and not self._select_name(): cancelled = True
+        if not cancelled and not self._select_lastname(): cancelled = True
+        if not cancelled and not self._select_age(): cancelled = True
+        if not cancelled and not self._select_username(): cancelled = True
+        if not cancelled and not self._select_password(): cancelled = True
+        if not cancelled: self._select_platforms() # Platforms are optional list
+        if not cancelled: self._select_hierarchical_interests()
+        if not cancelled: self._select_hierarchical_profession()
+        if not cancelled: self._select_location()
+        if not cancelled: self._select_optional_phrases()
+        if not cancelled: self._select_optional_picture()
+
+        if cancelled:
+            print("\nPersona creation cancelled.")
+            self.profile = {} # Ensure profile is cleared
+            input(self.texts["continue_prompt"])
+            return
+
+        # Continue if not cancelled
+        self.preview_profile()
+        if get_input(self.texts["edit_profile_prompt"] + " ").lower() in ["y", "yes"]:
+            self.edit_profile() # Assuming this method exists
+        self._add_optional_appendix()
+        self._save_and_export_profile()
+
+    # --------------------------------------------------------------------------
+    # Helper Methods for Persona Creation Steps (to keep create_persona clean)
+    # --------------------------------------------------------------------------
+
+    def _select_gender(self):
+        """Selects gender."""
+        clear_screen() # CORRECTED: Separated from print
         print(self.texts["gender_select"])
-        gender_options = self.texts["gender_options"]
-        for i, gender in enumerate(gender_options, 1):
-            print(f"{i}. {gender}")
-        gender_choice = get_numeric_choice(1, len(gender_options))
-        if gender_choice is None: return # Allow cancel
-        # Store gender consistently (e.g., 'male', 'female') for file paths
-        gender_map = {1: "male", 2: "female"}
-        self.profile["gender"] = gender_map.get(gender_choice, "male") # Default if error
+        options = self.texts["gender_options"]
+        for i, opt in enumerate(options, 1):
+            print(f"{i}. {opt}")
+        choice = get_numeric_choice(1, len(options))
+        if choice is None:
+            return False # Cancelled
+        self.profile["gender"] = {1: "male", 2: "female"}.get(choice, "male")
+        return True
 
-        # Select nationality (Simple choice)
-        self.select_nationality()
-        # Check if selection was cancelled or failed
-        if "nationality" not in self.profile or not self.profile["nationality"]:
-             print("Nationality selection is required. Aborting persona creation.")
-             # Optionally pause: input(self.texts["continue_prompt"])
-             return # Exit creation process
+    def _select_nationality(self):
+        """Selects nationality hierarchically."""
+        self.select_nationality() # Call the main selection logic
+        return self.profile.get("nationality") is not None # Return True if selected, False if cancelled
 
-        # Select first name (Using helper)
+    def _select_name(self):
+        """Selects first name."""
         self.select_name(self.profile["gender"], self.profile["nationality"])
-        if "first_name" not in self.profile: return # Check if selection was cancelled
+        return self.profile.get("first_name") is not None
 
-        # Select last name (Using helper)
+    def _select_lastname(self):
+        """Selects last name."""
         self.select_lastname(self.profile["nationality"])
-        if "last_name" not in self.profile: return # Check if selection was cancelled
+        return self.profile.get("last_name") is not None
 
-        # Get age
-        clear_screen()
+    def _select_age(self):
+        """Selects age."""
+        clear_screen() # CORRECTED: Separated
         while True:
             try:
                 age_str = get_input(self.texts["age_prompt"]).strip()
-                if not age_str: return # Allow cancel
+                # Check for empty input to allow cancellation
+                if not age_str:
+                    print("Age selection cancelled.") # Optional feedback
+                    return False # Indicate cancelled
+
+                # Convert to integer
                 age = int(age_str)
+
+                # Validate range
                 if 18 <= age <= 99:
                     self.profile["age"] = age
-                    break
+                    return True # Indicate success
                 else:
+                    # Age is outside the valid range
                     print(self.texts["age_error"])
             except ValueError:
+                # Input was not a valid number
                 print(self.texts["age_error"])
+            # Loop continues if there was an error
 
-        # Generate username suggestions (Using helper)
+    def _select_username(self):
+        """Selects username."""
         self.select_username()
-        if "username" not in self.profile: return # Check if selection was cancelled
+        return self.profile.get("username") is not None
 
-        # Get password
-        clear_screen()
-        while True:
-            password = get_input(self.texts["password_prompt"])
-            if not password: return # Allow cancel
-            confirm = get_input(self.texts["password_confirm"].format('*'*len(password)) + " ") # Mask password in prompt
-            if confirm.lower() in ["y", "yes"]:
-                self.profile["password"] = password
-                break
-            elif confirm.lower() in ["n", "no"]:
-                continue # Ask for password again
-            else: # Handle cancel/other input
-                return
+    def _select_password(self):
+        """Selects password (manual or generated)."""
+        clear_screen() # CORRECTED: Separated
+        print(self.texts["password_method_select"])
+        method_options = self.texts["password_method_options"]
+        # Using list comp for printing is okay, but loop is more standard
+        for i, opt in enumerate(method_options, 1): print(f"{i}. {opt}")
+        method_choice = get_numeric_choice(1, len(method_options))
+        if method_choice is None:
+            return False # Cancelled
+        password_to_confirm = None
+        if method_choice == 1: # Manual
+            while True:
+                password = get_input(self.texts["password_prompt"])
+                if not password:
+                    print("Password cannot be empty.")
+                    continue
+                # Use '*' for confirmation prompt masking
+                confirm = get_input(self.texts["password_confirm"].format('*'*len(password)) + " ").lower()
+                if confirm in ["y", "yes"]:
+                    password_to_confirm = password
+                    break
+                elif confirm in ["n", "no"]:
+                    continue
+                else: # Any other input treated as cancel? Or should it loop? Assuming cancel for now.
+                    print("Password confirmation cancelled.")
+                    return False # Cancelled
+        elif method_choice == 2: # Generate
+            clear_screen() # CORRECTED: Separated
+            print(self.texts["password_length_select"])
+            length_options = self.texts["password_length_options"]
+            length_map = {1: 12, 2: 24, 3: 32}
+            for i, opt in enumerate(length_options, 1): print(f"{i}. {opt}") # List comp okay
+            length_choice = get_numeric_choice(1, len(length_options))
+            if length_choice is None:
+                return False # Cancelled
+            selected_length = length_map.get(length_choice, 12)
+            password_to_confirm = generate_random_password(selected_length)
+            # Display masked password confirmation
+            print(f"\nGenerated Password: {'*' * len(password_to_confirm)}") # CORRECTED: Separated print
+            print("Generated password set.") # CORRECTED: Separated print
+            time.sleep(1.5)
+        # Assign password if one was set
+        if password_to_confirm:
+            self.profile["password"] = password_to_confirm
+            return True
+        else:
+            return False # Failed or cancelled
 
-        # Get platforms
-        clear_screen()
+    def _select_platforms(self):
+        """Selects platforms."""
+        clear_screen() # CORRECTED: Separated
         platforms_input = get_input(self.texts["platforms_prompt"])
         self.profile["platforms"] = [p.strip() for p in platforms_input.split(",") if p.strip()]
+        return True # Always succeeds even if list is empty
 
-        # Select interests hierarchically
+    def _select_hierarchical_interests(self):
+        """Selects interests hierarchically."""
         self.select_hierarchical_interests()
-        # No need to check for cancel here, skipping is handled internally
+        return True # Selection handles internal skipping/cancelling
 
-        # Select profession hierarchically
+    def _select_hierarchical_profession(self):
+        """Selects profession hierarchically."""
         self.select_hierarchical_profession()
-        # No need to check for cancel here
+        return True
 
-        # Select location
+    def _select_location(self):
+        """Selects location hierarchically."""
         self.select_location()
-        # No need to check for cancel here
+        return True
 
-        # Add common phrases if desired (Using helper)
-        clear_screen()
+    def _select_optional_phrases(self):
+        """Optionally selects common phrases."""
+        clear_screen() # CORRECTED: Separated
         if get_input(self.texts["add_phrases_prompt"] + " ").lower() in ["y", "yes"]:
             self.select_common_phrases()
+        return True
 
-        # Add profile picture if desired (Using helper)
-        clear_screen()
+    def _select_optional_picture(self):
+        """Optionally selects profile picture."""
+        clear_screen() # CORRECTED: Separated
         if get_input(self.texts["add_picture_prompt"] + " ").lower() in ["y", "yes"]:
             self.select_profile_picture()
+        return True
 
-        # Preview profile
-        self.preview_profile()
-
-        # Edit profile if desired
-        if get_input(self.texts["edit_profile_prompt"] + " ").lower() in ["y", "yes"]:
-            self.edit_profile() # Use the updated edit function
-
-        # Add appendix if desired
-        clear_screen()
+    def _add_optional_appendix(self):
+        """Optionally adds an appendix."""
+        clear_screen() # CORRECTED: Separated
         if get_input(self.texts["add_appendix_prompt"] + " ").lower() in ["y", "yes"]:
             appendix = get_input(self.texts["appendix_prompt"])
-            self.profile["appendix"] = appendix
+            if appendix:
+                self.profile["appendix"] = appendix
+        return True
 
-        # --- Save profile ---
-        clear_screen()
-        # Suggest a filename based on profile name
-        default_filename = f"{self.profile.get('first_name', 'profile')}_{self.profile.get('last_name', str(random.randint(100,999)))}".lower()
+    def _save_and_export_profile(self):
+        """Handles filename prompt, saving, and exporting."""
+        clear_screen() # CORRECTED: Separated
+        default_filename = f"{self.profile.get('first_name', 'profile')}_{self.profile.get('last_name', str(random.randint(100,999)))}".lower().replace(" ","_")
         filename_prompt = self.texts["filename_prompt"] + f" (Leave blank for '{default_filename}')"
         filename = get_input(filename_prompt).strip()
-        if not filename:
-            filename = default_filename
-
-        # Save and Export
+        filename = filename if filename else default_filename
         saved_path = save_profile(self.profile, filename, self.profiles_dir)
         if saved_path:
             print(self.texts["save_success"].format(saved_path))
-            # Export to TXT automatically after saving JSON
             exported_path = export_profile_to_txt(self.profile, filename, self.exports_dir)
             if exported_path:
-                print(self.texts["export_success"].format(exported_path))
+                print(self.texts["export_success"].format(exported_path)) # CORRECTED: Separated from export call
+            # Consider adding an else for export failure here if desired
         else:
-            print("Error occurred during saving.")
-
+            print("Error saving profile.")
         input(self.texts["continue_prompt"])
 
-    # --- SELECTION METHODS (Correctly Indented and Updated) ---
-
+    # --------------------------------------------------------------------------
+    # Selection Logic Methods (Called by creation steps)
+    # --------------------------------------------------------------------------
 
     def select_nationality(self):
-        """Select nationality using a hierarchical structure (Continent -> Specific)."""
-        clear_screen()
+        """Select nationality using hierarchical structure (Continent -> Specific)."""
+        clear_screen() # CORRECTED: Separated
         print("Loading nationality data...")
         try:
             nationalities_data = load_json_file(os.path.join(self.data_dir, "nationalities.json"))
-            if not nationalities_data or not isinstance(nationalities_data, dict):
-                 raise ValueError("Nationalities data is empty or invalid.")
+            assert nationalities_data and isinstance(nationalities_data, dict)
         except Exception as e:
-            print(f"Error loading or validating nationalities.json: {e}")
-            self.profile["nationality"] = None # Indicate failure
-            input(self.texts["continue_prompt"])
+            print(f"Error loading nationalities: {e}") # CORRECTED: Separated
+            self.profile["nationality"] = None         # CORRECTED: Separated
+            input(self.texts["continue_prompt"])       # CORRECTED: Separated
             return
-
-        # --- Level 1: Select Continent ---
-        clear_screen()
-        level_name = self.texts.get("nationality_continent", "Select continent/region for nationality:")
+        clear_screen() # CORRECTED: Separated
+        level_name = self.texts.get("nationality_continent")
         print(level_name)
         continents = sorted(list(nationalities_data.keys()))
         if not continents:
-            print("Error: No continents found in nationalities data.")
-            self.profile["nationality"] = None
-            input(self.texts["continue_prompt"])
+            print("Error: No continents found in data.") # CORRECTED: Separated
+            self.profile["nationality"] = None          # CORRECTED: Separated
+            input(self.texts["continue_prompt"])        # CORRECTED: Separated
             return
-
         for i, continent in enumerate(continents, 1):
             print(f"{i}. {continent}")
         print("-" * 20)
-
         continent_choice = get_numeric_choice(1, len(continents))
         if continent_choice is None:
-            print("Nationality selection cancelled.")
-            self.profile["nationality"] = None # Signal cancellation
+            print("Cancelled.")                      # CORRECTED: Separated
+            self.profile["nationality"] = None       # CORRECTED: Separated
             return
-
         selected_continent = continents[continent_choice - 1]
-        nationality_list = nationalities_data.get(selected_continent, [])
-
-        # --- Level 2: Select Specific Nationality ---
+        nationality_list = sorted(nationalities_data.get(selected_continent, []))
         if not nationality_list:
-            print(f"Error: No nationalities listed for {selected_continent}.")
-            self.profile["nationality"] = None
-            input(self.texts["continue_prompt"])
+            print(f"Error: No nationalities listed for {selected_continent}.") # CORRECTED: Separated
+            self.profile["nationality"] = None                             # CORRECTED: Separated
+            input(self.texts["continue_prompt"])                           # CORRECTED: Separated
             return
-
-        clear_screen()
-        prompt = self.texts.get("nationality_specific", "Select a specific nationality:")
-        specific_nationalities = sorted(nationality_list)
-
+        clear_screen() # CORRECTED: Separated
+        prompt = self.texts.get("nationality_specific")
         while True:
-            selected_item, action = handle_dynamic_list_selection(
-                full_list=specific_nationalities,
-                texts=self.texts,
-                prompt_msg=prompt,
-                initial_show=10, # Show more nationalities at once
-                increment=10,
-                allow_skip=False # Must select a specific nationality
-            )
-
+            # Assuming handle_dynamic_list_selection takes care of its own clearing/printing
+            selected_item, action = handle_dynamic_list_selection(nationality_list, self.texts, prompt, 10, 10, False)
             if action == 'selected':
-                self.profile["nationality"] = selected_item.lower() # Store lowercase
-                print(f"\nSelected Nationality: {selected_item}")
-                # input(self.texts["continue_prompt"]) # Optional pause
+                self.profile["nationality"] = selected_item.lower() # CORRECTED: Separated
+                print(f"\nSelected: {selected_item}")
                 break
-            elif action == 'back': # User cancelled the specific selection
-                print("Nationality selection cancelled.")
-                self.profile["nationality"] = None # Signal cancellation
+            elif action == 'back':
+                print("Cancelled.")                   # CORRECTED: Separated
+                self.profile["nationality"] = None    # CORRECTED: Separated
                 break
-            # 'show_more', 'regenerate' handled internally
 
     def select_name(self, gender, nationality):
         """Select a first name using dynamic list helper"""
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         prompt = self.texts["name_select"]
         names_file = os.path.join(self.data_dir, "names", gender, f"{nationality}.txt")
-        try:
-            full_list = load_data_file(names_file)
-            if not full_list:
-                print(f"Warning: No names found for {gender}/{nationality}. Using generic names.")
-                full_list = ["Alex", "Jamie", "Chris", "Pat", "Sam"] # Fallback
-        except Exception as e:
-            print(f"Warning: Error loading name file {names_file}: {e}. Using generic names.")
-            full_list = ["Alex", "Jamie", "Chris", "Pat", "Sam"] # Fallback
-
+        full_list = load_data_file(names_file)
+        if not full_list:
+            print(f"Warning: No names found for {gender}/{nationality}. Using generic list.") # CORRECTED: Separated
+            full_list = ["Alex", "Jamie", "Chris", "Sam", "Taylor", "Jordan", "Morgan"] # Expanded generic list
         while True:
-            selected_item, action = handle_dynamic_list_selection(
-                full_list=full_list, texts=self.texts, prompt_msg=prompt,
-                initial_show=7, increment=7, allow_skip=False # Show a bit more
-            )
-            if action == 'selected':
-                self.profile["first_name"] = selected_item
-                break
-            elif action == 'back': # Handle cancellation
-                 print("Name selection cancelled.")
-                 # Remove key to signal cancellation upstream if needed
-                 self.profile.pop("first_name", None)
-                 break
-            # 'show_more', 'regenerate' handled internally
+                    selected_item, action = handle_dynamic_list_selection(
+                        full_list,           # <<< CORRECT variable holding names
+                        self.texts,          # Arg 2
+                        prompt,              # Arg 3
+                        page_size=7,         # <<< CORRECT page size for names
+                        allow_skip=False,    # Keyword arg
+                        allow_back=True      # <<< CORRECT allow_back for names (logic handles 'back')
+                    )
+                    if action == 'selected':
+                        self.profile["first_name"] = selected_item
+                        break
+                    elif action == 'back': # This block requires allow_back=True
+                        self.profile.pop("first_name", None)
+                        break
 
     def select_lastname(self, nationality):
         """Select a last name using dynamic list helper"""
-        # This method was incorrectly indented inside select_name before
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         prompt = self.texts["lastname_select"]
         lastnames_file = os.path.join(self.data_dir, "last_names", f"{nationality}.txt")
-        try:
-            full_list = load_data_file(lastnames_file)
-            if not full_list:
-                print(f"Warning: No last names found for {nationality}. Using generic last names.")
-                full_list = ["Smith", "Jones", "Lee", "Garcia", "Chen"] # Fallback
-        except Exception as e:
-            print(f"Warning: Error loading last name file {lastnames_file}: {e}. Using generic names.")
-            full_list = ["Smith", "Jones", "Lee", "Garcia", "Chen"] # Fallback
-
+        full_list = load_data_file(lastnames_file)
+        if not full_list:
+            print(f"Warning: No last names found for {nationality}. Using generic list.") # CORRECTED: Separated
+            full_list = ["Smith", "Jones", "Lee", "Garcia", "Chen", "Williams", "Khan"] # Expanded generic list
         while True:
             selected_item, action = handle_dynamic_list_selection(
-                full_list=full_list, texts=self.texts, prompt_msg=prompt,
-                initial_show=7, increment=7, allow_skip=False
+                full_list,           # Arg 1
+                self.texts,          # Arg 2
+                prompt,              # Arg 3
+                page_size=7,         # Keyword arg
+                allow_skip=False,    # Keyword arg
+                allow_back=True      # Keyword arg (Required by logic)
             )
             if action == 'selected':
-                self.profile["last_name"] = selected_item
+                self.profile["last_name"] = selected_item # CORRECTED: Separated
                 break
             elif action == 'back':
-                 print("Last name selection cancelled.")
-                 self.profile.pop("last_name", None)
-                 break
+                self.profile.pop("last_name", None) # CORRECTED: Separated
+                break # Indicate cancel
 
     def select_username(self):
         """Generate and select username, allowing custom input or selection"""
-        # This method was incorrectly indented inside select_name before
         clear_screen()
         while True:
             print(self.texts["username_suggestions"])
+            suggestions = []
             try:
-                # Ensure required profile fields exist before generating
-                first = self.profile.get("first_name", "User")
-                last = self.profile.get("last_name", str(random.randint(100,999)))
-                age = self.profile.get("age", random.randint(18,99))
+                first = self.profile.get("first_name", "User") # CORRECTED: Separated assignment
+                last = self.profile.get("last_name", "")        # CORRECTED: Separated assignment
+                age = self.profile.get("age", 30)               # CORRECTED: Separated assignment
                 suggestions = generate_username_suggestions(first, last, age)
             except Exception as e:
-                print(f"Warning: Could not generate username suggestions ({e}).")
-                suggestions = [f"{self.profile.get('first_name','user').lower()}{random.randint(10,99)}"]
+                print(f"Warning: Username suggestion error ({e}). Using fallback.") # Added detail
+            # Ensure fallback is always available
+            fallback = f"{self.profile.get('first_name','user')[:4].lower()}{random.randint(100,999)}"
+            if not suggestions: suggestions.append(fallback) # Only add if suggestions failed
+            elif fallback not in suggestions: suggestions.append(fallback) # Add if not already present
 
-            if not suggestions: # Handle case where generation fails completely
-                 print("No suggestions could be generated.")
-                 suggestions = [] # Ensure it's a list
+            options = list(dict.fromkeys(suggestions)) # Ensure unique suggestions
+            options.append("Enter custom username") # Add custom option last
 
-            options = suggestions + ["Enter custom username"]
             for i, option in enumerate(options, 1):
                 print(f"{i}. {option}")
 
             choice = get_numeric_choice(1, len(options))
-            if choice is None: # User cancelled
-                print("Username selection cancelled.")
-                self.profile.pop("username", None)
-                return # Exit method
+            if choice is None:
+                self.profile.pop("username", None) # CORRECTED: Separated
+                return # Indicate cancel
 
-            if choice <= len(suggestions): # Selected a suggestion
-                username = suggestions[choice - 1]
-                confirm = get_input(self.texts["username_confirm"].format(username) + " ").lower()
-                if confirm in ["y", "yes"]:
-                    self.profile["username"] = username
-                    break # Success
-                # If no, loop continues to show suggestions again
-            else: # Selected "Enter custom username"
-                username = get_input(self.texts["username_prompt"]).strip()
-                if not username: # User entered blank custom name
-                     print("Custom username cannot be empty. Please try again.")
-                     input(self.texts["continue_prompt"]) # Pause
-                     continue # Go back to showing suggestions
+            username_to_set = ""
+            if choice <= len(suggestions): # If choice is one of the suggestions
+                 username_to_set = options[choice - 1]
+            elif choice == len(options): # If choice is "Enter custom username"
+                 username_to_set = get_input(self.texts["username_prompt"]).strip()
 
-                confirm = get_input(self.texts["username_confirm"].format(username) + " ").lower()
-                if confirm in ["y", "yes"]:
-                    self.profile["username"] = username
-                    break # Success
-                # If no, loop continues to show suggestions again
+            # Validate the chosen/entered username
+            if not username_to_set:
+                print("Username cannot be empty.") # CORRECTED: Separated
+                input(self.texts["continue_prompt"]) # Use standard pause
+                continue
+
+            # Confirm the final username
+            confirm = get_input(self.texts["username_confirm"].format(username_to_set) + " ").lower()
+            if confirm in ["y", "yes"]:
+                self.profile["username"] = username_to_set # CORRECTED: Separated
+                break
+            # If not confirmed, loop back to show suggestions/ask again
 
     def select_hierarchical_interests(self):
         """Select interests using hierarchical structure and new options"""
-        # This method was incorrectly indented inside select_name before
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         print("Loading interests data...")
         try:
             interests_data = load_json_file(os.path.join(self.data_dir, "interests.json"))
-            if not interests_data or not isinstance(interests_data, dict):
-                 raise ValueError("Interests data empty or invalid.")
+            assert interests_data and isinstance(interests_data, dict)
         except Exception as e:
-            print(f"Warning: Could not load interests data ({e}). Skipping interests selection.")
-            self.profile["interests"] = []
-            input(self.texts["continue_prompt"])
+            print(f"Warning: Interests data error ({e}). Skipping interests selection.") # CORRECTED: Separated
+            self.profile["interests"] = []                                              # CORRECTED: Separated
+            input(self.texts["continue_prompt"])                                        # CORRECTED: Separated
             return
 
         current_level_data = interests_data
-        path = []
-        level_prompt_keys = ["interests_select", "interests_subcategory", "interests_specific"] # Simplified level names
+        path = [] # CORRECTED: Separated assignment
+        level_prompt_keys = ["interests_select", "interests_subcategory", "interests_specific"]
         level = 0
-
         while isinstance(current_level_data, dict):
-            clear_screen()
-            level_name = self.texts.get(level_prompt_keys[level], f"Select Interest Level {level+1}:")
+            clear_screen() # CORRECTED: Separated
+            level_name = self.texts.get(level_prompt_keys[level], f"Select Category Level {level+1}:")
             options = sorted(list(current_level_data.keys()))
-            if not options: break
+            if not options:
+                print("No further options available in this branch.")
+                break # No more levels down this path
 
-            selected_option = None
-            action = None
-
-            if level == 0: # First level (Category) - Show All, No Skip
+            selected_option = None # CORRECTED: Separated assignment
+            action = None          # CORRECTED: Separated assignment
+            if level == 0: # Simple menu for the first level
                 print(level_name)
-                for i, option in enumerate(options, 1): print(f"{i}. {option}")
+                for i, o in enumerate(options, 1): print(f"{i}. {o}") # List comp okay here
                 print("-" * 20)
                 choice = get_numeric_choice(1, len(options))
-                if choice is None: action = 'back'
-                else: selected_option, action = options[choice - 1], 'selected'
-            else: # Subsequent levels - Dynamic List with Skip
+                action = 'back' if choice is None else 'selected'
+                selected_option = options[choice - 1] if action == 'selected' else None
+            else: # Use dynamic handler for subsequent levels
                 selected_option, action = handle_dynamic_list_selection(
-                    full_list=options, texts=self.texts, prompt_msg=level_name,
-                    initial_show=10, increment=10, allow_skip=True
+                    options,             # Arg 1
+                    self.texts,          # Arg 2
+                    level_name,          # Arg 3
+                    page_size=10,        # Keyword arg
+                    allow_skip=True,     # Keyword arg (Required by logic)
+                    allow_back=True      # Keyword arg (Required by logic)
                 )
 
-            # Process Action/Selection
             if action == 'selected':
                 path.append(selected_option)
-                next_level_data = current_level_data.get(selected_option)
-                if isinstance(next_level_data, (dict, list)):
-                    current_level_data = next_level_data
-                    level += 1
-                else: break # End of branch
-            elif action == 'skip': break # Stop navigating deeper
-            elif action == 'back': # User cancelled
-                if level == 0: self.profile["interests"] = [] # Cancelled at start
-                # Otherwise, loop breaks and uses current path/data
-                break
-            # 'regenerate', 'show_more' handled internally
+                next_data = current_level_data.get(selected_option)
+                # Ensure we only proceed if next level is dict or list
+                current_level_data = next_data if isinstance(next_data, (dict, list)) else {}
+                level += 1
+            elif action == 'skip':
+                print("Skipping further selection in this branch.")
+                break # Stop drilling down
+            elif action == 'back':
+                if level == 0: # Back from the very first level means cancel all
+                    print("Interests selection cancelled.")
+                    self.profile["interests"] = []
+                    return # Exit method
+                else: # Go back up one level
+                    print("Going back one level...")
+                    path.pop() # Remove last selection from path
+                    # Reconstruct the parent data (this is tricky without storing parent ref)
+                    # For simplicity, we might just break here or restart the process.
+                    # Let's break for now, user can restart if needed.
+                    print("Returning to previous level selection is complex, stopping selection here.")
+                    break # Stop drilling down
 
-        # --- Final Level: Specific Interests (Multi-select) ---
+        # Handle final level if it's a list
+        final_selected_interests = []
         if isinstance(current_level_data, list):
             specific_interests = sorted(current_level_data)
             if specific_interests:
-                # Use the manual multi-select loop pattern here
-                self._handle_multi_select_final_level(
-                    full_list=specific_interests,
-                    prompt=self.texts["interests_specific"],
-                    profile_key="interests",
-                    max_select=5
-                )
+                # Use the multi-select helper for the final list
+                self._handle_multi_select_final_level(specific_interests, self.texts["interests_specific"], "interests", 5)
+                # The helper modifies self.profile["interests"] directly
+                final_selected_interests = self.profile.get("interests", [])
             else:
-                print("No specific interests found at this level.")
-                self.profile["interests"] = [] # Or maybe use path? For now, empty.
-        elif not self.profile.get("interests"): # If stopped before reaching list
-             print("No specific interests selected.")
-             # Decide: use path? For now, keep empty if nothing specific selected.
+                print("No specific interests found at the end of this branch.")
+                self.profile["interests"] = [] # Ensure key exists
+        elif path and not isinstance(current_level_data, (dict, list)):
+             # If user skipped/stopped at a dict level, use the path items?
+             # Let's default to empty list if final level isn't a list of choices
+             print("Selection stopped before reaching specific items.")
              self.profile["interests"] = []
 
-        # Ensure key exists even if empty
+        # Ensure key exists even if skipped early or list empty
         if "interests" not in self.profile:
-             self.profile["interests"] = []
+            self.profile["interests"] = []
 
-        # input(self.texts["continue_prompt"]) # Pause only if needed
+        # Optionally print final selection summary
+        final_selection = self.profile.get("interests", [])
+        if final_selection:
+            print(f"\nFinal Selected Interests: {', '.join(final_selection)}")
+        else:
+            print("\nNo specific interests selected.")
+
 
     def select_hierarchical_profession(self):
         """Select profession using hierarchical structure and new options"""
-        # This method was incorrectly indented inside select_name before
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         print("Loading professions data...")
         try:
             professions_data = load_json_file(os.path.join(self.data_dir, "professions.json"))
-            if not professions_data or not isinstance(professions_data, dict):
-                 raise ValueError("Professions data empty or invalid.")
+            assert professions_data and isinstance(professions_data, dict)
         except Exception as e:
-            print(f"Warning: Could not load professions data ({e}). Setting profession to 'Unspecified'.")
-            self.profile["profession"] = "Unspecified"
-            input(self.texts["continue_prompt"])
+            print(f"Warning: Professions data error ({e}). Setting profession to 'Unspecified'.") # CORRECTED: Separated
+            self.profile["profession"] = "Unspecified"                                            # CORRECTED: Separated
+            input(self.texts["continue_prompt"])                                                 # CORRECTED: Separated
             return
 
         current_level_data = professions_data
-        path = []
+        path = [] # CORRECTED: Separated assignment
         level_prompt_keys = ["profession_category", "profession_subcategory", "profession_specific"]
         level = 0
+        final_profession = None # Variable to hold the single final choice
 
         while isinstance(current_level_data, dict):
-            clear_screen()
-            level_name = self.texts.get(level_prompt_keys[level], f"Select Profession Level {level+1}:")
+            clear_screen() # CORRECTED: Separated
+            level_name = self.texts.get(level_prompt_keys[level], f"Select Category Level {level+1}:")
             options = sorted(list(current_level_data.keys()))
-            if not options: break
-
-            selected_option = None
-            action = None
-
-            if level == 0: # First level - Show All, No Skip
-                print(level_name)
-                for i, option in enumerate(options, 1): print(f"{i}. {option}")
-                print("-" * 20)
-                choice = get_numeric_choice(1, len(options))
-                if choice is None: action = 'back'
-                else: selected_option, action = options[choice - 1], 'selected'
-            else: # Subsequent levels - Dynamic List with Skip
-                selected_option, action = handle_dynamic_list_selection(
-                    full_list=options, texts=self.texts, prompt_msg=level_name,
-                    initial_show=10, increment=10, allow_skip=True
-                )
-
-            # Process Action/Selection
-            if action == 'selected':
-                path.append(selected_option)
-                next_level_data = current_level_data.get(selected_option)
-                if isinstance(next_level_data, (dict, list)):
-                    current_level_data = next_level_data
-                    level += 1
-                else: break
-            elif action == 'skip': break
-            elif action == 'back':
-                if level == 0: self.profile["profession"] = "Unspecified"
-                # Otherwise break and use path if available
+            if not options:
+                print("No further options available in this branch.")
                 break
 
-        # --- Final Level: Specific Profession (Single Select) ---
-        final_profession = None
+            selected_option = None # CORRECTED: Separated assignment
+            action = None          # CORRECTED: Separated assignment
+            if level == 0: # Simple menu for the first level
+                print(level_name)
+                for i, o in enumerate(options, 1): print(f"{i}. {o}") # List comp okay
+                print("-" * 20)
+                choice = get_numeric_choice(1, len(options))
+                action = 'back' if choice is None else 'selected'
+                selected_option = options[choice - 1] if action == 'selected' else None
+            else: # Use dynamic handler for subsequent levels
+                selected_option, action = handle_dynamic_list_selection(
+                    options,             # Arg 1
+                    self.texts,          # Arg 2
+                    level_name,          # Arg 3
+                    page_size=10,        # Keyword arg
+                    allow_skip=True,     # Keyword arg (Required by logic)
+                    allow_back=True      # Keyword arg (Required by logic)
+                )
+
+            if action == 'selected':
+                path.append(selected_option)
+                next_data = current_level_data.get(selected_option)
+                current_level_data = next_data if isinstance(next_data, (dict, list)) else {}
+                level += 1
+            elif action == 'skip':
+                print("Stopping profession selection at this level.")
+                # Use the last selected category in the path as the profession
+                final_profession = path[-1] if path else "Unspecified"
+                break
+            elif action == 'back':
+                if level == 0:
+                    print("Profession selection cancelled.")
+                    self.profile["profession"] = "Unspecified"
+                    return
+                else:
+                    print("Going back one level...")
+                    path.pop()
+                    # As before, reconstructing parent is hard, so we stop here.
+                    final_profession = path[-1] if path else "Unspecified"
+                    print(f"Stopping selection. Current category: {final_profession}")
+                    break
+
+        # Handle final level if it's a list (choose one profession)
         if isinstance(current_level_data, list):
             specific_professions = sorted(current_level_data)
             if specific_professions:
-                clear_screen()
-                level_name = self.texts.get(level_prompt_keys[level], f"Select Final Level {level+1}:")
-                # Use single-select helper for the final choice
+                clear_screen() # CORRECTED: Separated
+                # Use dynamic list for SINGLE selection at the final level
+                level_name = self.texts.get(level_prompt_keys[level], f"Select Final Profession {level+1}:")
+                # Allow skip=True so user can choose the category level if desired
                 selected_final, action = handle_dynamic_list_selection(
-                    full_list=specific_professions, texts=self.texts,
-                    prompt_msg=level_name, allow_skip=True
+                    specific_professions, # Arg 1
+                    self.texts,           # Arg 2
+                    level_name,           # Arg 3
+                    page_size=15,         # Keyword arg (set explicitly as per comment)
+                    allow_skip=True,      # Keyword arg
+                    allow_back=True       # Keyword arg (Seems useful here)
                 )
                 if action == 'selected':
                     final_profession = selected_final
+                elif action == 'skip' or action == 'back':
+                     # If skipped/backed from final list, use the last path item (category)
+                     final_profession = path[-1] if path else "Unspecified"
+                     print(f"Using category: {final_profession}")
+                # Else (None returned by choice?), default below handles it
             else:
-                 print("No specific professions found at this level.")
+                 print("No specific professions found at the end of this branch.")
+                 final_profession = path[-1] if path else "Unspecified" # Use category
 
-        # --- Assign Profession ---
-        if final_profession:
-            self.profile["profession"] = final_profession
-        elif path: # Use the last category selected if no specific item chosen/found
-            self.profile["profession"] = path[-1]
-        elif "profession" not in self.profile: # Ensure key exists
-             self.profile["profession"] = "Unspecified"
-
-        print(f"\nSelected Profession: {self.profile['profession']}")
-        # input(self.texts["continue_prompt"]) # Pause only if needed
-
+        # Assign the determined profession (could be specific or category level)
+        # Default to 'Unspecified' if nothing was ever selected or derived
+        self.profile["profession"] = final_profession if final_profession else "Unspecified"
+        print(f"\nSelected Profession: {self.profile.get('profession', 'N/A')}") # Use get
 
     def select_location(self):
         """Select location with hierarchical structure and new options"""
-        # This function was previously outside the class
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         print("Loading location data...")
         try:
             locations_data = load_json_file(os.path.join(self.data_dir, "locations.json"))
-            if not locations_data or not isinstance(locations_data, dict):
-                 raise ValueError("Location data is empty or invalid.")
+            assert locations_data and isinstance(locations_data, dict)
         except Exception as e:
-            print(f"Error loading or validating locations.json: {e}")
-            self.profile["location"] = "Earth"
-            input(self.texts["continue_prompt"])
+            print(f"Error loading locations.json: {e}. Setting location to 'Earth'.") # CORRECTED: Separated
+            self.profile["location"] = "Earth"                                       # CORRECTED: Separated
+            input(self.texts["continue_prompt"])                                     # CORRECTED: Separated
             return
 
         current_level_data = locations_data
-        path = []
+        path = [] # CORRECTED: Separated assignment
         level_prompt_keys = ["location_continent", "location_country", "location_region", "location_city", "location_neighborhood"]
         level = 0
 
         while isinstance(current_level_data, dict):
-            clear_screen()
-            level_name = self.texts.get(level_prompt_keys[level], f"Select Level {level+1}:")
+            clear_screen() # CORRECTED: Separated
+            level_name = self.texts.get(level_prompt_keys[level], f"Select Location Level {level+1}:")
             options = sorted(list(current_level_data.keys()))
-            if not options: break
-
-            selected_option = None
-            action = None
-
-            if level == 0: # Continents - Show All, No Skip
-                print(level_name)
-                for i, option in enumerate(options, 1): print(f"{i}. {option}")
-                print("-" * 20)
-                choice = get_numeric_choice(1, len(options))
-                if choice is None: action = 'back'
-                else: selected_option, action = options[choice - 1], 'selected'
-            else: # Subsequent levels - Dynamic List with Skip
-                selected_option, action = handle_dynamic_list_selection(
-                    full_list=options, texts=self.texts, prompt_msg=level_name,
-                    initial_show=10, increment=10, allow_skip=True
-                )
-
-            # Process Action/Selection
-            if action == 'selected':
-                path.append(selected_option)
-                next_level_data = current_level_data.get(selected_option)
-                if isinstance(next_level_data, (dict, list)):
-                    current_level_data = next_level_data
-                    level += 1
-                else: break
-            elif action == 'skip': break
-            elif action == 'back':
-                if level == 0: self.profile["location"] = "Undetermined"
+            if not options:
+                print("No further options available in this branch.")
                 break
 
-        # Final Level (e.g., Neighborhoods) - Single Select (Optional)
+            selected_option = None # CORRECTED: Separated assignment
+            action = None          # CORRECTED: Separated assignment
+            # Determine if skipping should be allowed (e.g., allow skipping State/Region)
+            allow_skip_here = level >= 2 # Allow skipping from Region onwards
+
+            if level == 0: # Simple menu for Continent
+                print(level_name)
+                for i, o in enumerate(options, 1): print(f"{i}. {o}")
+                print("-" * 20)
+                choice = get_numeric_choice(1, len(options))
+                action = 'back' if choice is None else 'selected'
+                selected_option = options[choice - 1] if action == 'selected' else None
+            else: # Use dynamic handler for subsequent levels
+                            selected_option, action = handle_dynamic_list_selection(
+                                options,                   # Arg 1: full_list
+                                self.texts,                # Arg 2: texts_dict
+                                level_name,                # Arg 3: prompt
+                                page_size=10,              # Keyword arg for optional param
+                                allow_skip=allow_skip_here, # Keyword arg for optional param
+                                allow_back=True            # Keyword arg for optional param
+                            )
+
+            if action == 'selected':
+                path.append(selected_option)
+                next_data = current_level_data.get(selected_option)
+                current_level_data = next_data if isinstance(next_data, (dict, list)) else {}
+                level += 1
+            elif action == 'skip':
+                print("Stopping location selection at this level.")
+                break # Stop drilling down, use current path
+            elif action == 'back':
+                if level == 0:
+                    print("Location selection cancelled.")
+                    self.profile["location"] = "Undetermined"
+                    return
+                else:
+                    print("Going back one level...")
+                    if path: path.pop() # Go back up the path
+                    level -= 1
+                    # Need to reconstruct current_level_data based on new path end
+                    # This is complex. Let's just break and use the current path.
+                    print("Returning to previous level selection is complex, stopping selection here.")
+                    break
+
+        # Handle final level if it's a list (e.g., neighborhoods, optional final step)
         if isinstance(current_level_data, list):
             final_options = sorted(current_level_data)
             if final_options:
-                clear_screen()
-                level_name = self.texts.get(level_prompt_keys[level], f"Select Final Level {level+1}:")
+                clear_screen() # CORRECTED: Separated
+                final_level_index = min(level, len(level_prompt_keys) - 1) # Avoid index error
+                level_name = self.texts.get(level_prompt_keys[final_level_index], f"Select Final Location {level+1}:")
+                # Final level is optional (allow skip/back)
                 selected_final, action = handle_dynamic_list_selection(
-                    full_list=final_options, texts=self.texts,
-                    prompt_msg=level_name + " (Optional)", allow_skip=True
+                    final_options,            # Arg 1
+                    self.texts,               # Arg 2
+                    level_name + " (Optional)",# Arg 3
+                    page_size=10,             # Keyword arg (explicit default or change if needed)
+                    allow_skip=True,          # Keyword arg
+                    allow_back=True           # Keyword arg (Seems useful here)
                 )
                 if action == 'selected':
                     path.append(selected_final)
-            # else: print("No specific options listed at this final level.") # Optional msg
+                # If skipped/backed, just use the path as it was before this step
 
-        # Format Location String
-        if path:
-            self.profile["location"] = ", ".join(reversed(path))
-            print(f"\nSelected Location: {self.profile['location']}")
-        elif 'location' not in self.profile:
-            print("\nNo specific location selected.")
-            self.profile["location"] = "Unknown Location"
-
-        # input(self.texts["continue_prompt"]) # Pause only if needed
+        # Format the final location string from the path
+        self.profile["location"] = ", ".join(reversed(path)) if path else "Unknown Location"
+        print(f"\nSelected Location: {self.profile.get('location', 'N/A')}")
 
     def select_common_phrases(self):
-        """Select common phrases using manual loop with actions"""
-        # This function was previously outside the class
-        clear_screen()
-        language_file = "english.txt" # Simplified or use nationality logic
-        phrases_file = os.path.join(self.data_dir, "common_phrases", language_file)
-        try:
-            full_list = load_data_file(phrases_file)
-            if not full_list:
-                print(f"Warning: No common phrases found in {phrases_file}. Skipping.")
-                self.profile["common_phrases"] = []
-                input(self.texts["continue_prompt"])
-                return
-        except Exception as e:
-            print(f"Warning: Error loading phrases file {phrases_file}: {e}. Skipping.")
-            self.profile["common_phrases"] = []
-            input(self.texts["continue_prompt"])
+        """Select common phrases using reusable multi-select helper"""
+        clear_screen() # CORRECTED: Separated
+        phrases_file = os.path.join(self.data_dir, "common_phrases", "english.txt")
+        full_list = load_data_file(phrases_file)
+        if not full_list:
+            print("Warning: No common phrases found. Skipping.") # CORRECTED: Separated
+            self.profile["common_phrases"] = []                 # CORRECTED: Separated
+            input(self.texts["continue_prompt"])                # CORRECTED: Separated
             return
+        # Call the helper, which will update self.profile['common_phrases']
+        self._handle_multi_select_final_level(full_list, self.texts["common_phrases_select"], "common_phrases", 3)
 
-        # Use the reusable multi-select handler
-        self._handle_multi_select_final_level(
-             full_list=full_list,
-             prompt=self.texts["common_phrases_select"],
-             profile_key="common_phrases",
-             max_select=3
-        )
-        if "common_phrases" in self.profile:
-             print(f"Selected phrases: {self.profile['common_phrases']}")
-        # input(self.texts["continue_prompt"]) # Pause only if needed
+        # Optionally print summary after selection is done
+        selected_phrases = self.profile.get("common_phrases", [])
+        if selected_phrases:
+            print("\nSelected Phrases:")
+            for phrase in selected_phrases:
+                print(f"- {phrase}")
+        else:
+            print("\nNo common phrases selected.")
+        # Add pause if needed after printing summary
+        # input(self.texts["continue_prompt"])
 
     def select_profile_picture(self):
         """Select a profile picture URL using dynamic helper"""
-        # Updated to use the helper
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         prompt = "Select a profile picture:"
         pictures_file = os.path.join(self.data_dir, "profile_pictures.txt")
-        try:
-            pictures = load_data_file(pictures_file)
-            if not pictures:
-                print("Warning: profile_pictures.txt is empty. Skipping.")
-                self.profile.pop("profile_picture", None)
-                input(self.texts["continue_prompt"])
-                return
+        full_list = [] # CORRECTED: Separated assignment
 
-            # Filter by gender (Handles /men/ and /women/)
-            gender = self.profile.get("gender", "neutral")
-            keywords = []
-            if gender == "male": keywords = ["/male/", "/men/"]
-            elif gender == "female": keywords = ["/female/", "/women/"]
-            full_list = [pic for pic in pictures if any(kw in pic.lower() for kw in keywords)]
-
-            if not full_list: # Fallback if no gender match
-                print(f"No pictures found for gender '{gender}'. Showing all.")
-                full_list = pictures
-
-        except Exception as e:
-            print(f"Warning: Error loading profile pictures file: {e}. Skipping.")
-            self.profile.pop("profile_picture", None)
-            input(self.texts["continue_prompt"])
+        pictures = load_data_file(pictures_file) # Load first
+        if not pictures:
+            print("Warning: No pictures file found or list is empty. Cannot select picture.") # CORRECTED: Separated
+            self.profile.pop("profile_picture", None) # Ensure key isn't present # CORRECTED: Separated
+            input(self.texts["continue_prompt"]) # CORRECTED: Separated
             return
 
+        try:
+            gender = self.profile.get("gender", "female") # Default gender if needed
+            keywords = ["/men/"] if gender == "male" else ["/women/"]
+            full_list = [p for p in pictures if any(kw in p.lower() for kw in keywords)]
+            if not full_list:
+                print(f"Warning: No specific pictures found for '{gender}'. Showing all available pictures.") # CORRECTED: Separated
+                full_list = pictures # Fallback to all pictures
+        except Exception as e:
+            print(f"Warning: Picture filtering error ({e}). Showing all available pictures.") # CORRECTED: Separated
+            full_list = pictures # Fallback to all pictures
+
+        # Final check if list is empty even after fallbacks
+        if not full_list:
+            print("Warning: No pictures available to select after filtering/fallback.") # CORRECTED: Separated
+            self.profile.pop("profile_picture", None) # Ensure key isn't present # CORRECTED: Separated
+            input(self.texts["continue_prompt"]) # CORRECTED: Separated
+            return
+
+        # Loop for selection using the dynamic helper
         while True:
             selected_item, action = handle_dynamic_list_selection(
-                full_list=full_list, texts=self.texts, prompt_msg=prompt,
-                initial_show=5, increment=5, allow_skip=False
+                full_list,           # Arg 1
+                self.texts,          # Arg 2
+                prompt,              # Arg 3
+                page_size=5,         # Keyword arg
+                allow_skip=False,    # Keyword arg
+                allow_back=True      # Keyword arg (Required by logic)
             )
             if action == 'selected':
-                self.profile["profile_picture"] = selected_item
+                self.profile["profile_picture"] = selected_item # CORRECTED: Separated
+                print(f"\nSelected Picture: {selected_item}") # Give feedback
                 break
             elif action == 'back':
-                 print("Profile picture selection cancelled.")
-                 self.profile.pop("profile_picture", None)
-                 break
+                print("Picture selection cancelled.") # CORRECTED: Separated
+                self.profile.pop("profile_picture", None) # Ensure key removed on cancel # CORRECTED: Separated
+                break # Indicate cancel
 
-    # --- Helper for Multi-Select Lists (like interests, phrases) ---
+    # --- _handle_multi_select_final_level - Structure looks okay now ---
     def _handle_multi_select_final_level(self, full_list, prompt, profile_key, max_select=5):
-        """Internal helper for multi-select lists with actions"""
-        clear_screen()
+        """Internal helper for multi-select lists with actions and progressive selection."""
+        clear_screen() # CORRECTED: Separated
         initial_show = 10
         increment = 5
         available_indices = list(range(len(full_list)))
-        displayed_indices = random.sample(available_indices, min(initial_show, len(full_list)))
+        # Sample initial indices
+        displayed_indices = random.sample(available_indices, min(initial_show, len(available_indices)))
         displayed_indices.sort()
+        # Get existing selections or start fresh, ensure it's a mutable copy
+        selected_items_list = list(self.profile.get(profile_key, [])) # Use list() for copy
 
         while True:
             clear_screen()
             print(prompt)
-            current_options_map = {i + 1: full_list[idx] for i, idx in enumerate(displayed_indices)}
-            for num, item in current_options_map.items(): print(f"{num}. {item}")
+            print("-" * 30)
+            print(f"Currently Selected ({len(selected_items_list)}/{max_select}):")
+            if selected_items_list:
+                for item in selected_items_list:
+                    print(f"- {item}")
+            else:
+                print("(None)")
+            print("-" * 30)
+            print("Available Options:")
+            # Map displayed options that are NOT already selected
+            current_options_map = {
+                i + 1: full_list[idx]
+                for i, idx in enumerate(displayed_indices)
+                if full_list[idx] not in selected_items_list
+            }
+            if not current_options_map:
+                print("(No more selectable options in current view)")
+            else:
+                 for num, item in current_options_map.items():
+                     print(f"{num}. {item}")
 
             print("-" * 20)
-            option_offset = len(current_options_map)
-            show_more_opt_num = option_offset + 1
-            regenerate_opt_num = option_offset + 2
-            current_max_action_num = option_offset
+            # Determine action numbers dynamically
+            action_num_start = max(current_options_map.keys()) + 1 if current_options_map else 1
+            show_more_opt_num = -1 # Default to invalid
+            regenerate_opt_num = -1
+            finish_opt_num = -1
+            current_max_choice = max(current_options_map.keys()) if current_options_map else 0 # Start with highest item number
 
-            text_show_more = self.texts.get("show_more_options", "Show More Options")
-            text_regenerate = self.texts.get("regenerate_options", "Show New Options")
-            text_invalid_choice = self.texts.get("invalid_choice", "Invalid choice.")
+            can_show_more = len(displayed_indices) < len(available_indices)
 
-            can_show_more = len(displayed_indices) < len(full_list)
+            # Display actions and update max choice number
             if can_show_more:
-                print(f"{show_more_opt_num}. {text_show_more}")
-                current_max_action_num = show_more_opt_num
-            else: show_more_opt_num = -1
+                show_more_opt_num = action_num_start
+                print(f"{show_more_opt_num}. {self.texts.get('show_more_options', 'Show More')}") # CORRECTED: Separated
+                current_max_choice = show_more_opt_num
+                action_num_start += 1
 
-            print(f"{regenerate_opt_num}. {text_regenerate}")
-            current_max_action_num = regenerate_opt_num
+            regenerate_opt_num = action_num_start
+            print(f"{regenerate_opt_num}. {self.texts.get('regenerate_options', 'Regenerate List')}") # CORRECTED: Separated
+            current_max_choice = regenerate_opt_num
+            action_num_start += 1
 
-            print(f"\nEnter numbers (1-{len(current_options_map)}) separated by commas (max {max_select}), or choose an action:")
-            user_input = get_input("> ").strip()
+            finish_opt_num = action_num_start
+            print(f"{finish_opt_num}. Finish Selecting") # CORRECTED: Separated
+            current_max_choice = finish_opt_num
 
-            if not user_input: # Select none
-                self.profile[profile_key] = []
-                print("No items selected.")
+            # Determine the absolute max number user can enter
+            actual_max_input = current_max_choice # Max is now the highest action number
+
+            # Construct prompt text dynamically
+            item_num_range_str = f"1-{max(current_options_map.keys())}" if current_options_map else "N/A"
+            prompt_text = f"\nEnter item # ({item_num_range_str}) to add/select, or action #:"
+
+            user_choice = get_numeric_choice(1, actual_max_input, prompt=prompt_text)
+
+            if user_choice is None: # User pressed Enter or invalid input handled by get_numeric_choice
+                print("Finishing selection.") # CORRECTED: Separated
                 break
 
-            try: # Check for actions first
-                action_choice = int(user_input)
-                if can_show_more and action_choice == show_more_opt_num:
-                    remaining_indices = [i for i in available_indices if i not in displayed_indices]
-                    if remaining_indices:
-                        num_to_add = min(increment, len(remaining_indices))
-                        displayed_indices.extend(random.sample(remaining_indices, num_to_add))
-                        displayed_indices.sort()
-                    continue
-                elif action_choice == regenerate_opt_num:
-                    displayed_indices = random.sample(available_indices, min(initial_show, len(full_list)))
+            # --- Handle Actions ---
+            if user_choice == show_more_opt_num and can_show_more:
+                remaining_indices = [i for i in available_indices if i not in displayed_indices]
+                if remaining_indices:
+                    num_to_add = min(increment, len(remaining_indices))
+                    new_indices = random.sample(remaining_indices, num_to_add)
+                    displayed_indices.extend(new_indices)
                     displayed_indices.sort()
-                    continue
-            except ValueError: pass # Not a single number action
+                continue # Redisplay
 
-            try: # Process item selection
-                choices_str = [x.strip() for x in user_input.split(',') if x.strip()]
-                item_choices = [int(x) for x in choices_str]
+            elif user_choice == regenerate_opt_num:
+                num_to_show = min(initial_show, len(available_indices))
+                displayed_indices = random.sample(available_indices, num_to_show)
+                displayed_indices.sort()
+                continue # Redisplay
 
-                selected_items = []
-                valid = True
-                for choice_num in item_choices:
-                    if choice_num in current_options_map:
-                        selected_items.append(current_options_map[choice_num])
-                    else:
-                        valid = False; break
+            elif user_choice == finish_opt_num:
+                print("Finishing selection.") # CORRECTED: Separated
+                break # Exit loop
 
-                if not valid:
-                    print("Invalid selection number detected. Please try again.")
-                    input(self.texts["continue_prompt"]); continue
+            # --- Handle Item Selection ---
+            elif user_choice in current_options_map:
+                item_to_add = current_options_map[user_choice]
+                if len(selected_items_list) < max_select:
+                    selected_items_list.append(item_to_add)
+                    print(f"Added: {item_to_add}") # CORRECTED: Separated
+                    time.sleep(0.8)
+                else:
+                    print(f"Cannot add more than {max_select} item(s).") # CORRECTED: Separated
+                    time.sleep(1)
+                continue # Continue loop after attempting to add item
 
-                self.profile[profile_key] = selected_items[:max_select]
-                break
-            except ValueError:
-                print(text_invalid_choice + " Please enter valid item numbers or an action number.")
-                input(self.texts["continue_prompt"]); continue
+            else: # Choice was not a valid item or action number
+                print(self.texts.get("invalid_choice", "Invalid selection.")) # CORRECTED: Separated
+                time.sleep(1)
+                continue # Ask again
 
-    # --- Other Methods (preview_profile, etc.) ---
+        # After loop finishes (break), update the profile with the final list
+        self.profile[profile_key] = selected_items_list
+
+
+    # --------------------------------------------------------------------------
+    # Profile Management & Utility Methods
+    # --------------------------------------------------------------------------
 
     def preview_profile(self):
         """Display a preview of the generated or loaded profile"""
-        clear_screen()
+        clear_screen() # CORRECTED: Separated
         print(self.texts["profile_preview"])
         print("\n" + "=" * 40 + "\n")
-        # Use .get with defaults for safety
+        # Use .get() for safety, provide default values like 'N/A'
         print(f"Name: {self.profile.get('first_name', 'N/A')} {self.profile.get('last_name', 'N/A')}")
         print(f"Gender: {self.profile.get('gender', 'N/A').capitalize()}")
         print(f"Age: {self.profile.get('age', 'N/A')}")
         print(f"Nationality: {self.profile.get('nationality', 'N/A').capitalize()}")
         print(f"Location: {self.profile.get('location', 'N/A')}")
         print(f"Username: {self.profile.get('username', 'N/A')}")
-        print(f"Password: {'*' * len(self.profile.get('password', '')) if self.profile.get('password') else 'N/A'}") # Mask password
-
+        # Mask password display
+        password = self.profile.get('password')
+        print(f"Password: {'*' * len(password) if password else 'N/A'}")
+        # Handle list types gracefully
         platforms = self.profile.get("platforms", [])
+        interests = self.profile.get("interests", [])
+        common_phrases = self.profile.get("common_phrases", [])
+        profile_picture = self.profile.get("profile_picture")
+        appendix = self.profile.get("appendix")
+
         if platforms:
             print("\nPlatforms:")
-            for platform in platforms: print(f"- {platform}")
-
-        interests = self.profile.get("interests", [])
+            for p in platforms: print(f"- {p}") # List comp okay here
         if interests:
             print("\nInterests:")
-            for interest in interests: print(f"- {interest}")
+            for i in interests: print(f"- {i}") # List comp okay here
 
         print(f"\nProfession: {self.profile.get('profession', 'N/A')}")
 
-        common_phrases = self.profile.get("common_phrases", [])
         if common_phrases:
             print("\nCommon Phrases:")
-            for phrase in common_phrases: print(f"- {phrase}")
-
-        profile_picture = self.profile.get("profile_picture")
+            for p in common_phrases: print(f"- {p}") # List comp okay here
         if profile_picture:
             print(f"\nProfile Picture: {profile_picture}")
-
-        appendix = self.profile.get("appendix")
         if appendix:
             print(f"\nAppendix: {appendix}")
 
-        print("\n" + "=" * 40 + "\n")
+        print("\n" + "=" * 40 + "\n") # CORRECTED: Separated
         input(self.texts["continue_prompt"])
 
     def edit_profile(self):
-        """Allow user to edit profile fields (improved version)"""
+        """Allow user to edit profile fields."""
         while True:
-            clear_screen()
+            clear_screen() # CORRECTED: Separated
             print("--- Edit Profile ---")
             editable_fields = {}
             i = 1
+
+            # Create a sorted list of keys for consistent display order
+            # Filter out keys that maybe shouldn't be directly edited if needed
+            profile_keys = sorted([k for k in self.profile.keys()]) # e.g. add condition: if k not in ['internal_id']
+
             # Display current values nicely, map number to key
-            for key, value in self.profile.items():
-                 display_value = ', '.join(map(str, value)) if isinstance(value, (list, tuple)) else value
-                 # Mask password during edit display
-                 if key == 'password': display_value = '*' * len(str(display_value))
-                 print(f"{i}. {key.replace('_', ' ').capitalize()}: {display_value}")
-                 editable_fields[i] = key
-                 i += 1
+            for key in profile_keys:
+                value = self.profile[key]
+                display_value = value # Default display
+                # Format list values
+                if isinstance(value, (list, tuple)):
+                     display_value = ', '.join(map(str, value)) if value else "(Empty List)"
+                # Mask password
+                elif key == 'password':
+                    display_value = '*' * len(str(value)) if value else "(No Password Set)"
 
+                print(f"{i}. {key.replace('_', ' ').capitalize()}: {display_value}")
+                editable_fields[i] = key
+                i += 1
+
+            # Add the "Finish Editing" option
             print(f"\n{i}. Finish Editing")
-            prompt = self.texts.get("edit_field_prompt", "Enter field number to edit, or press Enter to finish:")
-            field_choice_str = get_input(prompt + " ")
 
-            if not field_choice_str: break # Finish if Enter pressed
+            # Get user's choice
+            prompt = self.texts.get("edit_field_prompt", "Enter field number to edit (or press Enter to finish):")
+            field_choice_str = get_input(prompt + " ").strip()
+
+            if not field_choice_str: # Exit if user presses Enter
+                break
 
             try:
                 field_choice = int(field_choice_str)
-                if field_choice == i: break # Finish Editing option
+
+                if field_choice == i: # Chose "Finish Editing"
+                    break
+
                 if field_choice in editable_fields:
                     field_to_edit = editable_fields[field_choice]
                     current_value = self.profile[field_to_edit]
-                    # Use specific prompts for different types
+
+                    print(f"\n--- Editing '{field_to_edit.replace('_', ' ').capitalize()}' ---")
+
+                    # Handle different input types
                     if isinstance(current_value, list):
-                        print(f"\nEditing '{field_to_edit.replace('_', ' ').capitalize()}'. Current: {current_value}")
-                        print("Enter new values separated by commas (or leave blank to keep current):")
+                        print(f"Current list: {current_value}")
+                        print("Enter new comma-separated values (or leave blank to keep current):")
                         new_value_str = get_input("> ")
                         if new_value_str.strip():
                             self.profile[field_to_edit] = [v.strip() for v in new_value_str.split(',') if v.strip()]
-                    elif isinstance(current_value, int):
-                        print(f"\nEditing '{field_to_edit.replace('_', ' ').capitalize()}'. Current: {current_value}")
-                        print("Enter new numeric value:")
+                        # else: keep current value
+
+                    elif isinstance(current_value, int) or field_to_edit == 'age': # Treat age as int
+                        print(f"Current number: {current_value}")
+                        print("Enter new number (or leave blank to keep current):")
                         while True:
-                            new_value_str = get_input("> ")
-                            if not new_value_str.strip(): break # Allow blank to keep current
+                            new_value_str = get_input("> ").strip()
+                            if not new_value_str:
+                                break # Keep current
                             try:
                                 new_value = int(new_value_str)
                                 if field_to_edit == 'age' and not (18 <= new_value <= 99):
-                                     print(self.texts["age_error"]); continue
-                                self.profile[field_to_edit] = new_value; break
-                            except ValueError: print("Invalid number.")
-                    else: # Assume string
-                        print(f"\nEditing '{field_to_edit.replace('_', ' ').capitalize()}'.") # Don't show password
-                        new_value = get_input(self.texts["edit_value_prompt"] + " ")
-                        self.profile[field_to_edit] = new_value
-                    print("... Updated.")
-                    time.sleep(0.7) # Brief pause
+                                    print(self.texts["age_error"])
+                                    continue # Ask for age again
+                                self.profile[field_to_edit] = new_value
+                                break # Valid number entered
+                            except ValueError:
+                                print("Invalid number. Please try again.")
+
+                    else: # Assume string type for others (gender, name, username, password, location, profession, picture, appendix)
+                        current_display = current_value if field_to_edit != 'password' else '*' * len(str(current_value))
+                        print(f"Current value: {current_display}")
+                        prompt_text = self.texts["edit_value_prompt"] + " (leave blank to keep current): "
+                        new_value = get_input(prompt_text) # Don't strip immediately if spaces might be intended, unless for password/username
+                        # Special handling for certain fields
+                        if field_to_edit in ['username', 'password']:
+                            new_value = new_value.strip() # Remove leading/trailing spaces
+
+                        if new_value or (field_to_edit == 'password' and new_value == ''): # Allow setting empty password explicitly
+                             if field_to_edit == 'password' and not new_value:
+                                 print("Password will be cleared.")
+                                 # Add confirmation maybe?
+                             self.profile[field_to_edit] = new_value
+                        # else: keep current value if blank was entered (except for password)
+
+                    print("... Field updated (if a new value was provided).") # CORRECTED: Separated
+                    time.sleep(0.8) # Brief pause
+
                 else:
-                    print(self.texts["invalid_choice"]); time.sleep(1)
+                    print(self.texts["invalid_choice"]) # CORRECTED: Separated
+                    time.sleep(1)
+
             except ValueError:
-                print(self.texts["invalid_choice"]); time.sleep(1)
-        # Preview after finishing all edits?
-        # self.preview_profile()
+                print(self.texts["invalid_choice"]) # CORRECTED: Separated
+                time.sleep(1)
+            # Outer while loop continues
 
+    # --- persona_options and create_random_persona were assumed correct from previous turns ---
+    # --- Add them back here if they were part of the original file content provided ---
+
+    # Example placeholder for load_persona if it wasn't defined before
     def load_persona(self):
-        """Load an existing persona from file"""
+        """Loads an existing persona from a JSON file."""
         clear_screen()
-        if not os.path.exists(self.profiles_dir):
-            print(f"Profiles directory '{self.profiles_dir}' not found.")
-            input(self.texts["continue_prompt"]); return
-
         try:
-             profiles = [f for f in os.listdir(self.profiles_dir) if f.endswith('.json')]
+            profiles = [f for f in os.listdir(self.profiles_dir) if f.endswith(".json")]
+        except FileNotFoundError:
+            print(f"Error: Profiles directory not found at {self.profiles_dir}")
+            input(self.texts["continue_prompt"])
+            return
         except OSError as e:
-             print(f"Error accessing profiles directory: {e}")
-             input(self.texts["continue_prompt"]); return
+            print(f"Error accessing profiles directory: {e}")
+            input(self.texts["continue_prompt"])
+            return
 
         if not profiles:
             print(self.texts["no_personas_found"])
-            input(self.texts["continue_prompt"]); return
+            input(self.texts["continue_prompt"])
+            return
 
         print(self.texts["select_persona"])
-        for i, profile_filename in enumerate(profiles, 1):
-            print(f"{i}. {profile_filename[:-5]}")
+        for i, profile_name in enumerate(profiles, 1):
+            # Strip .json for display
+            print(f"{i}. {profile_name[:-5]}")
 
         choice = get_numeric_choice(1, len(profiles))
-        if choice is None: print("Loading cancelled."); return
+        if choice is None:
+            print("Loading cancelled.")
+            input(self.texts["continue_prompt"])
+            return
 
-        selected_filename = profiles[choice - 1]
-        profile_path = os.path.join(self.profiles_dir, selected_filename)
+        selected_profile_file = profiles[choice - 1]
+        profile_path = os.path.join(self.profiles_dir, selected_profile_file)
+        profile_name_base = selected_profile_file[:-5] # Name without extension
 
-        try:
-            with open(profile_path, "r", encoding="utf-8") as f:
-                self.profile = json.load(f)
-            print(f"\n{self.texts['persona_loaded']}")
+        loaded_profile = load_json_file(profile_path)
+        if loaded_profile:
+            self.profile = loaded_profile
+            print(self.texts["persona_loaded"])
             input(self.texts["continue_prompt"])
-            # Pass name for export defaults etc.
-            self.persona_options(profile_path, selected_filename[:-5])
-        except FileNotFoundError:
-            print(f"Error: Profile file '{selected_filename}' not found.")
-            input(self.texts["continue_prompt"])
-        except json.JSONDecodeError:
-            print(f"Error: Profile file '{selected_filename}' is corrupted.")
-            input(self.texts["continue_prompt"])
-        except Exception as e:
-            print(f"An unexpected error occurred loading profile: {e}")
+            # Call persona options menu AFTER loading
+            self.persona_options(profile_path, profile_name_base)
+        else:
+            # load_json_file should print its own error
+            print("Failed to load persona.")
             input(self.texts["continue_prompt"])
 
+
+    # --- Added persona_options from previous turn for completeness ---
     def persona_options(self, profile_path, profile_name):
-        """Display options for loaded persona"""
+        """Display options for loaded persona, including deleting TXT export."""
         while True:
             clear_screen()
             print(f"--- Options for Persona: {profile_name} ---")
-            # print(self.texts["persona_options"]) # Generic title if preferred
+            # Use the text definition from TEXTS dict
             options_list = self.texts["persona_options_list"]
             for i, option in enumerate(options_list, 1):
                 print(f"{i}. {option}")
 
             choice = get_numeric_choice(1, len(options_list))
-            if choice is None: continue # Loop on empty input
+            if choice is None: # Assume None means user wants to go back or cancelled input
+                 print("Returning to main menu...")
+                 time.sleep(1)
+                 break # Exit the options loop
 
-            if choice == 1: # View details
+            if choice == 1:  # View details (using preview)
                 self.preview_profile()
-            elif choice == 2: # Edit persona
-                self.edit_profile()
+            elif choice == 2:  # Edit persona
+                self.edit_profile() # Use the existing edit method
                 # Save changes after editing
                 try:
                     with open(profile_path, "w", encoding="utf-8") as f:
                         json.dump(self.profile, f, indent=2, ensure_ascii=False)
                     print("Changes saved.")
                 except IOError as e:
-                     print(f"Error saving changes: {e}")
+                    print(f"Save Error after edit: {e}")
                 input(self.texts["continue_prompt"])
-            elif choice == 3: # Export persona as JSON
-                if not os.path.exists(self.exports_dir): os.makedirs(self.exports_dir)
-                export_filename = f"{profile_name}_export_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.json"
+            elif choice == 3:  # Export persona (JSON)
+                if not os.path.exists(self.exports_dir):
+                    try:
+                        os.makedirs(self.exports_dir)
+                    except OSError as e:
+                        print(f"Error creating exports directory: {e}")
+                        input(self.texts["continue_prompt"])
+                        continue # Skip export if dir fails
+
+                # Create a timestamped export filename
+                export_filename = f"{profile_name}_export_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
                 export_path = os.path.join(self.exports_dir, export_filename)
                 try:
                     with open(export_path, "w", encoding="utf-8") as f:
                         json.dump(self.profile, f, indent=2, ensure_ascii=False)
                     print(self.texts["export_success"].format(export_path))
-                except IOError as e: print(f"Error exporting JSON: {e}")
+                except IOError as e:
+                    print(f"JSON Export Error: {e}")
                 input(self.texts["continue_prompt"])
-            elif choice == 4: # Export persona as TXT
-                if not os.path.exists(self.exports_dir): os.makedirs(self.exports_dir)
+            elif choice == 4:  # Export persona (TXT)
+                if not os.path.exists(self.exports_dir):
+                     try:
+                        os.makedirs(self.exports_dir)
+                     except OSError as e:
+                        print(f"Error creating exports directory: {e}")
+                        input(self.texts["continue_prompt"])
+                        continue
                 try:
-                    txt_filepath = export_profile_to_txt(self.profile, profile_name, self.exports_dir)
-                    if txt_filepath: print(self.texts["export_success"].format(txt_filepath))
-                    else: print("Error during TXT export.")
-                except Exception as e: print(f"Error exporting TXT: {e}")
+                    # export_profile_to_txt should handle its own file writing
+                    txt_filepath = export_profile_to_txt(self.profile, profile_name, self.exports_dir) # Use base name for TXT
+                    if txt_filepath:
+                        print(self.texts["export_success"].format(txt_filepath))
+                    else:
+                        # export_profile_to_txt might return None/False or raise exception on error
+                        print("TXT Export failed (check function implementation).")
+                except Exception as e: # Catch potential errors from the export function itself
+                    print(f"TXT Export Error: {e}")
                 input(self.texts["continue_prompt"])
-            elif choice == 5: # Delete persona
-                confirm = get_input(self.texts["confirm_delete"] + " ").lower()
+            elif choice == 5:  # Delete persona
+                confirm = get_input(self.texts["confirm_delete"] + " (y/n): ").lower() # Added (y/n) hint
                 if confirm in ["y", "yes"]:
+                    deleted_json = False
+                    deleted_txt = False
+                    # Try deleting JSON profile
                     try:
                         os.remove(profile_path)
-                        print(self.texts["deleted_success"])
-                        self.profile = {} # Clear loaded profile
-                        input(self.texts["continue_prompt"])
-                        break # Exit persona options menu
+                        print(f"Deleted JSON: {profile_path}")
+                        deleted_json = True
                     except OSError as e:
-                        print(f"Error deleting file: {e}")
+                        print(f"Error deleting JSON profile ({profile_path}): {e}")
+
+                    # Try deleting corresponding TXT export (assuming name.txt)
+                    txt_export_path = os.path.join(self.exports_dir, f"{profile_name}.txt")
+                    if os.path.exists(txt_export_path):
+                        try:
+                            os.remove(txt_export_path)
+                            print(f"Deleted TXT export: {txt_export_path}")
+                            deleted_txt = True
+                        except OSError as e:
+                            print(f"Error deleting TXT export ({txt_export_path}): {e}")
+                    else:
+                        # If TXT doesn't exist, it's okay for deletion purpose
+                        print(f"TXT export ({txt_export_path}) not found, skipping deletion.")
+                        deleted_txt = True # Consider deletion successful if TXT wasn't there
+
+                    if deleted_json: # Only proceed if JSON was deleted
+                        if deleted_txt: # And TXT was deleted or didn't exist
+                             print(self.texts["deleted_success"])
+                             self.profile = {}  # Clear the loaded profile data in memory
+                             input(self.texts["continue_prompt"])
+                             break  # Exit options menu, return to main menu
+                        else:
+                             print("Deleted JSON, but could not remove associated TXT export.")
+                             input(self.texts["continue_prompt"])
+                             # Stay in options menu? Or break? Let's stay for now.
+                    else:
+                        print("Could not delete the main profile JSON file. No files removed.")
                         input(self.texts["continue_prompt"])
                 else:
                     print("Deletion cancelled.")
                     input(self.texts["continue_prompt"])
             elif choice == 6: # Back to main menu
-                break
+                break # Exit the while loop
 
+    # --- Added create_random_persona from previous turn for completeness ---
     def create_random_persona(self):
-        """Creates a persona with randomly selected attributes based on user-chosen detail level and shows the process."""
+        """Creates a persona with randomly selected attributes based on chosen level."""
         clear_screen()
         print(self.texts["random_level_select"])
+        # Display options clearly
         level_options = self.texts["random_level_options"]
-        for option in level_options: print(option)
+        for i, opt_desc in enumerate(level_options, 1):
+             # Extract level number from description if needed, or just use index
+             print(f"{i}. {opt_desc}") # Assumes format "N. Description"
 
         level_choice = get_numeric_choice(1, len(level_options))
         if level_choice is None:
-            print("Random persona generation cancelled.")
-            input(self.texts["continue_prompt"]) # Pause before returning
+            print("Random persona creation cancelled.")
+            input(self.texts["continue_prompt"])
             return
 
         clear_screen()
         print("\n--- Generating Random Persona ---")
-        print("Please wait...\n")
-        self.profile = {} # Start fresh profile
-        pause_time = 0.4 # Seconds to pause between steps for visibility
+        print("Please wait while data is loaded and attributes are generated...\n")
+        self.profile = {} # Start fresh
+        pause_time = 0.3 # Shorter pause for slightly faster generation display
 
-        # --- Load Data Files (with simplified warnings) ---
-        print("Loading data sets...")
-        # Nationalities (Now uses JSON)
+        # --- Load Data ---
+        print("Loading necessary data files...")
+        time.sleep(pause_time * 1.5) # Pause after loading message
+        # Use try-except blocks for robustness when loading each file
         nationalities_data = load_json_file(os.path.join(self.data_dir, "nationalities.json"))
-        if not nationalities_data: print("Warning: Nationalities data missing or empty.")
-
-        # Professions (JSON)
         professions_data = load_json_file(os.path.join(self.data_dir, "professions.json"))
-        if not professions_data: print("Warning: Professions data missing or empty.")
-
-        # Locations (JSON)
         locations_data = load_json_file(os.path.join(self.data_dir, "locations.json"))
-        if not locations_data: print("Warning: Locations data missing or empty.")
-
-        # Interests (JSON)
         interests_data = load_json_file(os.path.join(self.data_dir, "interests.json"))
-        if not interests_data: print("Warning: Interests data missing or empty.")
-
-        # Phrases (TXT)
+        # Assuming english.txt for phrases, adjust if language selection is added
         phrases_data = load_data_file(os.path.join(self.data_dir, "common_phrases", "english.txt"))
-        if not phrases_data: print("Warning: Common phrases file missing or empty.")
-
-        # Pictures (TXT)
         pictures_data = load_data_file(os.path.join(self.data_dir, "profile_pictures.txt"))
-        if not pictures_data: print("Warning: Profile pictures file missing or empty.")
-
-        time.sleep(pause_time * 2) # Longer pause after loading
+        # Need names and last names data loaded here too for Level 1
+        # We'll load them dynamically based on selected nationality later
 
         # --- Level 1: Minimal ---
-        print("\n--- Generating Minimal Details ---")
-
+        print("\n--- Generating Level 1 Details ---")
         # Gender
-        print(self.texts.get("random_generating","Generating {item}...").format(item="Gender"))
+        print(f"{self.texts['random_generating'].format(item='Gender')}")
         self.profile["gender"] = random.choice(["male", "female"])
         print(f"-> Gender: {self.profile['gender'].capitalize()}")
         time.sleep(pause_time)
-
-        # Nationality (using hierarchical data)
-        print(self.texts.get("random_generating","Generating {item}...").format(item="Nationality"))
-        selected_nationality = None
+        # Nationality (random hierarchical selection)
+        print(f"{self.texts['random_generating'].format(item='Nationality')}")
+        selected_nationality = "american" # Default fallback
         if nationalities_data:
-            item, _ = get_random_hierarchical_item(nationalities_data) # Get nationality string
-            selected_nationality = item
-        # Fallback if data missing or random selection fails
-        self.profile["nationality"] = selected_nationality.lower() if selected_nationality else "american"
+            item, _ = get_random_hierarchical_item(nationalities_data) # Choose random leaf node
+            if item: selected_nationality = item.lower()
+        self.profile["nationality"] = selected_nationality
         print(f"-> Nationality: {self.profile['nationality'].capitalize()}")
         time.sleep(pause_time)
-
         # Age
-        print(self.texts.get("random_generating","Generating {item}...").format(item="Age"))
-        self.profile["age"] = random.randint(18, 70)
+        print(f"{self.texts['random_generating'].format(item='Age')}")
+        self.profile["age"] = random.randint(18, 75) # Adjusted upper range slightly
         print(f"-> Age: {self.profile['age']}")
         time.sleep(pause_time)
-
-        # Name & Lastname (based on gender/nationality)
-        print(self.texts.get("random_generating","Generating {item}...").format(item="Name"))
-        first_name = "Alex" # Default fallback
+        # First Name (based on gender & nationality)
+        print(f"{self.texts['random_generating'].format(item='First Name')}")
+        first_name = "Alex" # Default
         try:
             names_file = os.path.join(self.data_dir, "names", self.profile["gender"], f"{self.profile['nationality']}.txt")
-            names = load_data_file(names_file)
-            if names: first_name = random.choice(names)
-        except Exception: pass # Keep fallback on error
+            names_list = load_data_file(names_file)
+            if names_list: first_name = random.choice(names_list)
+        except Exception: pass # Ignore errors like file not found, use default
         self.profile["first_name"] = first_name
         print(f"-> First Name: {self.profile['first_name']}")
         time.sleep(pause_time)
-
-        print(self.texts.get("random_generating","Generating {item}...").format(item="Last Name"))
-        last_name = "Smith" # Default fallback
+        # Last Name (based on nationality)
+        print(f"{self.texts['random_generating'].format(item='Last Name')}")
+        last_name = "Smith" # Default
         try:
             lastnames_file = os.path.join(self.data_dir, "last_names", f"{self.profile['nationality']}.txt")
-            lastnames = load_data_file(lastnames_file)
-            if lastnames: last_name = random.choice(lastnames)
-        except Exception: pass # Keep fallback on error
+            lastnames_list = load_data_file(lastnames_file)
+            if lastnames_list: last_name = random.choice(lastnames_list)
+        except Exception: pass # Ignore errors, use default
         self.profile["last_name"] = last_name
         print(f"-> Last Name: {self.profile['last_name']}")
         time.sleep(pause_time)
-
-        # Profession (using hierarchical data)
-        print(self.texts.get("random_generating","Generating {item}...").format(item="Profession"))
-        selected_profession = "Unspecified" # Default fallback
+        # Profession (random hierarchical)
+        print(f"{self.texts['random_generating'].format(item='Profession')}")
+        selected_profession = "Unspecified"
         if professions_data:
             item, path = get_random_hierarchical_item(professions_data)
-            # Prefer specific item, fallback to last category in path
+            # Use the specific item (leaf) if found, otherwise fallback to last category in path
             selected_profession = item if item else (path[-1] if path else "Unspecified")
         self.profile["profession"] = selected_profession
         print(f"-> Profession: {self.profile['profession']}")
@@ -1218,150 +1442,165 @@ class SockSpy:
 
         # --- Level 2: Standard ---
         if level_choice >= 2:
-            print("\n--- Adding Standard Details ---")
-
-            # Location (Basic - Continent, Country)
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Basic Location"))
-            location = "Earth" # Default fallback
+            print("\n--- Generating Level 2 Details ---")
+            # Basic Location (e.g., Country, Region from random path)
+            print(f"{self.texts['random_generating'].format(item='Basic Location')}")
+            basic_location = "Earth"
             if locations_data:
-                 _ , path = get_random_hierarchical_item(locations_data)
-                 # Take Continent, Country if path is long enough
-                 parts = path[:2]
-                 if parts: location = ", ".join(reversed(parts))
-            self.profile["location"] = location
+                _, path = get_random_hierarchical_item(locations_data) # Get a random path
+                # Take first 2 elements (e.g., Continent, Country) or fewer if path is short
+                parts = path[:2]
+                if parts: basic_location = ", ".join(reversed(parts)) # Format as Country, Continent
+            # For level 2, we overwrite location if it exists, otherwise create it
+            self.profile["location"] = basic_location
             print(f"-> Location: {self.profile['location']}")
             time.sleep(pause_time)
-
-            # Username
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Username"))
-            username = f"{self.profile.get('first_name','user').lower()}{random.randint(10,99)}" # Fallback
+            # Username (using suggestions)
+            print(f"{self.texts['random_generating'].format(item='Username')}")
+            generated_user = f"{self.profile['first_name'][:4].lower()}{random.randint(100,999)}" # Fallback
             try:
-                suggestions = generate_username_suggestions(self.profile["first_name"], self.profile["last_name"], self.profile["age"])
-                if suggestions: username = random.choice(suggestions)
-            except Exception: pass # Keep fallback on error
-            self.profile["username"] = username
+                suggestions = generate_username_suggestions(self.profile['first_name'], self.profile['last_name'], self.profile['age'])
+                if suggestions: generated_user = random.choice(suggestions)
+            except Exception: pass # Use fallback if suggestion fails
+            self.profile["username"] = generated_user
             print(f"-> Username: {self.profile['username']}")
             time.sleep(pause_time)
-
-            # Password
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Password"))
-            self.profile["password"] = generate_random_password()
-            print(f"-> Password: {'*' * len(self.profile['password'])}") # Masked
+            # Password (standard length)
+            print(f"{self.texts['random_generating'].format(item='Password')}")
+            generated_password = generate_random_password(length=12) # Standard length
+            self.profile["password"] = generated_password
+            print(f"-> Password: {'*' * len(generated_password)}")
             time.sleep(pause_time)
 
         # --- Level 3: Detailed ---
         if level_choice >= 3:
-            print("\n--- Adding Detailed Information ---")
-
-            # Location (Specific - Up to City level)
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Specific Location"))
+            print("\n--- Generating Level 3 Details ---")
+            # Detailed Location (overwrite L2 location)
+            print(f"{self.texts['random_generating'].format(item='Detailed Location')}")
+            detailed_location = self.profile.get("location", "Earth") # Start with previous if exists
             if locations_data:
-                 item, path = get_random_hierarchical_item(locations_data) # Get full path + item
-                 if item: path.append(item) # Add neighborhood/final item if selected
-                 parts = path[:4] # Limit to ~City level depth
-                 if parts: # Overwrite basic location only if specific path found
-                     self.profile["location"] = ", ".join(reversed(parts))
-                 # else keep the basic location from Level 2
-            # else keep basic location
-            print(f"-> Refined Location: {self.profile['location']}")
+                item, path = get_random_hierarchical_item(locations_data)
+                if item: path.append(item) # Add leaf node if found
+                # Take up to 4 elements (e.g., City, Region, Country, Continent)
+                parts = path[:4]
+                if parts: detailed_location = ", ".join(reversed(parts))
+            self.profile["location"] = detailed_location # Overwrite location
+            print(f"-> Location: {self.profile['location']}")
             time.sleep(pause_time)
-
             # Platforms
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Platforms"))
-            possible = ["Twitter", "Facebook", "Instagram", "Reddit", "LinkedIn", "TikTok", "Pinterest", "YouTube", "Discord", "Telegram", "Snapchat", "Mastodon", "Bluesky"]
-            self.profile["platforms"] = random.sample(possible, random.randint(1, 4))
+            print(f"{self.texts['random_generating'].format(item='Platforms')}")
+            possible_platforms = [
+                "Twitter", "Facebook", "Instagram", "Reddit", "LinkedIn", "TikTok",
+                "Pinterest", "YouTube", "Discord", "Telegram", "Snapchat", "Mastodon", "Bluesky"
+            ]
+            num_platforms = random.randint(1, 4) # Choose 1 to 4 platforms
+            num_platforms = min(num_platforms, len(possible_platforms)) # Ensure not asking for more than available
+            selected_platforms = random.sample(possible_platforms, num_platforms)
+            self.profile["platforms"] = selected_platforms
             print(f"-> Platforms: {', '.join(self.profile['platforms'])}")
             time.sleep(pause_time)
-
-            # Interests (using hierarchical data)
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Interests"))
+            # Interests (multiple random hierarchical)
+            print(f"{self.texts['random_generating'].format(item='Interests')}")
             selected_interests = []
             if interests_data:
-                 # Try getting 3 distinct random interests for better variety
-                 attempts = 0
-                 while len(selected_interests) < 3 and attempts < 10:
-                     item, _ = get_random_hierarchical_item(interests_data)
-                     if item and item not in selected_interests:
-                         selected_interests.append(item)
-                     attempts += 1
-            self.profile["interests"] = selected_interests[:5] # Ensure max 5, even if loop found fewer
-            print(f"-> Interests: {', '.join(self.profile.get('interests',[]))}")
+                attempts = 0
+                max_interests_to_add = 5
+                max_attempts_per_interest = 15 # Prevent infinite loop if data is sparse
+                while len(selected_interests) < max_interests_to_add and attempts < max_attempts_per_interest * max_interests_to_add:
+                    item, _ = get_random_hierarchical_item(interests_data)
+                    if item and item not in selected_interests:
+                        selected_interests.append(item)
+                    attempts += 1
+            self.profile["interests"] = selected_interests
+            print(f"-> Interests: {', '.join(self.profile['interests']) if self.profile['interests'] else '(None found)'}")
             time.sleep(pause_time)
 
         # --- Level 4: Full ---
         if level_choice >= 4:
-            print("\n--- Adding Final Touches ---")
-
+            print("\n--- Generating Level 4 Details ---")
             # Common Phrases
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Common Phrases"))
+            print(f"{self.texts['random_generating'].format(item='Common Phrases')}")
+            selected_phrases = []
             if phrases_data:
-                self.profile["common_phrases"] = random.sample(phrases_data, min(len(phrases_data), random.randint(1, 3)))
-            else: self.profile["common_phrases"] = []
-            print(f"-> Common Phrases: {len(self.profile.get('common_phrases',[]))} selected")
+                num_phrases = random.randint(1, 3) # Choose 1 to 3 phrases
+                num_phrases = min(num_phrases, len(phrases_data)) # Ensure not asking for more than available
+                selected_phrases = random.sample(phrases_data, num_phrases)
+            self.profile["common_phrases"] = selected_phrases
+            print(f"-> Common Phrases: {len(self.profile['common_phrases'])} added")
             time.sleep(pause_time)
-
-            # Profile Picture (Gender specific)
-            print(self.texts.get("random_generating","Generating {item}...").format(item="Profile Picture"))
-            picture_selected = False
+            # Profile Picture (filtered by gender if possible)
+            print(f"{self.texts['random_generating'].format(item='Profile Picture')}")
+            picture_url = None
+            picture_added = False
             if pictures_data:
-                # Use the correct paths based on randomuser.me URLs
-                gender_path = "/men/" if self.profile["gender"] == "male" else "/women/"
-                gender_pics = [p for p in pictures_data if gender_path in p.lower()]
-                if gender_pics:
-                    self.profile["profile_picture"] = random.choice(gender_pics)
-                    picture_selected = True
-                elif pictures_data: # Fallback to any picture if no gender match
-                    self.profile["profile_picture"] = random.choice(pictures_data)
-                    picture_selected = True
-            print(f"-> Profile Picture Added: {'Yes' if picture_selected else 'No'}")
+                gender_path_part = "/men/" if self.profile.get("gender") == "male" else "/women/"
+                gender_specific_pics = [p for p in pictures_data if gender_path_part in p.lower()]
+                if gender_specific_pics:
+                    picture_url = random.choice(gender_specific_pics)
+                elif pictures_data: # Fallback to any picture if no gender-specific found
+                    picture_url = random.choice(pictures_data)
+
+                if picture_url:
+                    self.profile["profile_picture"] = picture_url
+                    picture_added = True
+            print(f"-> Picture Added: {'Yes' if picture_added else 'No'}")
             time.sleep(pause_time)
 
-            # Optional: Add a basic Biography?
-            # print(self.texts.get("random_generating","Generating {item}...").format(item="Biography"))
-            # self.profile["biography"] = f"A {self.profile['age']}-year-old {self.profile['profession']} from {self.profile['location']} interested in {', '.join(self.profile.get('interests', ['various things']))[:50]}..."
-            # print("-> Basic Biography Added")
-            # time.sleep(pause_time)
-
-
-        # --- Completion ---
-        print(f"\n{self.texts['random_generation_complete']}")
-        input(self.texts["continue_prompt"]) # Pause before showing preview
+        # --- Completion & Save Prompt ---
+        print(f"\n{self.texts['random_generation_complete']}") # CORRECTED: Separated
+        input(self.texts["continue_prompt"])
 
         self.preview_profile() # Show the generated profile
 
-        # --- Ask to Save ---
-        save_choice = get_input(self.texts.get("confirm_save_random", "Save this profile? (y/n): ")).lower()
+        # Ask to save
+        save_choice = get_input(self.texts.get("confirm_save_random", "Save this generated profile? (y/n): ")).lower().strip()
         if save_choice in ["y", "yes"]:
-            clear_screen()
-            default_filename = f"{self.profile.get('first_name', 'random')}_{self.profile.get('last_name', 'profile')}".lower().replace(" ","_")
-            filename_prompt = self.texts["filename_prompt"] + f" (Leave blank for '{default_filename}')"
-            filename = get_input(filename_prompt).strip()
-            if not filename: filename = default_filename
-
-            saved_path = save_profile(self.profile, filename, self.profiles_dir)
-            if saved_path:
-                 print(self.texts["save_success"].format(saved_path))
-                 exported_path = export_profile_to_txt(self.profile, filename, self.exports_dir)
-                 if exported_path: print(self.texts["export_success"].format(exported_path))
-            else: print("Error occurred during saving.")
-            input(self.texts["continue_prompt"])
+            # Call the existing save/export helper method
+             self._save_and_export_profile() # This handles filename prompt, save, export, and pause
         else:
-            print("Profile not saved.")
+            print("Profile not saved.") # CORRECTED: Separated
             input(self.texts["continue_prompt"])
 
 
     def show_program_info(self):
-        """Display program information"""
-        clear_screen()
+        """Display program information."""
+        clear_screen() # CORRECTED: Separated
+        display_ascii_art(self.data_dir)
         print(self.texts["program_info"])
-        input(self.texts["continue_prompt"])
+        input(self.texts["continue_prompt"]) # CORRECTED: Separated
 
-# --- Main Execution ---
+# ==============================================================================
+# Main Execution Block
+# ==============================================================================
 def main():
+    """Main function to run the Sock Spy application."""
+    # Perform environment checks if necessary (e.g., Python version)
+    if sys.version_info < (3, 8): # Example check
+         print("Sock Spy requires Python 3.8 or newer.")
+         sys.exit(1)
+
     app = SockSpy()
-    # app.select_language() # REMOVED THIS LINE
-    app.display_welcome() # Start with welcome screen
-    app.main_menu()       # Proceed to main menu
+    try:
+        app.display_welcome()
+        app.main_menu()
+    except KeyboardInterrupt:
+        clear_screen()
+        display_ascii_art(app.data_dir) # Access data_dir via app instance
+        print("\n\nOperation cancelled by user. Exiting.")
+        sys.exit(0)
+    except Exception as e:
+        # Generic error handler for unexpected issues
+        clear_screen()
+        print("\n--- UNEXPECTED ERROR ---")
+        print(f"An error occurred: {e}")
+        import traceback
+        print("\n--- Traceback ---")
+        traceback.print_exc()
+        print("\n--------------------")
+        print("Please report this issue if it persists.")
+        input("Press Enter to attempt to exit.")
+        sys.exit(1)
+
 
 if __name__ == "__main__":
     main()
