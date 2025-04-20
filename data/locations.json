@@ -1,383 +1,595 @@
 {
   "Africa": {
     "Nigeria": {
-      "Lagos": ["Ikeja", "Victoria Island", "Lekki", "Surulere", "Yaba"],
-      "Abuja": ["Garki", "Wuse", "Maitama", "Gwarinpa", "Utako"]
+      "Lagos State": {
+        "Lagos": ["Ikeja", "Victoria Island", "Lekki", "Surulere", "Yaba"]
+      },
+      "Federal Capital Territory": {
+        "Abuja": ["Garki", "Wuse", "Maitama", "Gwarinpa", "Utako"]
+      }
     },
     "South Africa": {
-      "Johannesburg": ["Sandton", "Soweto", "Rosebank", "Melville", "Maboneng"],
-      "Cape Town": ["Waterfront", "Camps Bay", "Woodstock", "Khayelitsha", "Sea Point"]
+      "Gauteng": {
+        "Johannesburg": ["Sandton", "Soweto", "Rosebank", "Melville", "Maboneng"]
+      },
+      "Western Cape": {
+        "Cape Town": ["Waterfront", "Camps Bay", "Woodstock", "Khayelitsha", "Sea Point"]
+      }
     },
     "Kenya": {
-      "Nairobi": ["Westlands", "Karen", "Eastleigh", "Lang’ata", "Kibera"],
-      "Mombasa": ["Old Town", "Nyali", "Kizingo", "Majengo", "Makupa"]
+      "Nairobi County": {
+        "Nairobi": ["Westlands", "Karen", "Eastleigh", "Lang’ata", "Kibera"]
+      },
+      "Mombasa County": {
+        "Mombasa": ["Old Town", "Nyali", "Kizingo", "Majengo", "Makupa"]
+      }
     },
     "Ethiopia": {
-      "Addis Ababa": ["Bole", "Kirkos", "Arada", "Lideta", "Gulele"],
-      "Gondar": ["Debre Tabor", "Jan Meda", "Azmari Bet", "Shimbre", "Kebele 09"]
+      "Addis Ababa": {
+        "Addis Ababa": ["Bole", "Kirkos", "Arada", "Lideta", "Gulele"]
+      },
+      "Amhara": {
+        "Gondar": ["Debre Tabor", "Jan Meda", "Azmari Bet", "Shimbre", "Kebele 09"]
+      }
     },
     "Ghana": {
-      "Accra": ["Osu", "East Legon", "Labone", "Nungua", "Madina"],
-      "Kumasi": ["Asokwa", "Bantama", "Patasi", "Ayigya", "Amakom"]
+      "Greater Accra Region": {
+        "Accra": ["Osu", "East Legon", "Labone", "Nungua", "Madina"]
+      },
+      "Ashanti Region": {
+        "Kumasi": ["Asokwa", "Bantama", "Patasi", "Ayigya", "Amakom"]
+      }
     },
     "Algeria": {
-      "Algiers": ["Hydra", "El Biar", "Bab El Oued", "Kouba", "Hussein Dey"],
-      "Oran": ["Sidi El Houari", "Es-Sénia", "Hai El Badr", "Mers El Kebir", "Bir El Djir"]
+      "Algiers Province": {
+        "Algiers": ["Hydra", "El Biar", "Bab El Oued", "Kouba", "Hussein Dey"]
+      },
+      "Oran Province": {
+        "Oran": ["Sidi El Houari", "Es-Sénia", "Hai El Badr", "Mers El Kebir", "Bir El Djir"]
+      }
     },
     "Uganda": {
-      "Kampala": ["Makindye", "Nakawa", "Kawempe", "Rubaga", "Central Division"],
-      "Entebbe": ["Katabi", "Nkumba", "Gombe", "Mirembe", "Mihang’o"]
+      "Central Region": {
+        "Kampala": ["Makindye", "Nakawa", "Kawempe", "Rubaga", "Central Division"],
+        "Entebbe": ["Katabi", "Nkumba", "Gombe", "Mirembe", "Mihang’o"]
+      }
     },
     "Tanzania": {
-      "Dar es Salaam": ["Oyster Bay", "Mwenge", "Kariakoo", "Masaki", "Sinza"],
-      "Arusha": ["Sakina", "Daraja Mbili", "Moshono", "Kati", "Olasiti"]
+      "Dar es Salaam Region": {
+        "Dar es Salaam": ["Oyster Bay", "Mwenge", "Kariakoo", "Masaki", "Sinza"]
+      },
+      "Arusha Region": {
+        "Arusha": ["Sakina", "Daraja Mbili", "Moshono", "Kati", "Olasiti"]
+      }
     },
     "Cameroon": {
-      "Douala": ["Bonanjo", "Akwa", "Bonapriso", "Makepe", "Logpom"],
-      "Yaoundé": ["Melen", "Bastos", "Emana", "Nzeng-Ayong", "Mokolo"]
+      "Littoral Region": {
+        "Douala": ["Bonanjo", "Akwa", "Bonapriso", "Makepe", "Logpom"]
+      },
+      "Centre Region": {
+        "Yaoundé": ["Melen", "Bastos", "Emana", "Nzeng-Ayong", "Mokolo"]
+      }
     },
     "Senegal": {
-      "Dakar": ["Plateau", "Medina", "Hann", "Ngor", "Yoff"],
-      "Saint-Louis": ["Gorée", "Lac Rose", "Sor", "Ndar Takh", "Langue de Barbarie"]
-    }
-  },
-  "America": {
-    "California": {
-      "Los Angeles": ["Hollywood", "Venice", "Downtown", "Chinatown", "Westwood"],
-      "San Francisco": ["Mission District", "Chinatown", "Haight-Ashbury", "Castro", "Fisherman’s Wharf"]
+      "Dakar Region": {
+        "Dakar": ["Plateau", "Medina", "Hann", "Ngor", "Yoff"]
+      },
+      "Saint-Louis Region": {
+        "Saint-Louis": ["Gorée", "Lac Rose", "Sor", "Ndar Takh", "Langue de Barbarie"]
+      }
     },
-    "New York": {
-      "New York City": ["Manhattan", "Brooklyn", "Queens", "Harlem", "Chelsea"],
-      "Buffalo": ["Allentown", "Elmwood Village", "North Park", "Parkside", "Black Rock"]
-    },
-    "Texas": {
-      "Houston": ["Midtown", "Montrose", "Downtown", "The Heights", "River Oaks"],
-      "Dallas": ["Deep Ellum", "Uptown", "Downtown", "Oak Lawn", "Bishop Arts District"]
-    },
-    "Florida": {
-      "Miami": ["South Beach", "Wynwood", "Little Havana", "Brickell", "Coconut Grove"],
-      "Orlando": ["Downtown", "Lake Eola Heights", "Winter Park", "College Park", "Dr. Phillips"]
-    },
-    "Illinois": {
-      "Chicago": ["The Loop", "Lincoln Park", "Hyde Park", "Wicker Park", "Gold Coast"],
-      "Springfield": ["Downtown", "Old State Capitol", "Lincoln Home", "Archer Elevator", "East Side"]
-    },
-    "Pennsylvania": {
-      "Philadelphia": ["Center City", "Old City", "Fishtown", "South Philly", "University City"],
-      "Pittsburgh": ["Downtown", "Squirrel Hill", "Oakland", "Shadyside", "North Shore"]
-    },
-    "Ohio": {
-      "Columbus": ["Short North", "German Village", "Downtown", "Clintonville", "Franklinton"],
-      "Cleveland": ["Ohio City", "Tremont", "Shaker Heights", "Downtown", "University Circle"]
-    },
-    "Georgia": {
-      "Atlanta": ["Midtown", "Buckhead", "Downtown", "Old Fourth Ward", "Virginia-Highland"],
-      "Savannah": ["Historic District", "Ardsley Park", "Thomas Square", "Midtown", "Starland"]
-    },
-    "North Carolina": {
-      "Charlotte": ["Uptown", "NoDa", "South End", "Dilworth", "Plaza Midwood"],
-      "Raleigh": ["Downtown", "Glenwood South", "Cameron Village", "North Hills", "Five Points"]
-    },
-    "Michigan": {
-      "Detroit": ["Downtown", "Midtown", "Corktown", "New Center", "Mexicantown"],
-      "Ann Arbor": ["Downtown", "Kerrytown", "Burns Park", "West Side", "Old West Side"]
-    }
-  },
-  "Arabia": {
-    "Saudi Arabia": {
-      "Riyadh": ["Olaya", "Al Malaz", "Al-Batha", "Al Nakheel", "Al Murabba"],
-      "Jeddah": ["Al Hamra", "Al Balad", "Al Rawdah", "Al Basatin", "Ar Rawdah"]
-    },
-    "United Arab Emirates": {
-      "Dubai": ["Deira", "Bur Dubai", "Marina", "Jumeirah", "Al Quoz"],
-      "Abu Dhabi": ["Corniche", "Khalifa City", "Al Maryah Island", "Al Khalidiyah", "Al Bateen"]
-    },
-    "Iraq": {
-      "Baghdad": ["Karrada", "Mansour", "Sadr City", "Green Zone", "Kadhimiya"],
-      "Erbil": ["Ankawa", "Kawarga", "Citadel", "Ainkawa", "Qanat Mosque"]
-    },
-    "Jordan": {
-      "Amman": ["Jabal Amman", "Sweifieh", "Abdoun", "Marka", "Downtown"],
-      "Zarqa": ["Markaz", "Ramtha", "Rusaifa", "Azmi al-Mufti", "Um Uthor"]
-    },
-    "Lebanon": {
-      "Beirut": ["Hamra", "Gemmayze", "Achrafieh", "Verdun", "Ras Beirut"],
-      "Tripoli": ["Bab al-Tabbaneh", "Jabal Mohsen", "Mina", "El Nejmeh", "Qobbeh"]
-    },
-    "Kuwait": {
-      "Kuwait City": ["Sharq", "Salmiya", "Mirqab", "Dasman", "Abdullah Al-Salem"],
-      "Hawalli": ["Jabriya", "Salwa", "Mangaf", "Farwaniya", "Khaitan"]
-    },
-    "Oman": {
-      "Muscat": ["Muttrah", "Qurum", "Ghubrah", "Seeb", "Ruwi"],
-      "Salalah": ["Al-Haffa", "Mirbat", "Thumrait", "Taqah", "Dhofar"]
-    },
-    "Qatar": {
-      "Doha": ["West Bay", "The Pearl", "Al Sadd", "Old Doha", "Al Wakrah"],
-      "Al Rayyan": ["Abu Hamour", "Al Aziziya", "Al Gharrafa", "Al Luqta", "Al Shahaniya"]
-    },
-    "Bahrain": {
-      "Manama": ["Seef", "Juffair", "Fareej", "Bab Al Bahrain", "Hoora"],
-      "Riffa": ["East Riffa", "West Riffa", "Al Budaiya", "Shakhurah", "Jannusan"]
-    },
-    "Yemen": {
-      "Sana’a": ["Old City", "New Residential City", "Kilo 16", "Faj Attan", "Ma’ain"],
-      "Aden": ["Crater", "Khormaksar", "Mualla", "Tawahi", "Al Mansura"]
-    }
-  },
-  "Argentina": {
-    "Buenos Aires Province": {
-      "La Plata": ["Centro", "City Bell", "Ringuelet", "Tolosa", "Altos de San Lorenzo"],
-      "Mar del Plata": ["Centro", "La Perla", "Las Heras", "Balcarce", "Los Troncos"]
-    },
-    "Córdoba": {
-      "Córdoba City": ["Nueva Córdoba", "Alta Córdoba", "Centro", "Argüello", "Guillermo Paez"],
-      "Villa Carlos Paz": ["Centro", "Santa Rita", "San Roque", "Pueblo Nuevo", "Las Moreras"]
-    },
-    "Santa Fe": {
-      "Rosario": ["Centro", "Pichincha", "Echesortu", "Fisherton", "Alberdi"],
-      "Santa Fe City": ["Centro", "Guadalupe", "Mariano Comas", "25 de Mayo", "Barranquitas"]
-    },
-    "Mendoza": {
-      "Mendoza City": ["Godoy Cruz", "Guaymallén", "Luján de Cuyo", "Las Heras", "Palmares"],
-      "San Rafael": ["Buen Orden", "Villa Atuel", "El Sosneado", "Jaime Prats", "Cuadro Nacional"]
-    },
-    "Tucumán": {
-      "San Miguel de Tucumán": ["Centro", "Barrio Sur", "Yerba Buena", "Barrio Norte", "Villa 9 de Julio"],
-      "Tafí Viejo": ["El Molino", "Agua Dulce", "Villa Belgrano", "San Pablo", "Barrio Nuevo"]
-    },
-    "Salta": {
-      "Salta City": ["Balcarce", "Cerro San Bernardo", "9 de Julio", "Alte. Brown", "San Antonio"],
-      "Orán": ["Villa La Merced", "Presidente Castillo", "25 de Mayo", "El Milagro", "Balderrama"]
-    },
-    "Chaco": {
-      "Resistencia": ["Villa Río Negro", "San Miguel", "Parque Urbano", "Santa Inés", "Villa Libertad"],
-      "Sáenz Peña": ["Ceibas", "Batalla 9 de Julio", "San Martín", "Villa Progreso", "La Loma"]
-    },
-    "Corrientes": {
-      "Corrientes City": ["Centro", "Libertad", "Valle", "Berón de Astrada", "Tatacua"],
-      "Goya": ["Centro", "San Isidro", "Ferré", "Gregoria Matorras", "Barrio 4 de Junio"]
-    },
-    "Entre Ríos": {
-      "Paraná": ["Centro", "Bajada Grande", "Londín", "San Martín", "Santa Lucía"],
-      "Concepción del Uruguay": ["Centro", "Villa Zorraquín", "Ferré", "Villa María", "Arroyo Ancho"]
-    },
-    "Misiones": {
-      "Posadas": ["Centro", "Itaembé Miní", "Villa Cabello", "Miguel Lanús", "Itaembé Guazú"],
-      "Oberá": ["Centro", "Villa Crisol", "Sarmiento", "Arturo Illia", "Alem"]
-    }
+     "Morocco": {
+        "Casablanca-Settat": {
+          "Casablanca": ["Ain Diab", "Maarif", "Habous", "Sidi Belyout", "Derb Omar"],
+          "Mohammedia": ["Centre Ville", "Oulad Salah", "Al Fida", "El Maarif", "Bouznika"]
+        },
+        "Rabat-Salé-Kénitra": {
+          "Rabat": ["Agdal", "Hassan", "Souissi", "Yacoub Al Mansour", "Hay Riad"],
+          "Salé": ["Tabriquet", "Bouknadel", "Agdal Salé", "Bougarnine", "Hay Nahda"]
+        },
+        "Marrakech-Safi": {
+          "Marrakech": ["Medina", "Gueliz", "Hivernage", "Palmeraie", "Sidi Youssef Ben Ali"],
+          "Essaouira": ["Medina", "Diabat", "Kasbah", "Bourg", "Haut Parc"]
+        },
+        "Tanger-Tétouan-Al Hoceïma": {
+          "Tangier": ["Medina", "Marshan", "Malabata", "Ibn Battouta", "M’Hamid"],
+          "Tétouan": ["Medina", "Marshan", "Chefchaouen Road", "Mansouria", "Hay El Matar"]
+        },
+        "Fès-Meknès": {
+          "Fès": ["Fès el-Bali", "Fès el-Jdid", "Ville Nouvelle", "Mellah", "Ziat"],
+          "Meknès": ["Medina", "Hri Souani", "Agdal", "Khoukha", "Hay Touha"]
+        },
+        "Souss-Massa": {
+          "Agadir": ["Talborjt", "Founty", "Haut Founty", "Hay Mohammadi", "Anza"],
+          "Taroudant": ["Medina", "Zaouia", "Ibn Youssef", "Hay Al Qods", "El-Mouahidine"]
+        },
+        "Drâa-Tafilalet": {
+          "Ouarzazate": ["Taourirte", "Fint", "Ait Ben Haddou", "Skoura", "Tifoultoute"],
+          "Errachidia": ["Ziz Gorges", "Al Qaria", "Hay Al Amal", "Boumalne", "Skoura Oasis"]
+        },
+        "Béni Mellal-Khénifra": {
+          "Béni Mellal": ["Ain Asserdoun", "Oulad Yaich", "Hay Cano", "Sidi Hallab", "Oulad M’Barec"],
+          "Khénifra": ["Aguelmous", "Agoudim", "Hay El Madina", "Aït Bouguemez", "Tighanimine"]
+        },
+        "Oriental": {
+          "Oujda": ["Saïss", "Beni Znassen", "Madagh", "Hay El Hassani", "Sidi Yahya"],
+          "Nador": ["Zmamra", "Tafoughalt", "Hay El Fath", "Aït Bustan", "Sidi Moussa"]
+        },
+        "Laâyoune-Sakia El Hamra": {
+          "Laâyoune": ["Hay Al Bahja", "Al Massira", "Al Bahia", "Ticola", "Moulay Rachid"],
+          "Boujdour": ["Al Kora", "Al Jabal", "Sidi Ali", "Hay Fifi", "Oued Ed-Dahab"]
+        }
+      }
   },
   "Asia": {
+    "Saudi Arabia": {
+      "Riyadh Province": {
+        "Riyadh": ["Olaya", "Al Malaz", "Al-Batha", "Al Nakheel", "Al Murabba"]
+      },
+      "Mecca Province": {
+        "Jeddah": ["Al Hamra", "Al Balad", "Al Rawdah", "Al Basatin", "Ar Rawdah"]
+      }
+    },
+    "United Arab Emirates": {
+      "Dubai Emirate": {
+        "Dubai": ["Deira", "Bur Dubai", "Marina", "Jumeirah", "Al Quoz"]
+      },
+      "Abu Dhabi Emirate": {
+        "Abu Dhabi": ["Corniche", "Khalifa City", "Al Maryah Island", "Al Khalidiyah", "Al Bateen"]
+      }
+    },
+    "Iraq": {
+      "Baghdad Governorate": {
+        "Baghdad": ["Karrada", "Mansour", "Sadr City", "Green Zone", "Kadhimiya"]
+      },
+       "Erbil Governorate": {
+        "Erbil": ["Ankawa", "Kawarga", "Citadel", "Ainkawa", "Qanat Mosque"]
+      }
+    },
+    "Jordan": {
+      "Amman Governorate": {
+        "Amman": ["Jabal Amman", "Sweifieh", "Abdoun", "Marka", "Downtown"]
+      },
+      "Zarqa Governorate": {
+        "Zarqa": ["Markaz", "Ramtha", "Rusaifa", "Azmi al-Mufti", "Um Uthor"]
+      }
+    },
+    "Lebanon": {
+      "Beirut Governorate": {
+        "Beirut": ["Hamra", "Gemmayze", "Achrafieh", "Verdun", "Ras Beirut"]
+      },
+      "North Governorate": {
+        "Tripoli": ["Bab al-Tabbaneh", "Jabal Mohsen", "Mina", "El Nejmeh", "Qobbeh"]
+      }
+    },
+    "Kuwait": {
+      "Capital Governorate": {
+        "Kuwait City": ["Sharq", "Salmiya", "Mirqab", "Dasman", "Abdullah Al-Salem"]
+      },
+      "Hawalli Governorate": {
+        "Hawalli": ["Jabriya", "Salwa", "Mangaf", "Farwaniya", "Khaitan"]
+      }
+    },
+    "Oman": {
+      "Muscat Governorate": {
+        "Muscat": ["Muttrah", "Qurum", "Ghubrah", "Seeb", "Ruwi"]
+      },
+      "Dhofar Governorate": {
+        "Salalah": ["Al-Haffa", "Mirbat", "Thumrait", "Taqah", "Dhofar"]
+      }
+    },
+    "Qatar": {
+      "Doha Municipality": {
+        "Doha": ["West Bay", "The Pearl", "Al Sadd", "Old Doha", "Al Wakrah"]
+      },
+      "Al Rayyan Municipality": {
+        "Al Rayyan": ["Abu Hamour", "Al Aziziya", "Al Gharrafa", "Al Luqta", "Al Shahaniya"]
+      }
+    },
+    "Bahrain": {
+      "Capital Governorate": {
+        "Manama": ["Seef", "Juffair", "Fareej", "Bab Al Bahrain", "Hoora"]
+      },
+      "Northern Governorate": {
+        "Riffa": ["East Riffa", "West Riffa", "Al Budaiya", "Shakhurah", "Jannusan"]
+      }
+    },
+    "Yemen": {
+      "Sana'a Governorate": {
+        "Sana’a": ["Old City", "New Residential City", "Kilo 16", "Faj Attan", "Ma’ain"]
+      },
+       "Aden Governorate": {
+        "Aden": ["Crater", "Khormaksar", "Mualla", "Tawahi", "Al Mansura"]
+      }
+    },
     "Indonesia": {
-      "Jakarta": ["Menteng", "Kemang", "Kelapa Gading", "Senayan", "Tanah Abang"],
-      "Surabaya": ["Wonokromo", "Gubeng", "Tegalsari", "Wonocolo", "Keputih"]
+      "DKI Jakarta": {
+        "Jakarta": ["Menteng", "Kemang", "Kelapa Gading", "Senayan", "Tanah Abang"]
+      },
+      "East Java": {
+        "Surabaya": ["Wonokromo", "Gubeng", "Tegalsari", "Wonocolo", "Keputih"]
+      }
     },
     "Bangladesh": {
-      "Dhaka": ["Gulshan", "Banani", "Dhanmondi", "Mirpur", "Uttara"],
-      "Chittagong": ["Agrabad", "Panchlaish", "Patenga", "Halishahar", "Pahartali"]
+      "Dhaka Division": {
+        "Dhaka": ["Gulshan", "Banani", "Dhanmondi", "Mirpur", "Uttara"]
+      },
+      "Chittagong Division": {
+        "Chittagong": ["Agrabad", "Panchlaish", "Patenga", "Halishahar", "Pahartali"]
+      }
     },
     "Philippines": {
-      "Manila": ["Intramuros", "Binondo", "Ermita", "Malate", "Paco"],
-      "Cebu City": ["Mango", "Lahug", "Mambaling", "Guadalupe", "Talamban"]
+      "Metro Manila": {
+        "Manila": ["Intramuros", "Binondo", "Ermita", "Malate", "Paco"]
+      },
+      "Central Visayas": {
+        "Cebu City": ["Mango", "Lahug", "Mambaling", "Guadalupe", "Talamban"]
+      }
     },
     "Vietnam": {
-      "Hanoi": ["Hoàn Kiếm", "Ba Đình", "Đống Đa", "Tây Hồ", "Long Biên"],
-      "Ho Chi Minh City": ["District 1", "District 3", "District 5", "Bình Thạnh", "Phú Nhuận"]
+      "Hanoi": {
+        "Hanoi City": ["Hoàn Kiếm", "Ba Đình", "Đống Đa", "Tây Hồ", "Long Biên"]
+      },
+      "Ho Chi Minh City": {
+        "Ho Chi Minh City": ["District 1", "District 3", "District 5", "Bình Thạnh", "Phú Nhuận"]
+      }
     },
     "Iran": {
-      "Tehran": ["Tajrish", "Saadat Abad", "Shahrak-e Gharb", "Valiasr", "Poonak"],
-      "Mashhad": ["Vakilabad", "Torqabeh", "Marzdaran", "Saei", "Hezar Jarib"]
+      "Tehran Province": {
+        "Tehran": ["Tajrish", "Saadat Abad", "Shahrak-e Gharb", "Valiasr", "Poonak"]
+      },
+      "Razavi Khorasan Province": {
+        "Mashhad": ["Vakilabad", "Torqabeh", "Marzdaran", "Saei", "Hezar Jarib"]
+      }
     },
     "Thailand": {
-      "Bangkok": ["Sukhumvit", "Silom", "Khao San", "Chatuchak", "Bangrak"],
-      "Chiang Mai": ["Old City", "Nimmanhaemin", "Santitham", "Chang Phueak", "Tha Phae"]
+      "Bangkok": {
+        "Bangkok City": ["Sukhumvit", "Silom", "Khao San", "Chatuchak", "Bangrak"]
+      },
+      "Chiang Mai Province": {
+        "Chiang Mai": ["Old City", "Nimmanhaemin", "Santitham", "Chang Phueak", "Tha Phae"]
+      }
     },
     "Malaysia": {
-      "Kuala Lumpur": ["Bukit Bintang", "Chinatown", "KLCC", "Bangsar", "Bukit Jalil"],
-      "George Town": ["Lebuh Chulia", "Chinese Clan Houses", "Armenian Street", "Gurney Drive", "Tanjung Tokong"]
+      "Federal Territory of Kuala Lumpur": {
+        "Kuala Lumpur": ["Bukit Bintang", "Chinatown", "KLCC", "Bangsar", "Bukit Jalil"]
+      },
+      "Penang": {
+        "George Town": ["Lebuh Chulia", "Chinese Clan Houses", "Armenian Street", "Gurney Drive", "Tanjung Tokong"]
+      }
     },
     "Singapore": {
-      "Central Region": ["Orchard", "Marina Bay", "Bugis", "Little India", "Clarke Quay"],
-      "East Region": ["Tampines", "Pasir Ris", "Changi", "Bedok", "Marine Parade"]
+      "Central Region": {
+        "Singapore City": ["Orchard", "Marina Bay", "Bugis", "Little India", "Clarke Quay"]
+      },
+      "East Region": {
+        "Tampines": ["Tampines", "Pasir Ris", "Changi", "Bedok", "Marine Parade"]
+      }
     },
     "Sri Lanka": {
-      "Colombo": ["Fort", "Pettah", "Kollupitiya", "Borella", "Wellawatte"],
-      "Kandy": ["Kandy Town", "Peradeniya", "Katugastota", "Mahaiyawa", "Hantana"]
+      "Western Province": {
+        "Colombo": ["Fort", "Pettah", "Kollupitiya", "Borella", "Wellawatte"]
+      },
+      "Central Province": {
+        "Kandy": ["Kandy Town", "Peradeniya", "Katugastota", "Mahaiyawa", "Hantana"]
+      }
     },
     "Nepal": {
-      "Kathmandu": ["Thamel", "Basantapur", "Lazimpat", "Patan Dhoka", "Swayambhu"],
-      "Pokhara": ["Lakeside", "Mahendrapul", "Baidam", "Chipledhunga", "Gharipatan"]
-    }
-  },
-    "Belgium": {
-      "Antwerp Province": {
-        "Antwerp": ["Centrum", "Zurenborg", "Borgerhout", "Berchem", "Deurne"],
-        "Mechelen": ["Botermarkt", "Nekkerspoel", "Bruul", "Leuvense Poort", "Heffen"]
+      "Bagmati Province": {
+        "Kathmandu": ["Thamel", "Basantapur", "Lazimpat", "Patan Dhoka", "Swayambhu"]
       },
-      "Flemish Brabant": {
-        "Leuven": ["Groot Begijnhof", "Universiteitswijk", "Heverlee", "Kessel-Lo", "Sint-Maartenstal"],
-        "Halle": ["Centrum", "Lembeek", "Buizingen", "Kesterenwijk", "Gleïsche"]
-      },
-      "Walloon Brabant": {
-        "Wavre": ["Centre", "Bierges", "Limal", "Mont-Saint-Guibert", "Chastre"],
-        "Nivelles": ["Centre", "Thines", "Baulers", "Bornival", "Monstreux"]
-      },
-      "Liège Province": {
-        "Liège": ["Centre", "Cointe", "Amercoeur", "Grivegnée", "Sainte-Walburge"],
-        "Verviers": ["Centre", "Ensival", "Andrimont", "Heusy", "Stembert"]
-      },
-      "Hainaut": {
-        "Mons": ["Centre", "Jemappes", "Cuesmes", "Saint-Symphorien", "Ghlin"],
-        "Charleroi": ["Ville-haute", "Marchienne", "Gilly", "Monceau", "Jumet"]
-      },
-      "Namur": {
-        "Namur": ["Centre", "Jambes", "Saint-Servais", "Belgrade", "Wépion"],
-        "Dinant": ["Centre", "Belvédère", "Les Rivages", "Anseremme", "Bouvignes"]
-      },
-      "Luxembourg (province)": {
-        "Arlon": ["Centre", "Clair-Vaux", "Saint-Martin", "Fouches", "Autelbas"],
-        "Bastogne": ["Centre", "Noville", "Les Hayons", "Wardin", "Tournay"]
-      },
-      "East Flanders": {
-        "Ghent": ["Patershol", "Rabot", "Sint-Pietersnieuwstraat", "Ledeberg", "Wondelgem"],
-        "Aalst": ["Centrum", "Hofstade", "Moorsel", "Denderwindeke", "Erembodegem"]
-      },
-      "West Flanders": {
-        "Bruges": ["Burg", "Sint-Anna", "Assebroek", "Sint-Michiels", "Lissewege"],
-        "Kortrijk": ["Centrum", "Bissegem", "Heule", "Marke", "Kooigem"]
-      },
-      "Brussels-Capital Region": {
-        "Brussels": ["City Centre", "Ixelles", "Saint-Gilles", "Anderlecht", "Uccle"],
-        "Schaerbeek": ["Helmet", "Josaphat", "Pavillon", "Verboeckhoven", "Madou"]
+      "Gandaki Province": {
+        "Pokhara": ["Lakeside", "Mahendrapul", "Baidam", "Chipledhunga", "Gharipatan"]
       }
     },
     "China": {
-      "Beijing": {
-        "Chaoyang": ["CBD", "Sanlitun", "Guomao", "Tuanjiehu", "Jianwai"],
-        "Haidian": ["Wudaokou", "Zhongguancun", "Shangdi", "Tsinghua Univ.", "Haidian Centre"]
+      "Beijing Municipality": {
+        "Beijing": ["Chaoyang", "Haidian", "Sanlitun", "Wudaokou", "Zhongguancun"]
       },
-      "Shanghai": {
-        "Huangpu": ["The Bund", "People’s Square", "Nanjing Rd E", "Xintiandi", "South Bund"],
-        "Jing’an": ["Nanjing Rd W", "Wuding Rd", "Gubei", "Jingan Temple", "Huashan Rd"]
+      "Shanghai Municipality": {
+        "Shanghai": ["Huangpu", "Jing’an", "The Bund", "Nanjing Rd", "Xintiandi"]
       },
-      "Guangdong": {
+      "Guangdong Province": {
         "Guangzhou": ["Tianhe", "Yuexiu", "Haizhu", "Liwan", "Panyu"],
         "Shenzhen": ["Nanshan", "Futian", "Luohu", "Yantian", "Bao'an"]
       },
-      "Jiangsu": {
+      "Jiangsu Province": {
         "Nanjing": ["Xuanwu", "Gulou", "Qinhuai", "Jianye", "Jiangning"],
         "Suzhou": ["Gusu", "Wuzhong", "Xiangcheng", "Industrial Park", "Wujiang"]
       },
-      "Shandong": {
+      "Shandong Province": {
         "Qingdao": ["Shinan", "Shibei", "Laoshan", "Chengyang", "Licang"],
         "Jinan": ["Lixia", "Tianqiao", "Shizhong", "Huaiyin", "Changqing"]
       },
-      "Zhejiang": {
+      "Zhejiang Province": {
         "Hangzhou": ["Xihu", "Binjiang", "Shangcheng", "Gongshu", "Xiaoshan"],
         "Ningbo": ["Haishu", "Jiangbei", "Beilun", "Zhenhai", "Yinzhou"]
       },
-      "Henan": {
+      "Henan Province": {
         "Zhengzhou": ["Jinshui", "Erqi", "Zhongyuan", "Guancheng", "Huiji"],
         "Luoyang": ["Jianxi", "Xigong", "Laocheng", "Chanhe Hui", "Yanshi"]
       },
-      "Hebei": {
+      "Hebei Province": {
         "Shijiazhuang": ["Chang'an", "Yuhua", "Qiaoxi", "Qiaodong", "Xinhua"],
         "Tangshan": ["Lunan", "Lubei", "Kaiping", "Fengrun", "Guye"]
       },
-      "Sichuan": {
+      "Sichuan Province": {
         "Chengdu": ["Jinjiang", "Qingyang", "Wuhou", "Chenghua", "Jinniu"],
         "Zigong": ["Ziliujing", "Gongjing", "Da'an", "Yantan", "Fushun"]
       },
-      "Yunnan": {
+      "Yunnan Province": {
         "Kunming": ["Wuhua", "Panlong", "Guandu", "Xishan", "Chenggong"],
         "Dali": ["Dali Town", "Xiaguan", "Yangbi", "Binchuan", "Eryuan"]
       }
     },
-    "Colombia": {
-      "Antioquia": {
-        "Medellín": ["El Poblado", "Laureles", "Belén", "Castilla", "Robledo"],
-        "Envigado": ["La Sebastiana", "El Salado", "La Magnolia", "Alejandría", "Las Antillas"]
+    "India": {
+      "Uttar Pradesh": {
+        "Lucknow": ["Hazratganj", "Aminabad", "Gomti Nagar", "Aliganj", "Nishatganj"],
+        "Kanpur": ["Swaroop Nagar", "Civil Lines", "Kalyanpur", "Kidwai Nagar", "Govind Nagar"]
       },
-      "Cundinamarca": {
-        "Bogotá": ["La Candelaria", "Chapinero", "Usaquén", "Teusaquillo", "Suba"],
-        "Soacha": ["Ciudad Verde", "La María", "General Santander", "San Mateíto", "Viña"]
+      "Maharashtra": {
+        "Mumbai": ["Colaba", "Bandra", "Andheri", "Juhu", "Dadar"],
+        "Pune": ["Shivajinagar", "Koregaon Park", "Pimpri-Chinchwad", "Kothrud", "Baner"]
       },
-      "Valle del Cauca": {
-        "Cali": ["San Antonio", "Granada", "El Peñón", "Ciudad Jardín", "Pampalinda"],
-        "Buenaventura": ["Centro", "El Calipso", "San Cipriano", "La Independencia", "La Playa"]
+      "Tamil Nadu": {
+        "Chennai": ["T. Nagar", "Adyar", "Anna Nagar", "Mylapore", "Besant Nagar"],
+        "Coimbatore": ["RS Puram", "Gandhipuram", "Peelamedu", "Singanallur", "Saibaba Colony"]
       },
-      "Atlántico": {
-        "Barranquilla": ["El Prado", "Riomar", "Norte", "Centro", "San Vicente"],
-        "Soledad": ["Simón Bolívar", "La Arboleda", "El Chircal", "Ciudadela 20 de Julio", "La Manga"]
+      "Karnataka": {
+        "Bengaluru": ["MG Road", "Koramangala", "Indiranagar", "Whitefield", "Jayanagar"],
+        "Mysuru": ["Chamrajpura", "Lakshmipuram", "Gokulam", "Jayalakshmipuram", "Vidyaranyapuram"]
       },
-      "Bolívar": {
-        "Cartagena": ["Getsemaní", "Bocagrande", "Manga", "Castillo Grande", "Centro Histórico"],
-        "Magangué": ["Centro", "Río", "Gaitán", "Candelaria", "El Progreso"]
+      "Gujarat": {
+        "Ahmedabad": ["Maninagar", "Vastrapur", "Satellite", "Naranpura", "SG Highway"],
+        "Surat": ["Adajan", "Varachha", "Udhna", "Athwa", "Piplod"]
       },
-      "Santander": {
-        "Bucaramanga": ["Cabecera", "Cañaveral", "Morrorico", "San Francisco", "Centro"],
-        "Floridablanca": ["Girardot", "El Solar", "Catama", "Canoas", "Los Almendros"]
+      "West Bengal": {
+        "Kolkata": ["Park Street", "Salt Lake", "Tollygunge", "Dum Dum", "New Town"],
+        "Howrah": ["Dasnagar", "Shibpur", "Howrah Maidan", "Bally", "Jagacha"]
       },
-      "Nariño": {
-        "Pasto": ["Centro", "Chicalá", "Obonuco", "La Victoria", "San Juan"],
-        "Tumaco": ["Centro", "Santa Bárbara", "San Andrés", "La Playita", "El Progreso"]
+      "Rajasthan": {
+        "Jaipur": ["Bani Park", "C-Scheme", "Mansarovar", "Vaishali Nagar", "Rambagh"],
+        "Udaipur": ["City Palace", "Hiran Magri", "Fateh Sagar", "Delwara", "Udiapole"]
       },
-      "Tolima": {
-        "Ibagué": ["Centro", "La Pola", "Ricaurte", "Piedras", "San Simón"],
-        "Espinal": ["Alto de Nieva", "El Corazón", "Colver", "Ricaurte", "La Samaria"]
+      "Bihar": {
+        "Patna": ["Boring Road", "Kankarbagh", "Bailey Road", "Rajendra Nagar", "Mithapur"],
+        "Gaya": ["Bodhgaya", "Uday Park", "Chandmari", "Kolhua", "Nishikant"]
       },
-      "Boyacá": {
-        "Tunja": ["Centro", "Belén", "Boyacá", "Rosales", "Cuenca"],
-        "Sogamoso": ["Centro", "Betania", "Los Andes", "La Libertad", "La Palma"]
+      "Madhya Pradesh": {
+        "Bhopal": ["Habibganj", "Arera Colony", "MP Nagar", "Old Bhopal", "Shahpura"],
+        "Indore": ["Vijay Nagar", "Palasia", "Rajwada", "Rau", "Devguradia"]
       },
-      "Caldas": {
-        "Manizales": ["Centro", "Chipre", "Palermo", "La Estancia", "Campohermoso"],
-        "Villamaría": ["Centro", "Santágueda", "La Cueva", "Alto Bonito", "Peñas Blancas"]
+      "Kerala": {
+        "Thiruvananthapuram": ["Kowdiar", "Kazhakkoottam", "Vazhuthacaud", "Kumarapuram", "Pappanamcode"],
+        "Kochi": ["Fort Kochi", "Ernakulam", "Marine Drive", "Edappally", "Vyttila"]
       }
     },
-    "Ecuador": {
-      "Pichincha": {
-        "Quito": ["Centro Histórico", "La Mariscal", "La Floresta", "El Batán", "Chillogallo"],
-        "Cayambe": ["Centro", "Electrificación", "San Pedro", "Llanganates", "La Dolorosa"]
+    "Japan": {
+      "Tokyo Prefecture": {
+        "Tokyo": ["Shinjuku", "Shibuya", "Ginza", "Asakusa", "Roppongi"],
+        "Hachiōji": ["Hachiōji Station", "Yokoyama", "Kamiyugi", "Minamino", "Takakura"]
       },
-      "Guayas": {
-        "Guayaquil": ["Urdesa", "Las Peñas", "Guasmo", "Bastión Popular", "La Alborada"],
-        "Durán": ["Ciudadela Modelo", "Córdova", "La Cúrcuma", "Luz de América", "Florida"]
+      "Osaka Prefecture": {
+        "Osaka": ["Namba", "Umeda", "Shinsekai", "Tennoji", "Kitahama"],
+        "Sakai": ["Sakai-ku", "Naka-ku", "Higashi-ku", "Minami-ku", "Kita-ku"]
       },
-      "Azuay": {
-        "Cuenca": ["Centro", "El Batán", "El Vecino", "Yanuncay", "El Valle"],
-        "Gualaceo": ["Centro", "San Ramón", "Naranjal", "Santa Lucía", "9 de Octubre"]
+      "Kanagawa Prefecture": {
+        "Yokohama": ["Minato Mirai", "Chinatown", "Kannai", "Naka Ward", "Totsuka"],
+        "Kawasaki": ["Saiwai-ku", "Kawasaki-ku", "Nakahara", "Tama-ku", "Takatsu-ku"]
       },
-      "Manabí": {
-        "Manta": ["Tarqui", "Miraflores", "La Floresta", "San Mateo", "El Castillo"],
-        "Portoviejo": ["Centro", "Las Vegas", "Rocafuerte", "El Arenal", "Santa Ana"]
+      "Aichi Prefecture": {
+        "Nagoya": ["Sakae", "Nishiki", "Kanayama", "Atsuta", "Tsurumai"],
+        "Toyota": ["Uenodai", "Ogura", "Koromo", "Yoshioka", "Shimoyama"]
       },
-      "El Oro": {
-        "Machala": ["Centro", "Puerto Bolívar", "Barrio Bolívar", "El Retorno", "La Nazarenita"],
-        "Pasaje": ["Centro", "2 de Abril", "La Unión", "La Victoria", "Las Calcetas"]
+      "Saitama Prefecture": {
+        "Saitama": ["Omiya", "Urawa", "Chuo-ku", "Iwatsuki-ku", "Minuma-ku"],
+        "Kawaguchi": ["Kawaguchi-ku", "Nishi-ku", "Minami-ku", "East-ku", "Midori-ku"]
       },
-      "Loja": {
-        "Loja": ["Centro", "San Sebastián", "La Tebaida", "La Pradera", "El Valle"],
-        "Catamayo": ["Centro", "El Rosario", "Buenos Aires", "Luis Cordero", "La Victoria"]
+      "Chiba Prefecture": {
+        "Chiba": ["Chuo-ku", "Mihama-ku", "Inage-ku", "Wakaba-ku", "Hanamigawa-ku"],
+        "Funabashi": ["Nishi-Funabashi", "Minami Funabashi", "Funabashi-shi", "Myoden", "Takaya"]
       },
-      "Imbabura": {
-        "Ibarra": ["Centro", "San Francisco", "Toctiuco", "Los Cuatro Mangas", "El Sagrario"],
-        "Otavalo": ["Centro", "San Luis", "La Columna", "Santa Rosa", "El Porvenir"]
+      "Hokkaido Prefecture": {
+        "Sapporo": ["Chuo-ku", "Kita-ku", "Nishi-ku", "Higashi-ku", "Minami-ku"],
+        "Hakodate": ["Motomachi", "Goryokaku", "Yunokawa", "Bay Area", "Hiyoshicho"]
       },
-      "Tungurahua": {
-        "Ambato": ["Centro", "San Andrés", "La Merced", "El Villonaco", "La Veintimilla"],
-        "Pelileo": ["Centro", "Santo Domingo", "La Patria", "La Independencia", "La Arminda"]
+      "Fukuoka Prefecture": {
+        "Fukuoka": ["Hakata", "Tenjin", "Nakasu", "Chuo-ku", "Sawara-ku"],
+        "Kitakyushu": ["Kokura-Kita", "Kokura-Minami", "Yahata-Higashi", "Yahata-Nishi", "Kurosaki"]
       },
-      "Santo Domingo de los Tsáchilas": {
-        "Santo Domingo": ["Centro", "La Y", "El Dorado", "Obraje", "Luz de América"],
-        "La Concordia": ["Centro", "Luis Tello", "3 de Mayo", "Luis Vargas Torres", "Comercial"]
+      "Hyōgo Prefecture": {
+        "Kobe": ["Chuo-ku", "Suma-ku", "Nada-ku", "Tarumi-ku", "Kobe Station Area"],
+        "Himeji": ["Himeji Castle Area", "Kamigori", "Tennoji", "Nishi-ku", "Shikama"]
       },
-      "Esmeraldas": {
-        "Esmeraldas": ["Centro", "Siete de Julio", "San Mateo", "La Tola", "Eloy Alfaro"],
-        "Quinindé": ["Centro", "La Unión", "San Rafael", "Delta Amchay", "Los Bancos"]
+      "Kyoto Prefecture": {
+        "Kyoto": ["Gion", "Arashiyama", "Fushimi", "Higashiyama", "Kamigyo-ku"],
+        "Uji": ["Uji Central", "Ujigami", "Obaku", "Byodoin", "Mimurodo"]
       }
     },
-      "United Kingdom": {
+    "South Korea": {
+      "Seoul Capital Area": {
+        "Seoul": ["Jongno-gu", "Gangnam-gu", "Insadong", "Apgujeong", "Myeongdong"]
+      },
+      "Busan Metropolitan City": {
+        "Busan": ["Haeundae-gu", "Suyeong-gu", "Haeundae Beach", "Gwangan", "Centum City"]
+      },
+      "Incheon Metropolitan City": {
+        "Incheon": ["Namdong-gu", "Yeonsu-gu", "Songdo", "Cheongna", "Yeoungjong"]
+      },
+      "Daegu Metropolitan City": {
+        "Daegu": ["Suseong-gu", "Dalseo-gu", "Beomeo", "Duryu", "Daemyeong"]
+      },
+      "Daejeon Metropolitan City": {
+        "Daejeon": ["Yuseong-gu", "Seo-gu", "Oncheon-dong", "Dunsan-dong", "Gung-dong"]
+      },
+      "Gwangju Metropolitan City": {
+        "Gwangju": ["Buk-gu", "Nam-gu", "Dongmyeong-dong", "Sangmu-dong", "Hwajeong-dong"]
+      },
+      "Ulsan Metropolitan City": {
+        "Ulsan": ["Nam-gu", "Buk-gu", "Taehwagang", "Mugeo-dong", "Hakseong"]
+      },
+      "Gyeonggi Province": {
+        "Suwon": ["Hwaseong", "Jangan", "Gwonseon", "Yeongtong", "Paldal"],
+        "Seongnam": ["Bundang", "Jungwon", "Sujeong", "Seohyeon", "Wolmyeong"]
+      },
+      "Gangwon Province": {
+        "Chuncheon": ["Myeongdong", "Bujeong-dong", "Jorye-dong", "Byeokrang-dong", "Sunjin-dong"],
+        "Gangneung": ["Jumunjin", "Anmok", "Gyo-dong", "Bahngudae", "Songjeong"]
+      },
+      "North Gyeongsang Province": {
+        "Pohang": ["Buk-gu", "Nam-gu", "Chilho", "Moonhwa-dong", "Hampyeong"],
+        "Gyeongju": ["Hwangnam-dong", "Yangdong Village", "Wolseong-dong", "Seongdong-dong", "Bomun-dong"]
+      }
+    },
+    "Pakistan": {
+      "Sindh": {
+        "Karachi": ["Clifton", "Gulshan-e-Iqbal", "Nazimabad", "Lyari", "Korangi"],
+         "Hyderabad": ["Latifabad", "Qasimabad", "Gorakh Hill Road", "Phuleli", "Masoom Shah"]
+      },
+      "Punjab": {
+        "Lahore": ["Gulberg", "DHA", "Model Town", "Johar Town", "Walled City"],
+        "Faisalabad": ["Madina Town", "People's Colony", "Ghulam Muhammad Abad", "Jaranwala Road", "Samanabad"],
+        "Rawalpindi": ["Saddar", "Bahria Town", "Chaklala", "Murree Road", "DHA"],
+        "Multan": ["Cantt", "Boson Road", "Sher Shah Road", "Guru Mandir", "Shah Rukn-e-Alam"],
+        "Gujranwala": ["Waris Pura", "Daska Road", "Satellite Town", "Cantt", "Sialkot Road"],
+         "Sialkot": ["Jassar Town", "BECHS", "Wazirabad Road", "Maryam Abad", "Kashmir Road"]
+      },
+      "Khyber Pakhtunkhwa": {
+        "Peshawar": ["Hayatabad", "University Town", "Chowk Yadgar", "Sector F-7", "Gulbahar"]
+      },
+      "Balochistan": {
+        "Quetta": ["Mezan Town", "Sariab Road", "Urdu Road", "Jinnah Road", "Satellite Town"]
+      }
+    },
+    "Turkey": {
+      "Istanbul Province": {
+        "Istanbul": ["Kadıköy", "Beşiktaş", "Fatih", "Üsküdar", "Beyoğlu"],
+        "Şile": ["Ağva", "Yeniköy", "Ahmetli", "Çavuş", "Kabakoz"]
+      },
+      "Ankara Province": {
+        "Ankara": ["Çankaya", "Keçiören", "Mamak", "Altındağ", "Etimesgut"],
+        "Polatlı": ["Cumhuriyet", "Şentepe", "Fatih", "Gazi", "Zafer"]
+      },
+      "Izmir Province": {
+        "Izmir": ["Konak", "Karşıyaka", "Bornova", "Buca", "Güzelyalı"],
+        "Çeşme": ["Alaçatı", "Dalyan", "Ilıca", "Ovacık", "Reisdere"]
+      },
+      "Bursa Province": {
+        "Bursa": ["Osmangazi", "Yıldırım", "Nilüfer", "Mudanya", "Görükle"],
+        "İnegöl": ["Hamidiye", "Yenice", "Kemalpaşa", "Mesudiye", "Osmaniye"]
+      },
+      "Antalya Province": {
+        "Antalya": ["Muratpaşa", "Konyaaltı", "Kepez", "Lara", "Aksu"],
+        "Alanya": ["Mahmutlar", "Oba", "Kestel", "Tosmur", "Avsallar"]
+      },
+      "Konya Province": {
+        "Konya": ["Selçuklu", "Meram", "Karatay", "Beyhekim", "Bosna Hersek"],
+        "Ereğli": ["Hacımemiş", "Belkaya", "Yenibağlar", "Ziya Gökalp", "Borlu"]
+      },
+      "Gaziantep Province": {
+        "Gaziantep": ["Şahinbey", "Şehitkamil", "Karlıtepe", "İbrahimli", "Aydınlar"],
+        "Nizip": ["Mimar Sinan", "Atatürk", "Yukarıbayır", "Fatih", "Belkıs"]
+      },
+      "Mersin Province": {
+        "Mersin": ["Yenişehir", "Mezitli", "Akdeniz", "Toroslar", "Çiftlikköy"],
+        "Tarsus": ["Kırklarsırtı", "Anıt", "Yeni Ömerli", "Yeşilyurt", "Şehitkerim"]
+      },
+      "Adana Province": {
+        "Adana": ["Seyhan", "Çukurova", "Yüreğir", "Sarıçam", "Karaisalı"],
+        "Ceyhan": ["İstiklal", "Gaziosmanpaşa", "Namık Kemal", "Emek", "Büyükkırım"]
+      },
+      "Samsun Province": {
+        "Samsun": ["Atakum", "İlkadım", "Canik", "Tekkeköy", "Baruthane"],
+        "Bafra": ["Altınkaya", "Gaziosmanpaşa", "Emirefendi", "Kavakpınar", "Kemalpaşa"]
+      }
+    }
+  },
+  "Europe": {
+    "Germany": {
+      "Bavaria": {
+        "Munich": ["Altstadt", "Schwabing", "Maxvorstadt", "Glockenbachviertel", "Haidhausen"],
+        "Nuremberg": ["Altstadt", "Gostenhof", "St. Johannis", "Wöhrd", "Südstadt"]
+      },
+      "North Rhine-Westphalia": {
+        "Cologne": ["Altstadt", "Ehrenfeld", "Nippes", "Lindenthal", "Deutz"],
+        "Düsseldorf": ["Altstadt", "Pempelfort", "Flingern", "Oberkassel", "Bilk"]
+      },
+      "Baden-Württemberg": {
+        "Stuttgart": ["Mitte", "Vaihingen", "Bad Cannstatt", "Süd", "Feuerbach"],
+        "Mannheim": ["Quadrate", "Feudenheim", "Neckarstadt-West", "Schwetzingerstadt", "Käfertal"]
+      },
+      "Hesse": {
+        "Frankfurt": ["Innenstadt", "Sachsenhausen", "Bornheim", "Bockenheim", "Westend"],
+        "Wiesbaden": ["Mitte", "Biebrich", "Sonnenberg", "Schierstein", "Nordost"]
+      },
+      "Saxony": {
+        "Dresden": ["Altstadt", "Neustadt", "Pieschen", "Loschwitz", "Plauen"],
+        "Leipzig": ["Zentrum", "Plagwitz", "Connewitz", "Gohlis", "Schönefeld"]
+      },
+      "Lower Saxony": {
+        "Hanover": ["Mitte", "List", "Linden", "Hainholz", "Südstadt"],
+        "Braunschweig": ["Altstadt", "Weststadt", "Lehndorf", "Südliches Ringgebiet", "Rautheim"]
+      },
+      "Rhineland-Palatinate": {
+        "Mainz": ["Altstadt", "Weisenau", "Mombach", "Bretzenheim", "Gonsenheim"],
+        "Koblenz": ["Altstadt", "Evangelisches Viertel", "Karthause", "Horchheim", "Goldgrube"]
+      },
+      "Berlin": {
+        "Berlin City State": ["Mitte", "Kreuzberg", "Charlottenburg", "Prenzlauer Berg", "Neukölln"]
+      },
+      "Schleswig-Holstein": {
+        "Kiel": ["Altstadt", "Gaarden", "Holtenau", "Düsternbrook", "Mettenhof"],
+        "Lübeck": ["Altstadt", "St. Lorenz", "St. Jürgen", "St. Gertrud", "Moisling"]
+      },
+      "Brandenburg": {
+        "Potsdam": ["Nauener Vorstadt", "Babelsberg", "Friedrichswerder", "Bornstedt", "Eiche"],
+        "Cottbus": ["Meerbeck", "Sachsendorf", "Spremberger Vorstadt", "Sandow", "Westvorstadt"]
+      }
+    },
+    "France": {
+      "Île-de-France": {
+        "Paris": ["Le Marais", "Montmartre", "Saint-Germain-des-Prés", "Latin Quarter", "La Défense"],
+        "Versailles": ["Notre-Dame", "Saint-Louis", "Montreuil", "Château", "Jean-Rond"]
+      },
+      "Provence-Alpes-Côte d'Azur": {
+        "Marseille": ["Le Panier", "La Joliette", "Le Vieux-Port", "Endoume", "Les Camoins"],
+        "Nice": ["Old Town", "Promenade des Anglais", "Cimiez", "Vieux-Nice", "Port"]
+      },
+      "Auvergne-Rhône-Alpes": {
+        "Lyon": ["Presqu'île", "Vieux Lyon", "La Croix-Rousse", "Confluence", "Part-Dieu"],
+        "Grenoble": ["Île Verte", "Centre-ville", "Antonnière", "Teisseire", "Berriat"]
+      },
+      "Nouvelle-Aquitaine": {
+        "Bordeaux": ["La Bastide", "Chartrons", "Saint-Pierre", "Saint-Michel", "La Victoire"],
+        "La Rochelle": ["Vieux Port", "Saint-Nicolas", "Grosse-Horloge", "Les Minimes", "Parc Charruyer"]
+      },
+      "Occitanie": {
+        "Toulouse": ["Capitole", "Carmes", "Saint-Cyprien", "Rangueil", "Minimes"],
+        "Montpellier": ["Antigone", "Écusson", "Beaux-Arts", "Hôpitaux-Facultés", "Port-Marianne"]
+      },
+      "Hauts-de-France": {
+        "Lille": ["Vieux-Lille", "Wazemmes", "Euralille", "Moulins", "Saint-Maurice Pellevoisin"],
+        "Amiens": ["Saint-Leu", "Henriville", "Saint-Maurice", "Saint-Acheul", "Clichy"]
+      },
+      "Grand Est": {
+        "Strasbourg": ["La Petite France", "Neudorf", "Krutenau", "Esplanade", "Meinau"],
+        "Reims": ["Centre-Ville", "Cernay", "Montagne de Reims", "Thillois", "Bezannes"]
+      },
+      "Bretagne": {
+        "Rennes": ["Le Bourg-l'Évêque", "Saint-Hélier", "Thabor", "Bréquigny", "Cleunay"],
+        "Brest": ["Recouvrance", "Strasbourg", "Quatre-Moulins", "Saint-Martin", "Keredern"]
+      },
+      "Normandie": {
+        "Rouen": ["Vieux-Marché", "Saint-Sever", "Jardin des Plantes", "Malaquais", "Mont-Gargan"],
+        "Caen": ["Centre-Ville", "Vaucelles", "Saint-Jean", "Presqu'île", "Bucaille"]
+      },
+      "Bourgogne-Franche-Comté": {
+        "Dijon": ["Centre-Ville", "Saint-Étienne", "Les Grésilles", "Port du Canal", "Toison d’Or"],
+        "Besançon": ["Battant", "Chaprais", "Planoise", "Saint-Claude", "Tilleroyes"]
+      }
+    },
+    "United Kingdom": {
+      "England": {
         "Greater London": {
           "London": ["Camden Town", "Greenwich", "Hackney", "Kensington", "Chelsea"],
           "Croydon": ["Central Croydon", "South Croydon", "West Croydon", "Norwood", "Addiscombe"]
@@ -407,743 +619,635 @@
           "Portsmouth": ["Old Portsmouth", "Fratton", "Southsea", "Copnor", "Cosham"]
         },
         "Kent": {
-          "Canterbury": ["St Dunstan's", "Wincheap", "Sturry", "Blean", "Northgate"],
-          "Maidstone": ["Penenden Heath", "Bearsted", "Marden", "Hollingbourne", "Staplehurst"]
+          "Canterbury": ["St Dunstan's", "Wincheap", "Sturry", "Blean", "Northgate"],
+          "Maidstone": ["Penenden Heath", "Bearsted", "Marden", "Hollingbourne", "Staplehurst"]
         },
         "Surrey": {
           "Guildford": ["Park Barn", "Merrow", "High Street", "Bellfields", "Stoke"],
-          "Woking": ["Goldsworth Park", "Sheerwater", "Maybury", "Kingfield", "St Johns"]
+          "Woking": ["Goldsworth Park", "Sheerwater", "Maybury", "Kingfield", "St Johns"]
         },
         "West Sussex": {
           "Chichester": ["Northgate", "East Broyle", "Southgate", "The Hornet", "Fisher"],
           "Worthing": ["Montague", "Goring-by-Sea", "Durrington", "West Worthing", "Central"]
         }
+      }
+    },
+    "Italy": {
+      "Lombardy": {
+        "Milan": ["Brera", "Navigli", "Porta Romana", "Isola", "Porta Venezia"],
+        "Bergamo": ["Città Alta", "Borgo San Leonardo", "Celadina", "Redona", "Longuelo"]
       },
-      "Europe": {
-        "Germany": {
-          "Berlin": ["Mitte", "Kreuzberg", "Charlottenburg", "Prenzlauer Berg", "Neukölln"],
-          "Munich": ["Altstadt", "Schwabing", "Maxvorstadt", "Glockenbachviertel", "Haidhausen"]
-        },
-        "France": {
-          "Paris": ["Le Marais", "Montmartre", "Saint-Germain-des-Prés", "Latin Quarter", "La Défense"],
-          "Lyon": ["Presqu'île", "La Croix-Rousse", "Vieux Lyon", "Confluence", "Part-Dieu"]
-        },
-        "United Kingdom": {
-          "London": ["Camden", "Greenwich", "Hackney", "Shoreditch", "Soho"],
-          "Manchester": ["Northern Quarter", "Ancoats", "Didsbury", "Salford Quays", "Chorlton"]
-        },
-        "Italy": {
-          "Rome": ["Trastevere", "Monti", "Prati", "Testaccio", "Campo de' Fiori"],
-          "Milan": ["Navigli", "Brera", "Porta Romana", "Isola", "Porta Venezia"]
-        },
-        "Spain": {
-          "Madrid": ["Sol", "Malasaña", "Chueca", "La Latina", "Salamanca"],
-          "Barcelona": ["Gothic Quarter", "Gràcia", "Eixample", "El Born", "Barceloneta"]
-        },
-        "Netherlands": {
-          "Amsterdam": ["Jordaan", "De Pijp", "Centrum", "Oost", "Zuid"],
-          "Rotterdam": ["Kop van Zuid", "Delfshaven", "Charlois", "Oude Haven", "Kralingen"]
-        },
-        "Belgium": {
-          "Brussels": ["Marolles", "Sablon", "EU Quarter", "Ixelles", "Saint-Gilles"],
-          "Antwerp": ["Centrum", "Zurenborg", "Het Zuid", "Linkeroever", "Eilandje"]
-        },
-        "Sweden": {
-          "Stockholm": ["Gamla Stan", "Södermalm", "Östermalm", "Norrmalm", "Kungsholmen"],
-          "Gothenburg": ["Haga", "Majorna", "Linnéstaden", "Örgryte", "Eriksberg"]
-        },
-        "Poland": {
-          "Warsaw": ["Śródmieście", "Praga", "Wola", "Mokotów", "Żoliborz"],
-          "Kraków": ["Old Town", "Kazimierz", "Podgórze", "Nowa Huta", "Zwierzyniec"]
-        },
-        "Greece": {
-          "Athens": ["Plaka", "Monastiraki", "Kolonaki", "Exarcheia", "Psiri"],
-          "Thessaloniki": ["Ladadika", "Ano Poli", "Bit Bazaar", "Aristotelous", "Valaoritou"]
-        }
+      "Lazio": {
+        "Rome": ["Trastevere", "Monti", "Prati", "Testaccio", "Ostiense"],
+        "Latina": ["Latina Scalo", "Borgo Piave", "Q4", "Q5", "City Centre"]
       },
-      "France": {
-        "Île-de-France": {
-          "Paris": ["Le Marais", "Montmartre", "Saint-Germain-des-Prés", "Latin Quarter", "La Défense"],
-          "Versailles": ["Notre-Dame", "Saint-Louis", "Montreuil", "Château", "Jean-Rond"]
-        },
-        "Provence-Alpes-Côte d'Azur": {
-          "Marseille": ["Le Panier", "La Joliette", "Le Vieux-Port", "Endoume", "Les Camoins"],
-          "Nice": ["Old Town", "Promenade des Anglais", "Cimiez", "Vieux-Nice", "Port"]
-        },
-        "Auvergne-Rhône-Alpes": {
-          "Lyon": ["Presqu'île", "Vieux Lyon", "La Croix-Rousse", "Confluence", "Part-Dieu"],
-          "Grenoble": ["Île Verte", "Centre-ville", "Antonnière", "Teisseire", "Berriat"]
-        },
-        "Nouvelle-Aquitaine": {
-          "Bordeaux": ["La Bastide", "Chartrons", "Saint-Pierre", "Saint-Michel", "La Victoire"],
-          "La Rochelle": ["Vieux Port", "Saint-Nicolas", "Grosse-Horloge", "Les Minimes", "Parc Charruyer"]
-        },
-        "Occitanie": {
-          "Toulouse": ["Capitole", "Carmes", "Saint-Cyprien", "Rangueil", "Minimes"],
-          "Montpellier": ["Antigone", "Écusson", "Beaux-Arts", "Hôpitaux-Facultés", "Port-Marianne"]
-        },
-        "Hauts-de-France": {
-          "Lille": ["Vieux-Lille", "Wazemmes", "Euralille", "Moulins", "Saint-Maurice Pellevoisin"],
-          "Amiens": ["Saint-Leu", "Henriville", "Saint-Maurice", "Saint-Acheul", "Clichy"]
-        },
-        "Grand Est": {
-          "Strasbourg": ["La Petite France", "Neudorf", "Krutenau", "Esplanade", "Meinau"],
-          "Reims": ["Centre-Ville", "Cernay", "Montagne de Reims", "Thillois", "Bezannes"]
-        },
-        "Bretagne": {
-          "Rennes": ["Le Bourg-l'Évêque", "Saint-Hélier", "Thabor", "Bréquigny", "Cleunay"],
-          "Brest": ["Recouvrance", "Strasbourg", "Quatre-Moulins", "Saint-Martin", "Keredern"]
-        },
-        "Normandie": {
-          "Rouen": ["Vieux-Marché", "Saint-Sever", "Jardin des Plantes", "Malaquais", "Mont-Gargan"],
-          "Caen": ["Centre-Ville", "Vaucelles", "Saint-Jean", "Presqu'île", "Bucaille"]
-        },
-        "Bourgogne-Franche-Comté": {
-          "Dijon": ["Centre-Ville", "Saint-Étienne", "Les Grésilles", "Port du Canal", "Toison d’Or"],
-          "Besançon": ["Battant", "Chaprais", "Planoise", "Saint-Claude", "Tilleroyes"]
-        }
+      "Campania": {
+        "Naples": ["Spaccanapoli", "Vomero", "Chiaia", "Posillipo", "Sanità"],
+        "Salerno": ["Centro", "Torrione", "Pastena", "Mercatello", "Matierno"]
       },
-      "Germany": {
-        "Bavaria": {
-          "Munich": ["Altstadt", "Schwabing", "Maxvorstadt", "Glockenbachviertel", "Haidhausen"],
-          "Nuremberg": ["Altstadt", "Gostenhof", "St. Johannis", "Wöhrd", "Südstadt"]
-        },
-        "North Rhine-Westphalia": {
-          "Cologne": ["Altstadt", "Ehrenfeld", "Nippes", "Lindenthal", "Deutz"],
-          "Düsseldorf": ["Altstadt", "Pempelfort", "Flingern", "Oberkassel", "Bilk"]
-        },
-        "Baden-Württemberg": {
-          "Stuttgart": ["Mitte", "Vaihingen", "Bad Cannstatt", "Süd", "Feuerbach"],
-          "Mannheim": ["Quadrate", "Feudenheim", "Neckarstadt-West", "Schwetzingerstadt", "Käfertal"]
-        },
-        "Hesse": {
-          "Frankfurt": ["Innenstadt", "Sachsenhausen", "Bornheim", "Bockenheim", "Westend"],
-          "Wiesbaden": ["Mitte", "Biebrich", "Sonnenberg", "Schierstein", "Nordost"]
-        },
-        "Saxony": {
-          "Dresden": ["Altstadt", "Neustadt", "Pieschen", "Loschwitz", "Plauen"],
-          "Leipzig": ["Zentrum", "Plagwitz", "Connewitz", "Gohlis", "Schönefeld"]
-        },
-        "Lower Saxony": {
-          "Hanover": ["Mitte", "List", "Linden", "Hainholz", "Südstadt"],
-          "Braunschweig": ["Altstadt", "Weststadt", "Lehndorf", "Südliches Ringgebiet", "Rautheim"]
-        },
-        "Rhineland-Palatinate": {
-          "Mainz": ["Altstadt", "Weisenau", "Mombach", "Bretzenheim", "Gonsenheim"],
-          "Koblenz": ["Altstadt", "Evangelisches Viertel", "Karthause", "Horchheim", "Goldgrube"]
-        },
-        "Berlin": {
-          "Mitte": ["Brunnenviertel", "Hansaviertel", "Fisher Island", "Wedding", "Tiergarten"],
-          "Kreuzberg": ["SO36", "Mitte", "Graefekiez", "Yorckstraße", "Oranienstraße"]
-        },
-        "Schleswig-Holstein": {
-          "Kiel": ["Altstadt", "Gaarden", "Holtenau", "Düsternbrook", "Mettenhof"],
-          "Lübeck": ["Altstadt", "St. Lorenz", "St. Jürgen", "St. Gertrud", "Moisling"]
-        },
-        "Brandenburg": {
-          "Potsdam": ["Nauener Vorstadt", "Babelsberg", "Friedrichswerder", "Bornstedt", "Eiche"],
-          "Cottbus": ["Meerbeck", "Sachsendorf", "Spremberger Vorstadt", "Sandow", "Westvorstadt"]
-        }
+      "Sicily": {
+        "Palermo": ["Kalsa", "Vucciria", "Albergheria", "Politeama", "Mondello"],
+        "Catania": ["Stesicoro", "Borgo", "Ognina", "Picanello", "San Giovanni"]
       },
-        "India": {
-          "Uttar Pradesh": {
-            "Lucknow": ["Hazratganj", "Aminabad", "Gomti Nagar", "Aliganj", "Nishatganj"],
-            "Kanpur": ["Swaroop Nagar", "Civil Lines", "Kalyanpur", "Kidwai Nagar", "Govind Nagar"]
-          },
-          "Maharashtra": {
-            "Mumbai": ["Colaba", "Bandra", "Andheri", "Juhu", "Dadar"],
-            "Pune": ["Shivajinagar", "Koregaon Park", "Pimpri-Chinchwad", "Kothrud", "Baner"]
-          },
-          "Tamil Nadu": {
-            "Chennai": ["T. Nagar", "Adyar", "Anna Nagar", "Mylapore", "Besant Nagar"],
-            "Coimbatore": ["RS Puram", "Gandhipuram", "Peelamedu", "Singanallur", "Saibaba Colony"]
-          },
-          "Karnataka": {
-            "Bengaluru": ["MG Road", "Koramangala", "Indiranagar", "Whitefield", "Jayanagar"],
-            "Mysuru": ["Chamrajpura", "Lakshmipuram", "Gokulam", "Jayalakshmipuram", "Vidyaranyapuram"]
-          },
-          "Gujarat": {
-            "Ahmedabad": ["Maninagar", "Vastrapur", "Satellite", "Naranpura", "SG Highway"],
-            "Surat": ["Adajan", "Varachha", "Udhna", "Athwa", "Piplod"]
-          },
-          "West Bengal": {
-            "Kolkata": ["Park Street", "Salt Lake", "Tollygunge", "Dum Dum", "New Town"],
-            "Howrah": ["Dasnagar", "Shibpur", "Howrah Maidan", "Bally", "Jagacha"]
-          },
-          "Rajasthan": {
-            "Jaipur": ["Bani Park", "C-Scheme", "Mansarovar", "Vaishali Nagar", "Rambagh"],
-            "Udaipur": ["City Palace", "Hiran Magri", "Fateh Sagar", "Delwara", "Udiapole"]
-          },
-          "Bihar": {
-            "Patna": ["Boring Road", "Kankarbagh", "Bailey Road", "Rajendra Nagar", "Mithapur"],
-            "Gaya": ["Bodhgaya", "Uday Park", "Chandmari", "Kolhua", "Nishikant"]
-          },
-          "Madhya Pradesh": {
-            "Bhopal": ["Habibganj", "Arera Colony", "MP Nagar", "Old Bhopal", "Shahpura"],
-            "Indore": ["Vijay Nagar", "Palasia", "Rajwada", "Rau", "Devguradia"]
-          },
-          "Kerala": {
-            "Thiruvananthapuram": ["Kowdiar", "Kazhakkoottam", "Vazhuthacaud", "Kumarapuram", "Pappanamcode"],
-            "Kochi": ["Fort Kochi", "Ernakulam", "Marine Drive", "Edappally", "Vyttila"]
-          }
-        },
-        "Italy": {
-          "Lombardy": {
-            "Milan": ["Brera", "Navigli", "Porta Romana", "Isola", "Porta Venezia"],
-            "Bergamo": ["Città Alta", "Borgo San Leonardo", "Celadina", "Redona", "Longuelo"]
-          },
-          "Lazio": {
-            "Rome": ["Trastevere", "Monti", "Prati", "Testaccio", "Ostiense"],
-            "Latina": ["Latina Scalo", "Borgo Piave", "Q4", "Q5", "City Centre"]
-          },
-          "Campania": {
-            "Naples": ["Spaccanapoli", "Vomero", "Chiaia", "Posillipo", "Sanità"],
-            "Salerno": ["Centro", "Torrione", "Pastena", "Mercatello", "Matierno"]
-          },
-          "Sicily": {
-            "Palermo": ["Kalsa", "Vucciria", "Albergheria", "Politeama", "Mondello"],
-            "Catania": ["Stesicoro", "Borgo", "Ognina", "Picanello", "San Giovanni"]
-          },
-          "Veneto": {
-            "Venice": ["San Marco", "Cannaregio", "Dorsoduro", "Castello", "Giudecca"],
-            "Verona": ["Centro Storico", "Borgo Trento", "Borgo Roma", "San Zeno", "Montorio"]
-          },
-          "Piedmont": {
-            "Turin": ["Lingotto", "San Salvario", "Centro", "Vanchiglia", "Barriera di Milano"],
-            "Novara": ["Centro", "Sant'Agabio", "Sacro Cuore", "Lumellogno", "Bicocca"]
-          },
-          "Emilia-Romagna": {
-            "Bologna": ["Centro Storico", "Santo Stefano", "Saragozza", "Porto", "Navile"],
-            "Modena": ["Centro", "Crocetta", "Buon Pastore", "San Faustino", "Villaggio Artigiano"]
-          },
-          "Tuscany": {
-            "Florence": ["Santa Croce", "Oltrarno", "San Marco", "Duomo", "Santissima Annunziata"],
-            "Pisa": ["Centro", "San Francesco", "Barbaricina", "Porta a Lucca", "Santa Maria"]
-          },
-          "Apulia": {
-            "Bari": ["Murat", "Libertà", "Madonnella", "Santo Spirito", "Poggiofranco"],
-            "Lecce": ["Centro Storico", "Borgo Pace", "Rudiae", "San Lazzaro", "Mazzini"]
-          },
-          "Calabria": {
-            "Reggio Calabria": ["Centro Storico", "Pellaro", "Gallico", "Catona", "Archi"],
-            "Catanzaro": ["Centro", "Germaneto", "Lido", "Santa Maria", "Sala"]
-          }
-        },
-        "Japan": {
-          "Tokyo Prefecture": {
-            "Tokyo": ["Shinjuku", "Shibuya", "Ginza", "Asakusa", "Roppongi"],
-            "Hachiōji": ["Hachiōji Station", "Yokoyama", "Kamiyugi", "Minamino", "Takakura"]
-          },
-          "Osaka Prefecture": {
-            "Osaka": ["Namba", "Umeda", "Shinsekai", "Tennoji", "Kitahama"],
-            "Sakai": ["Sakai-ku", "Naka-ku", "Higashi-ku", "Minami-ku", "Kita-ku"]
-          },
-          "Kanagawa Prefecture": {
-            "Yokohama": ["Minato Mirai", "Chinatown", "Kannai", "Naka Ward", "Totsuka"],
-            "Kawasaki": ["Saiwai-ku", "Kawasaki-ku", "Nakahara", "Tama-ku", "Takatsu-ku"]
-          },
-          "Aichi Prefecture": {
-            "Nagoya": ["Sakae", "Nishiki", "Kanayama", "Atsuta", "Tsurumai"],
-            "Toyota": ["Uenodai", "Ogura", "Koromo", "Yoshioka", "Shimoyama"]
-          },
-          "Saitama Prefecture": {
-            "Saitama": ["Omiya", "Urawa", "Chuo-ku", "Iwatsuki-ku", "Minuma-ku"],
-            "Kawaguchi": ["Kawaguchi-ku", "Nishi-ku", "Minami-ku", "East-ku", "Midori-ku"]
-          },
-          "Chiba Prefecture": {
-            "Chiba": ["Chuo-ku", "Mihama-ku", "Inage-ku", "Wakaba-ku", "Hanamigawa-ku"],
-            "Funabashi": ["Nishi-Funabashi", "Minami Funabashi", "Funabashi-shi", "Myoden", "Takaya"]
-          },
-          "Hokkaido Prefecture": {
-            "Sapporo": ["Chuo-ku", "Kita-ku", "Nishi-ku", "Higashi-ku", "Minami-ku"],
-            "Hakodate": ["Motomachi", "Goryokaku", "Yunokawa", "Bay Area", "Hiyoshicho"]
-          },
-          "Fukuoka Prefecture": {
-            "Fukuoka": ["Hakata", "Tenjin", "Nakasu", "Chuo-ku", "Sawara-ku"],
-            "Kitakyushu": ["Kokura-Kita", "Kokura-Minami", "Yahata-Higashi", "Yahata-Nishi", "Kurosaki"]
-          },
-          "Hyōgo Prefecture": {
-            "Kobe": ["Chuo-ku", "Suma-ku", "Nada-ku", "Tarumi-ku", "Kobe Station Area"],
-            "Himeji": ["Himeji Castle Area", "Kamigori", "Tennoji", "Nishi-ku", "Shikama"]
-          },
-          "Kyoto Prefecture": {
-            "Kyoto": ["Gion", "Arashiyama", "Fushimi", "Higashiyama", "Kamigyo-ku"],
-            "Uji": ["Uji Central", "Ujigami", "Obaku", "Byodoin", "Mimurodo"]
-          }
-        },
-        "South Korea": {
-          "Seoul": {
-            "Jongno-gu": ["Insadong", "Gwanghwamun", "Samcheong-dong", "Cheongjin-dong", "Pil-dong"],
-            "Gangnam-gu": ["Apgujeong", "Cheongdam", "Yeoksam", "Samsung-dong", "Sinsa"]
-          },
-          "Busan": {
-            "Haeundae-gu": ["Haeundae Beach", "Jung-dong", "U-dong", "Centum City", "Marine City"],
-            "Suyeong-gu": ["Gwangan", "Mangmi", "Namcheon", "Suyeong", "Millak"]
-          },
-          "Incheon": {
-            "Namdong-gu": ["Nonhyeon", "Ganseok", "Todong", "Hogupo", "Bucheon"],
-            "Yeonsu-gu": ["Songdo", "Cheongra", "Yeoungjong", "Janghwa", "Majeui"]
-          },
-          "Daegu": {
-            "Suseong-gu": ["Beomeo", "Hoedong", "Daemyeong", "Duryu", "Daesin"],
-            "Dalseo-gu": ["Dalseong-dong", "Heunghae-dong", "Imjuk-dong", "Songhyeon-dong", "Wollo-dong"]
-          },
-          "Daejeon": {
-            "Yuseong-gu": ["Oncheon-dong", "Gung-dong", "Hanbat-daero", "Daejeon-ro", "Nokdong"],
-            "Seo-gu": ["Dunsan-dong", "Tanbang-dong", "Oryong-dong", "Jang-dong", "Wolchul-dong"]
-          },
-          "Gwangju": {
-            "Buk-gu": ["Dongmyeong-dong", "Hwalin-dong", "Yang-dong", "Bukseo-dong", "Pungam-dong"],
-            "Nam-gu": ["Hwajeong-dong", "Sangmu-dong", "Yangrim-dong", "Uncheon-dong", "Daehyeon-dong"]
-          },
-          "Ulsan": {
-            "Nam-gu": ["Taehwagang", "Hakseong", "Mugeo-dong", "Dowon-dong", "Duwang-dong"],
-            "Buk-gu": ["Hwajeon-dong", "Ok-dong", "Yeompo-dong", "Changma-dong", "Seongnam-dong"]
-          },
-          "Gyeonggi Province": {
-            "Suwon": ["Hwaseong", "Jangan", "Gwonseon", "Yeongtong", "Paldal"],
-            "Seongnam": ["Bundang", "Jungwon", "Sujeong", "Seohyeon", "Wolmyeong"]
-          },
-          "Gangwon Province": {
-            "Chuncheon": ["Myeongdong", "Bujeong-dong", "Jorye-dong", "Byeokrang-dong", "Sunjin-dong"],
-            "Gangneung": ["Jumunjin", "Anmok", "Gyo-dong", "Bahngudae", "Songjeong"]
-          },
-          "North Gyeongsang Province": {
-            "Pohang": ["Buk-gu", "Nam-gu", "Chilho", "Moonhwa-dong", "Hampyeong"],
-            "Gyeongju": ["Hwangnam-dong", "Yangdong Village", "Wolseong-dong", "Seongdong-dong", "Bomun-dong"]
-          }
-        },
-          "Morocco": {
-            "Casablanca-Settat": {
-              "Casablanca": ["Ain Diab", "Maarif", "Habous", "Sidi Belyout", "Derb Omar"],
-              "Mohammedia": ["Centre Ville", "Oulad Salah", "Al Fida", "El Maarif", "Bouznika"]
-            },
-            "Rabat-Salé-Kénitra": {
-              "Rabat": ["Agdal", "Hassan", "Souissi", "Yacoub Al Mansour", "Hay Riad"],
-              "Salé": ["Tabriquet", "Bouknadel", "Agdal Salé", "Bougarnine", "Hay Nahda"]
-            },
-            "Marrakech-Safi": {
-              "Marrakech": ["Medina", "Gueliz", "Hivernage", "Palmeraie", "Sidi Youssef Ben Ali"],
-              "Essaouira": ["Medina", "Diabat", "Kasbah", "Bourg", "Haut Parc"]
-            },
-            "Tanger-Tétouan-Al Hoceïma": {
-              "Tangier": ["Medina", "Marshan", "Malabata", "Ibn Battouta", "M’Hamid"],
-              "Tétouan": ["Medina", "Marshan", "Chefchaouen Road", "Mansouria", "Hay El Matar"]
-            },
-            "Fès-Meknès": {
-              "Fès": ["Fès el-Bali", "Fès el-Jdid", "Ville Nouvelle", "Mellah", "Ziat"],
-              "Meknès": ["Medina", "Hri Souani", "Agdal", "Khoukha", "Hay Touha"]
-            },
-            "Souss-Massa": {
-              "Agadir": ["Talborjt", "Founty", "Haut Founty", "Hay Mohammadi", "Anza"],
-              "Taroudant": ["Medina", "Zaouia", "Ibn Youssef", "Hay Al Qods", "El-Mouahidine"]
-            },
-            "Drâa-Tafilalet": {
-              "Ouarzazate": ["Taourirte", "Fint", "Ait Ben Haddou", "Skoura", "Tifoultoute"],
-              "Errachidia": ["Ziz Gorges", "Al Qaria", "Hay Al Amal", "Boumalne", "Skoura Oasis"]
-            },
-            "Béni Mellal-Khénifra": {
-              "Béni Mellal": ["Ain Asserdoun", "Oulad Yaich", "Hay Cano", "Sidi Hallab", "Oulad M’Barec"],
-              "Khénifra": ["Aguelmous", "Agoudim", "Hay El Madina", "Aït Bouguemez", "Tighanimine"]
-            },
-            "Oriental": {
-              "Oujda": ["Saïss", "Beni Znassen", "Madagh", "Hay El Hassani", "Sidi Yahya"],
-              "Nador": ["Zmamra", "Tafoughalt", "Hay El Fath", "Aït Bustan", "Sidi Moussa"]
-            },
-            "Laâyoune-Sakia El Hamra": {
-              "Laâyoune": ["Hay Al Bahja", "Al Massira", "Al Bahia", "Ticola", "Moulay Rachid"],
-              "Boujdour": ["Al Kora", "Al Jabal", "Sidi Ali", "Hay Fifi", "Oued Ed-Dahab"]
-            }
-          },
-          "Netherlands": {
-            "North Holland": {
-              "Amsterdam": ["Jordaan", "De Pijp", "Centrum", "Oost", "Zuid"],
-              "Haarlem": ["Groot Heiligland", "Houtplein", "De Olmen", "Koningsplein", "Schalkwijk"]
-            },
-            "South Holland": {
-              "Rotterdam": ["Kop van Zuid", "Delfshaven", "Charlois", "Oude Haven", "Kralingen"],
-              "The Hague": ["Binnenhof", "Scheveningen", "Benoordenhout", "Transvaal", "Oude Centrum"]
-            },
-            "Utrecht": {
-              "Utrecht": ["Binnenstad", "Oog in Al", "Leidsche Rijn", "Overvecht", "Wittevrouwen"],
-              "Amersfoort": ["Lage Erf", "Krommestraat", "Stadsschouwburg", "Het Rietveld", "Schothorst"]
-            },
-            "Gelderland": {
-              "Arnhem": ["Centrum", "Kronenburg", "Sonsbeek", "Velperweg", "Malburgen"],
-              "Nijmegen": ["Stadtcentrum", "Haaswijk", "Dukenburg", "Lindenholt", "Neerbosch-Oost"]
-            },
-            "North Brabant": {
-              "Eindhoven": ["Strijp", "Woensel", "Gestel", "Centrum", "Stratum"],
-              "’s-Hertogenbosch": ["Centrum", "Oosterplas", "Kruisstraat", "Empel", "Orthen"]
-            },
-            "Overijssel": {
-              "Zwolle": ["Diezerpoorten", "Spoolde", "Assendorp", "Kamperpoort", "Holtenbroek"],
-              "Enschede": ["Roombeek", "Glanerbrug", "Stadsveld", "Wesselerbrink", "Lonneker"]
-            },
-            "Friesland": {
-              "Leeuwarden": ["Binnenstad", "Wilhelminapark", "Tweebaksmarkt", "Achter de Hoven", "Camminghaburen"],
-              "Sneek": ["Noordstalling", "Oudestraat", "Welgelegen", "Loevestein", "Stationsweg"]
-            },
-            "Groningen": {
-              "Groningen": ["Noorderplantsoen", "Oosterpoort", "Nieuwe Ebbingestraat", "Vinkhuizen", "Paddepoel"],
-              "Delfzijl": ["Blikslotermeer", "Tuikwerd", "Vennenwijk", "Mercuriuswijk", "Woldhoek"]
-            },
-            "Drenthe": {
-              "Assen": ["Centrum", "Koopmansplein", "Peelo", "Zuidwolde", "Marsdijk"],
-              "Emmen": ["Centrummatik", "Rietlanden", "Emmerhout", "Bargeres", "Zuidbarge"]
-            },
-            "Flevoland": {
-              "Lelystad": ["Centrale Buurt", "Batavia Stad", "Polder", "Landerijen", "Middengebied"],
-              "Almere": ["Stad", "Haven", "Poort", "Oostvaarders", "Noordoost"]
-            }
-          },
-          "Pakistan": {
-            "Karachi": ["Clifton", "Gulshan-e-Iqbal", "Nazimabad", "Lyari", "Korangi"],
-            "Lahore": ["Gulberg", "DHA", "Model Town", "Johar Town", "Walled City"],
-            "Faisalabad": ["Madina Town", "People's Colony", "Ghulam Muhammad Abad", "Jaranwala Road", "Samanabad"],
-            "Rawalpindi": [" Saddar", "Bahria Town", "Chaklala", "Murree Road", "DHA"],
-            "Peshawar": ["Hayatabad", "University Town", "Chowk Yadgar", "Sector F-7", "Gulbahar"],
-            "Multan": ["Cantt", "Boson Road", "Sher Shah Road", "Guru Mandir", "Shah Rukn-e-Alam"],
-            "Hyderabad": ["Latifabad", "Qasimabad", "Gorakh Hill Road", "Phuleli", "Masoom Shah"],
-            "Gujranwala": ["Waris Pura", "Daska Road", "Satellite Town", "Cantt", "Sialkot Road"],
-            "Quetta": ["Mezan Town", "Sariab Road", "Urdu Road", "Jinnah Road", "Satellite Town"],
-            "Sialkot": ["Jassar Town", "BECHS", "Wazirabad Road", "Maryam Abad", "Kashmir Road"]
-          },
-          "Perú": {
-            "Lima Region": {
-              "Lima": ["Miraflores", "San Isidro", "Barranco", "Surco", "Callao"],
-              "Huaral": ["Centro", "Pueblo Nuevo", "Chancay", "Paramonga", "Morrope"]
-            },
-            "Arequipa Region": {
-              "Arequipa": ["Cayma", "Yanahuara", "Cercado", "Selva Alegre", "José Luis Bustamante y Rivero"],
-              "Mollendo": ["Centro", "La Capilla", "La Punta", "Daniel Hoyle", "Quinta Lala"]
-            },
-            "Cusco Region": {
-              "Cusco": ["San Blas", "Wanchaq", "Centro", "San Sebastián", "Tambomachay"],
-              "Urubamba": ["Centro", "Yucay", "Ollantaytambo", "Chinchero", "Calca"]
-            },
-            "La Libertad Region": {
-              "Trujillo": ["El Porvenir", "Víctor Larco Herrera", "Centro", "La Esperanza", "Florencia de Mora"],
-              "Chepén": ["Centro", "Pacanga", "Guadalupito", "Manantial", "Machu Picchu"]
-            },
-            "Piura Region": {
-              "Piura": ["Carmen de la Legua", "Las Lomas", "Cercado", "Buenos Aires", "El Chipe"],
-              "Sullana": ["Miguel Checa", "La Victoria", "Parcoy", "Bellavista", "Querecotillo"]
-            },
-            "Junín Region": {
-              "Huancayo": ["El Tambo", "Quiullin", "Chupaca", "Sapallanga", "Cochas"],
-              "Tarma": ["Centro", "Huasahuasi", "La Unión", "Palca", "Acobamba"]
-            },
-            "Puno Region": {
-              "Puno": ["Juliaca", "Ilave", "Pomata", "Maure", "Capachica"],
-              "Juliaca": ["Miraflores", "Cuyo Cuyo", "San Román", "San Miguel", "San Antonio"]
-            },
-            "Cajamarca Region": {
-              "Cajamarca": ["Baños del Inca", "Centro", "San Juan", "San Nicolás", "Centro Poblado"],
-              "Jaén": ["Bellavista", "Las Delicias", "San Felipe", "Porcón", "Pomahuaca"]
-            },
-            "Loreto Region": {
-              "Iquitos": ["Belén", "San Juan", "Pizarro", "Cahuide", "Santa Clara"],
-              "Nauta": ["Centro", "San Pablo", "Santa Clara", "Madre de Dios", "Paraná"]
-            },
-            "Lambayeque Region": {
-              "Chiclayo": ["José Leonardo Ortiz", "Pimentel", "Santa Victoria", "Cayaltí", "La Victoria"],
-              "Ferreñafe": ["Centro", "Pitipo", "Pueblo Nuevo", "Incahuasi", "Manuel Antonio Mesones Muro"]
-            }
-          },
-            "Polonia": {
-              "Masovian Voivodeship": {
-                "Warsaw": ["Śródmieście", "Mokotów", "Praga Północ", "Wilanów", "Wola"],
-                "Radom": ["Ustronie", "Planty", "Gołębiów", "Południe", "Borki"]
-              },
-              "Silesian Voivodeship": {
-                "Katowice": ["Śródmieście", "Nikiszowiec", "Koszutka", "Podlesie", "Ligota"],
-                "Gliwice": ["Śródmieście", "Sośnica", "Ligota Zabrska", "Zatorze", "Trynek"]
-              },
-              "Greater Poland Voivodeship": {
-                "Poznań": ["Stare Miasto", "Grunwald", "Jeżyce", "Wilda", "Nowe Miasto"],
-                "Kalisz": ["Stare Miasto", "Dobrzec", "Rypinek", "Piaski", "Serbinów"]
-              },
-              "Lesser Poland Voivodeship": {
-                "Kraków": ["Stare Miasto", "Kazimierz", "Podgórze", "Dębniki", "Nowa Huta"],
-                "Tarnów": ["Stare Miasto", "Mościce", "Westerplatte", "Piaski", "Uroczysko"]
-              },
-              "Lower Silesian Voivodeship": {
-                "Wrocław": ["Stare Miasto", "Nadodrze", "Ołtaszyn", "Muchobór", "Biskupin"],
-                "Legnica": ["Stare Miasto", "Siedlce", "Piekary", "Azoty", "Zosinek"]
-              },
-              "Łódź Voivodeship": {
-                "Łódź": ["Śródmieście", "Bałuty", "Polesie", "Górna", "Widzew"],
-                "Piotrków Trybunalski": ["Stare Miasto", "Południe", "Północ", "Zatorze", "Sławomirów"]
-              },
-              "Pomeranian Voivodeship": {
-                "Gdańsk": ["Śródmieście", "Oliwa", "Wrzeszcz", "Przymorze", "Zaspa"],
-                "Gdynia": ["Śródmieście", "Redłowo", "Orłowo", "Chylonia", "Wielki Kack"]
-              },
-              "West Pomeranian Voivodeship": {
-                "Szczecin": ["Śródmieście", "Pogodno", "Niebuszewo", "Zdroje", "Gumieńce"],
-                "Koszalin": ["Śródmieście", "Jamno", "Wyszyńskiego", "Rokosowo", "Osiedle Bukowe"]
-              },
-              "Lublin Voivodeship": {
-                "Lublin": ["Stare Miasto", "Czechów", "Wieniawa", "Czuby", "Śródmieście"],
-                "Chełm": ["Stare Miasto", "Nowe Miasto", "Żółkiewka", "Sławin", "Pogodna"]
-              },
-              "Kuyavian-Pomeranian Voivodeship": {
-                "Bydgoszcz": ["Śródmieście", "Szwederowo", "Fordon", "Bocianowo", "Wyżyny"],
-                "Toruń": ["Stare Miasto", "Mokre", "Bydgoskie Przedmieście", "Koniuchy", "Rubinkowo"]
-              }
-            },
-            "Portugal": {
-              "Lisbon District": {
-                "Lisbon": ["Baixa", "Alfama", "Bairro Alto", "Belém", "Parque das Nações"],
-                "Sintra": ["Centro Histórico", "Colares", "Pena", "Queluz", "Monserrate"]
-              },
-              "Porto District": {
-                "Porto": ["Ribeira", "Boavista", "Foz do Douro", "Campanhã", "Cedofeita"],
-                "Vila Nova de Gaia": ["Miramar", "Lordelo do Ouro", "Canelas", "Grijo", "Oliveira do Douro"]
-              },
-              "Braga District": {
-                "Braga": ["Sé", "São Victor", "Maximinos", "Nogueiró", "Gualtar"],
-                "Guimarães": ["Centro", "Oliveira", "São Torcato", "Azurém", "Atães"]
-              },
-              "Aveiro District": {
-                "Aveiro": ["Centro", "São Jacinto", "Glória", "Vera Cruz", "Aradas"],
-                "Ílhavo": ["Gafanha da Nazaré", "Ílhavo", "São Salvador", "Costa Nova", "Vista Alegre"]
-              },
-              "Leiria District": {
-                "Leiria": ["Centro", "Barreira", "Caranguejeira", "Milagres", "Amorosa"],
-                "Pombal": ["Centro", "Carriço", "Maceira", "Pelariga", "Abiul"]
-              },
-              "Viseu District": {
-                "Viseu": ["Centro", "Bom Jesus", "Fontelo", "Quintela", "Mundão"],
-                "Lamego": ["Centro", "Britiande", "Ucanha", "Pretufe", "Sé"]
-              },
-              "Faro District": {
-                "Faro": ["Centro", "Gambelas", "Montenegro", "Penha", "Patacão"],
-                "Loulé": ["Centro Histórico", "Quarteira", "Almancil", "Boliqueime", "Vale Judeu"]
-              },
-              "Setúbal District": {
-                "Setúbal": ["Centro Histórico", "Troino", "São Julião", "Brejos", "Tróia"],
-                "Almada": ["Cova da Piedade", "Pragal", "Sobreda", "Costa Sul", "Trafaria"]
-              },
-              "Coimbra District": {
-                "Coimbra": ["Baixa", "Alta", "Sé Nova", "Solum", "Celas"],
-                "Figueira da Foz": ["Centro", "Buarcos", "Lavos", "Quiaios", "São Pedro"]
-              },
-              "Évora District": {
-                "Évora": ["Centro", "Horta das Figueiras", "Malagueira", "Bacelo", "Bairro do Torrão"],
-                "Estremoz": ["Centro", "São Domingos", "Santo Amaro", "São Bento", "Santa Clara"]
-              }
-            },
-            "Romania": {
-              "Cluj": {
-                "Cluj-Napoca": ["Centru", "Mănăștur", "Gheorgheni", "Grigorescu", "Zorilor"],
-                "Turda": ["Centru", "Aleea Lindenilor", "Chișcani", "Valea Ghevelor", "Florilor"]
-              },
-              "Timiș": {
-                "Timișoara": ["Cetate", "Iosefin", "Fabric", "Fratelia", "Lipovei"],
-                "Lugoj": ["Centru", "Vitrometan", "Calea Aradului", "Traian Vuia", "I.C. Drăgan"]
-              },
-              "Iași": {
-                "Iași": ["Copou", "Tătărași", "Palas", "Cantemir", "Dacia"],
-                "Pașcani": ["Centru", "Andrieșeni", "Gara", "Podu Oprii", "Tabacaria"]
-              },
-              "Constanța": {
-                "Constanța": ["Tomis Nord", "Tomis South", "Campus", "Inel I", "Inel II"],
-                "Mangalia": ["Centro", "Callatis", "23 August", "Cazino", "Delfinari"]
-              },
-              "Prahova": {
-                "Ploiești": ["Nord", "Sud", "Vest", "Est", "Albăstrele"],
-                "Câmpina": ["Centru", "Mușcel", "Breaza", "Poiana Câmpina", "Filipeștii de Târg"]
-              },
-              "Brașov": {
-                "Brașov": ["Centrul Vechi", "Șchei", "Bartolomeu", "Tractorul", "Astra"],
-                "Săcele": ["Centru", "Trei Stejari", "Lunca Mare", "Cazarma", "Inferior"]
-              },
-              "Dolj": {
-                "Craiova": ["Centru", "Brazda lui Novac", "Rovine", "1 Mai", "Valea Roșie"],
-                "Calafat": ["Centru", "Băile", "Dunăreni", "Vișina", "Ciupercești"]
-              },
-              "Galați": {
-                "Galați": ["Centru", "Micro 19", "Micro 21", "Micro 23", "Barboși"],
-                "Tecuci": ["Centru", "Dănuț", "Rediu", "Radar", "Termocentru"]
-              },
-              "Maramureș": {
-                "Baia Mare": ["Centru", "Valea Borcutului", "Răsărit", "Viilor", "Dâmbul Morii"],
-                "Sighetu Marmației": ["Centru", "Drăgan", "Teceu", "Marmatiei", "1 Mai"]
-              },
-              "Bucharest": {
-                "Sector 1": ["Dorobanți", "Aviatorilor", "Băneasa", "Floreasca", "Piața Romană"],
-                "Sector 3": ["Unirii", "Titan", "Vitan", "Dristor", "Pantelimon"]
-              }
-            },
-            "Russia": {
-              "Moscow Oblast": {
-                "Moscow": ["Arbat", "Tverskoy", "Zamoskvorechye", "Presnensky", "Tagansky"],
-                "Khimki": ["Novogorsk", "Tishkovo", "Filimonkovskoye", "Yuzhny", "Levoberezhny"]
-              },
-              "Saint Petersburg": {
-                "Saint Petersburg": ["Tsentralny", "Admiralteysky", "Vasileostrovsky", "Petrogradsky", "Moskovsky"],
-                "Pushkin": ["Tsarskoye Selo", "Fontanka", "Sofiyskaya", "Babolovo", "Detskoe Selo"]
-              },
-              "Krasnodar Krai": {
-                "Krasnodar": ["Centro", "Gorny", "Yubileyny", "Jubileyniy", "Rodina"],
-                "Sochi": ["Adler", "Krasnaya Polyana", "Central District", "Khosta", "Lazarevskoye"]
-              },
-              "Sverdlovsk Oblast": {
-                "Yekaterinburg": ["Vysotsky", "Sevastyanova", "Leninsky", "Ordzonikidze", "Dzerzhinsky"],
-                "Nizhny Tagil": ["Centro", "Metallurgical", "Voroshilovsky", "Kuysky", "Severny"]
-              },
-              "Novosibirsk Oblast": {
-                "Novosibirsk": ["Leninsky", "Zheleznodorozhny", "Tsentralny", "Oktyabrsky", "Kirovsky"],
-                "Berdsk": ["Sovetsky", "Rabochiy", "Zavodsky", "Lesnoy", "Gagarinsky"]
-              },
-              "Rostov Oblast": {
-                "Rostov-on-Don": ["Centro", "Leninsky", "Oktyabrsky", "Vasilyevsky", "Sovetsky"],
-                "Taganrog": ["Centro", "North District", "East District", "South District", "West District"]
-              },
-              "Republic of Tatarstan": {
-                "Kazan": ["Kremlin", "Sovetsky", "Privolzhsky", "Kirovsky", "Moskovsky"],
-                "Naberezhnye Chelny": ["Centro", "Komsomolsky", "Avtozavodsky", "Kamatsky", "Azino"]
-              },
-              "Chelyabinsk Oblast": {
-                "Chelyabinsk": ["Tsentralny", "Traktorozavodsky", "Leninsky", "Kalininsky", "Sverdlovsky"],
-                "Magnitogorsk": ["Centro", "Zapadny", "Severny", "Pervomaysky", "Leninsky"]
-              },
-              "Krasnoyarsk Krai": {
-                "Krasnoyarsk": ["Tsentralny", "Zheleznodorozhny", "Oktyabrsky", "Sovetsky", "Leninsky"],
-                "Norilsk": ["Talnakh", "Oktyabrsky", "Central", "Tsentralny", "Industrial"]
-              },
-              "Primorsky Krai": {
-                "Vladivostok": ["Centro", "Pervorechensky", "Svetlanovsky", "Svetlanskaya", "Dynamo"],
-                "Nakhodka": ["Centro", "Vtoraya Rechka", "Yeiskaya", "Severo-Vostochny", "Strelnya"]
-              }
-            },
-              "Turkey": {
-                "Istanbul Province": {
-                  "Istanbul": ["Kadıköy", "Beşiktaş", "Fatih", "Üsküdar", "Beyoğlu"],
-                  "Şile": ["Ağva", "Yeniköy", "Ahmetli", "Çavuş", "Kabakoz"]
-                },
-                "Ankara Province": {
-                  "Ankara": ["Çankaya", "Keçiören", "Mamak", "Altındağ", "Etimesgut"],
-                  "Polatlı": ["Cumhuriyet", "Şentepe", "Fatih", "Gazi", "Zafer"]
-                },
-                "Izmir Province": {
-                  "Izmir": ["Konak", "Karşıyaka", "Bornova", "Buca", "Güzelyalı"],
-                  "Çeşme": ["Alaçatı", "Dalyan", "Ilıca", "Ovacık", "Reisdere"]
-                },
-                "Bursa Province": {
-                  "Bursa": ["Osmangazi", "Yıldırım", "Nilüfer", "Mudanya", "Görükle"],
-                  "İnegöl": ["Hamidiye", "Yenice", "Kemalpaşa", "Mesudiye", "Osmaniye"]
-                },
-                "Antalya Province": {
-                  "Antalya": ["Muratpaşa", "Konyaaltı", "Kepez", "Lara", "Aksu"],
-                  "Alanya": ["Mahmutlar", "Oba", "Kestel", "Tosmur", "Avsallar"]
-                },
-                "Konya Province": {
-                  "Konya": ["Selçuklu", "Meram", "Karatay", "Beyhekim", "Bosna Hersek"],
-                  "Ereğli": ["Hacımemiş", "Belkaya", "Yenibağlar", "Ziya Gökalp", "Borlu"]
-                },
-                "Gaziantep Province": {
-                  "Gaziantep": ["Şahinbey", "Şehitkamil", "Karlıtepe", "İbrahimli", "Aydınlar"],
-                  "Nizip": ["Mimar Sinan", "Atatürk", "Yukarıbayır", "Fatih", "Belkıs"]
-                },
-                "Mersin Province": {
-                  "Mersin": ["Yenişehir", "Mezitli", "Akdeniz", "Toroslar", "Çiftlikköy"],
-                  "Tarsus": ["Kırklarsırtı", "Anıt", "Yeni Ömerli", "Yeşilyurt", "Şehitkerim"]
-                },
-                "Adana Province": {
-                  "Adana": ["Seyhan", "Çukurova", "Yüreğir", "Sarıçam", "Karaisalı"],
-                  "Ceyhan": ["İstiklal", "Gaziosmanpaşa", "Namık Kemal", "Emek", "Büyükkırım"]
-                },
-                "Samsun Province": {
-                  "Samsun": ["Atakum", "İlkadım", "Canik", "Tekkeköy", "Baruthane"],
-                  "Bafra": ["Altınkaya", "Gaziosmanpaşa", "Emirefendi", "Kavakpınar", "Kemalpaşa"]
-                }
-              },
-              "Ukraine": {
-                "Kyiv Oblast": {
-                  "Kyiv": ["Pecherskyi", "Shevchenkivskyi", "Darnytskyi", "Solomianskyi", "Podilskyi"],
-                  "Brovary": ["Tsentralna", "Svobody", "Lisova", "Peremohy", "Krasylivka"]
-                },
-                "Lviv Oblast": {
-                  "Lviv": ["Halytskyi", "Sykhiv", "Frankivskyi", "Shevchenkivskyi", "Zaliznychnyi"],
-                  "Drohobych": ["Sambirska", "Zarechye", "Pekarska", "Horishnya", "Truskavetska"]
-                },
-                "Kharkiv Oblast": {
-                  "Kharkiv": ["Saltivka", "Kholodnohirskyi", "Moskovskyi", "Shevchenkivskyi", "Industrialnyi"],
-                  "Chuhuiv": ["Tsentralna", "Lisna", "Zavodska", "Myru", "Pivnichna"]
-                },
-                "Odessa Oblast": {
-                  "Odessa": ["Prymorskyi", "Kyivskyi", "Suvorovskyi", "Malinovsky", "Arcadia"],
-                  "Bilhorod-Dnistrovskyi": ["Tsentralna", "Zhovtneva", "Prymorska", "Slobidka", "Shkilna"]
-                },
-                "Dnipro Oblast": {
-                  "Dnipro": ["Shevchenkivskyi", "Samarskyi", "Amur-Nyzhnodniprovskyi", "Industrialnyi", "Tsentralnyi"],
-                  "Kamianske": ["Bamy", "Tsentralna", "Khimikiv", "Zhovtnevyi", "Zamkova"]
-                },
-                "Vinnytsia Oblast": {
-                  "Vinnytsia": ["Tsentralna", "Khmelnitske", "Podillya", "Sabariv", "Stare Misto"],
-                  "Zhmerynka": ["Tsentralna", "Zaliznychna", "Lisna", "Krasna", "Zhovtneva"]
-                },
-                "Ivano-Frankivsk Oblast": {
-                  "Ivano-Frankivsk": ["Tsentralna", "Pasichna", "Mistechko", "Konovaltsia", "Bam"],
-                  "Kalush": ["Tsentralna", "Zakhidna", "Promyslova", "Parkova", "Pivdenna"]
-                },
-                "Chernihiv Oblast": {
-                  "Chernihiv": ["Tsentralnyi", "Bobrovytsia", "Desnianskyi", "Pryluky", "Masany"],
-                  "Nizhyn": ["Tsentralna", "Lisna", "Pivnichna", "Myru", "Parkova"]
-                },
-                "Ternopil Oblast": {
-                  "Ternopil": ["Druzhba", "Kievska", "Zamkova", "Levanevskoho", "Bam"],
-                  "Chortkiv": ["Tsentralna", "Pidzamche", "Bereg", "Horishnia", "Zarichchia"]
-                },
-                "Zaporizhzhia Oblast": {
-                  "Zaporizhzhia": ["Oleksandrivskyi", "Khortytskyi", "Shevchenkivskyi", "Komunarskyi", "Dniprovs'kyi"],
-                  "Melitopol": ["Tsentralnyi", "Pivnichnyi", "Yuzhnyi", "Sadky", "Avtozavod"]
-                }
-              },
-              "Venezuela": {
-                "Distrito Capital": {
-                  "Caracas": ["Chacao", "Petare", "La Candelaria", "El Hatillo", "San Bernardino"],
-                  "El Junquito": ["Kilómetro 11", "Kilómetro 18", "El Rodeo", "Monte Alto", "El Trigo"]
-                },
-                "Zulia": {
-                  "Maracaibo": ["La Lago", "San Francisco", "Cañada Honda", "Cecilio Acosta", "Sabaneta"],
-                  "Cabimas": ["Ambrosio", "La Rosa", "Punta Gorda", "Nueva Cabimas", "Campo Lara"]
-                },
-                "Lara": {
-                  "Barquisimeto": ["Centro", "Santa Rosa", "Cabudare", "El Ujano", "La Carucieña"],
-                  "Carora": ["Centro", "Torrellas", "La Guzmana", "El Obelisco", "San Juan"]
-                },
-                "Anzoátegui": {
-                  "Barcelona": ["Centro", "Boyacá", "El Viñedo", "Los Cerezos", "Mesones"],
-                  "Puerto La Cruz": ["Chuparín", "Pozuelos", "Las Charas", "Puerto del Este", "El Pensil"]
-                },
-                "Carabobo": {
-                  "Valencia": ["San Blas", "El Trigal", "Los Caobos", "Flor Amarillo", "Santa Rosa"],
-                  "Guacara": ["Yagua", "Vigirima", "Ciudad Alianza", "Centro", "El Samán"]
-                },
-                "Aragua": {
-                  "Maracay": ["Las Delicias", "San Jacinto", "El Limón", "Caña de Azúcar", "La Soledad"],
-                  "Turmero": ["La Candelaria", "El Macaro", "Guayabita", "La Julia", "El Limón"]
-                },
-                "Mérida": {
-                  "Mérida": ["Centro", "La Pedregosa", "Campo Claro", "Los Sauzales", "Pie del Llano"],
-                  "Ejido": ["Santa Bárbara", "El Palmo", "San Buenaventura", "Avenida Bolívar", "Campo Elías"]
-                },
-                "Táchira": {
-                  "San Cristóbal": ["La Concordia", "Barrio Obrero", "Pueblo Nuevo", "Centro", "Puente Real"],
-                  "Táriba": ["Centro", "El Diamante", "San Josecito", "El Terminal", "Loma del Viento"]
-                },
-                "Bolívar": {
-                  "Ciudad Bolívar": ["Vista Hermosa", "La Paragua", "Los Próceres", "El Perú", "Agua Salada"],
-                  "Ciudad Guayana": ["Unare", "Villa Colombia", "Los Olivos", "Alta Vista", "El Gallo"]
-                },
-                "Nueva Esparta": {
-                  "Porlamar": ["Centro", "Conejeros", "Genovés", "Los Cocos", "La Arboleda"],
-                  "Pampatar": ["Costa Azul", "Los Robles", "Agua de Vaca", "Avenida Bolívar", "Playa El Ángel"]
-                }
-              }
+      "Veneto": {
+        "Venice": ["San Marco", "Cannaregio", "Dorsoduro", "Castello", "Giudecca"],
+        "Verona": ["Centro Storico", "Borgo Trento", "Borgo Roma", "San Zeno", "Montorio"]
+      },
+      "Piedmont": {
+        "Turin": ["Lingotto", "San Salvario", "Centro", "Vanchiglia", "Barriera di Milano"],
+        "Novara": ["Centro", "Sant'Agabio", "Sacro Cuore", "Lumellogno", "Bicocca"]
+      },
+      "Emilia-Romagna": {
+        "Bologna": ["Centro Storico", "Santo Stefano", "Saragozza", "Porto", "Navile"],
+        "Modena": ["Centro", "Crocetta", "Buon Pastore", "San Faustino", "Villaggio Artigiano"]
+      },
+      "Tuscany": {
+        "Florence": ["Santa Croce", "Oltrarno", "San Marco", "Duomo", "Santissima Annunziata"],
+        "Pisa": ["Centro", "San Francesco", "Barbaricina", "Porta a Lucca", "Santa Maria"]
+      },
+      "Apulia": {
+        "Bari": ["Murat", "Libertà", "Madonnella", "Santo Spirito", "Poggiofranco"],
+        "Lecce": ["Centro Storico", "Borgo Pace", "Rudiae", "San Lazzaro", "Mazzini"]
+      },
+      "Calabria": {
+        "Reggio Calabria": ["Centro Storico", "Pellaro", "Gallico", "Catona", "Archi"],
+        "Catanzaro": ["Centro", "Germaneto", "Lido", "Santa Maria", "Sala"]
+      }
+    },
+    "Spain": {
+       "Community of Madrid": {
+         "Madrid": ["Sol", "Malasaña", "Chueca", "La Latina", "Salamanca"]
+       },
+       "Catalonia": {
+         "Barcelona": ["Gothic Quarter", "Gràcia", "Eixample", "El Born", "Barceloneta"]
+       }
+    },
+    "Netherlands": {
+      "North Holland": {
+        "Amsterdam": ["Jordaan", "De Pijp", "Centrum", "Oost", "Zuid"],
+        "Haarlem": ["Groot Heiligland", "Houtplein", "De Olmen", "Koningsplein", "Schalkwijk"]
+      },
+      "South Holland": {
+        "Rotterdam": ["Kop van Zuid", "Delfshaven", "Charlois", "Oude Haven", "Kralingen"],
+        "The Hague": ["Binnenhof", "Scheveningen", "Benoordenhout", "Transvaal", "Oude Centrum"]
+      },
+      "Utrecht": {
+        "Utrecht": ["Binnenstad", "Oog in Al", "Leidsche Rijn", "Overvecht", "Wittevrouwen"],
+        "Amersfoort": ["Lage Erf", "Krommestraat", "Stadsschouwburg", "Het Rietveld", "Schothorst"]
+      },
+      "Gelderland": {
+        "Arnhem": ["Centrum", "Kronenburg", "Sonsbeek", "Velperweg", "Malburgen"],
+        "Nijmegen": ["Stadtcentrum", "Haaswijk", "Dukenburg", "Lindenholt", "Neerbosch-Oost"]
+      },
+      "North Brabant": {
+        "Eindhoven": ["Strijp", "Woensel", "Gestel", "Centrum", "Stratum"],
+        "’s-Hertogenbosch": ["Centrum", "Oosterplas", "Kruisstraat", "Empel", "Orthen"]
+      },
+      "Overijssel": {
+        "Zwolle": ["Diezerpoorten", "Spoolde", "Assendorp", "Kamperpoort", "Holtenbroek"],
+        "Enschede": ["Roombeek", "Glanerbrug", "Stadsveld", "Wesselerbrink", "Lonneker"]
+      },
+      "Friesland": {
+        "Leeuwarden": ["Binnenstad", "Wilhelminapark", "Tweebaksmarkt", "Achter de Hoven", "Camminghaburen"],
+        "Sneek": ["Noordstalling", "Oudestraat", "Welgelegen", "Loevestein", "Stationsweg"]
+      },
+      "Groningen": {
+        "Groningen": ["Noorderplantsoen", "Oosterpoort", "Nieuwe Ebbingestraat", "Vinkhuizen", "Paddepoel"],
+        "Delfzijl": ["Blikslotermeer", "Tuikwerd", "Vennenwijk", "Mercuriuswijk", "Woldhoek"]
+      },
+      "Drenthe": {
+        "Assen": ["Centrum", "Koopmansplein", "Peelo", "Zuidwolde", "Marsdijk"],
+        "Emmen": ["Centrummatik", "Rietlanden", "Emmerhout", "Bargeres", "Zuidbarge"]
+      },
+      "Flevoland": {
+        "Lelystad": ["Centrale Buurt", "Batavia Stad", "Polder", "Landerijen", "Middengebied"],
+        "Almere": ["Stad", "Haven", "Poort", "Oostvaarders", "Noordoost"]
+      }
+    },
+    "Belgium": {
+      "Antwerp Province": {
+        "Antwerp": ["Centrum", "Zurenborg", "Borgerhout", "Berchem", "Deurne"],
+        "Mechelen": ["Botermarkt", "Nekkerspoel", "Bruul", "Leuvense Poort", "Heffen"]
+      },
+      "Flemish Brabant": {
+        "Leuven": ["Groot Begijnhof", "Universiteitswijk", "Heverlee", "Kessel-Lo", "Sint-Maartenstal"],
+        "Halle": ["Centrum", "Lembeek", "Buizingen", "Kesterenwijk", "Gleïsche"]
+      },
+      "Walloon Brabant": {
+        "Wavre": ["Centre", "Bierges", "Limal", "Mont-Saint-Guibert", "Chastre"],
+        "Nivelles": ["Centre", "Thines", "Baulers", "Bornival", "Monstreux"]
+      },
+      "Liège Province": {
+        "Liège": ["Centre", "Cointe", "Amercoeur", "Grivegnée", "Sainte-Walburge"],
+        "Verviers": ["Centre", "Ensival", "Andrimont", "Heusy", "Stembert"]
+      },
+      "Hainaut": {
+        "Mons": ["Centre", "Jemappes", "Cuesmes", "Saint-Symphorien", "Ghlin"],
+        "Charleroi": ["Ville-haute", "Marchienne", "Gilly", "Monceau", "Jumet"]
+      },
+      "Namur": {
+        "Namur": ["Centre", "Jambes", "Saint-Servais", "Belgrade", "Wépion"],
+        "Dinant": ["Centre", "Belvédère", "Les Rivages", "Anseremme", "Bouvignes"]
+      },
+      "Luxembourg Province": {
+        "Arlon": ["Centre", "Clair-Vaux", "Saint-Martin", "Fouches", "Autelbas"],
+        "Bastogne": ["Centre", "Noville", "Les Hayons", "Wardin", "Tournay"]
+      },
+      "East Flanders": {
+        "Ghent": ["Patershol", "Rabot", "Sint-Pietersnieuwstraat", "Ledeberg", "Wondelgem"],
+        "Aalst": ["Centrum", "Hofstade", "Moorsel", "Denderwindeke", "Erembodegem"]
+      },
+      "West Flanders": {
+        "Bruges": ["Burg", "Sint-Anna", "Assebroek", "Sint-Michiels", "Lissewege"],
+        "Kortrijk": ["Centrum", "Bissegem", "Heule", "Marke", "Kooigem"]
+      },
+      "Brussels-Capital Region": {
+        "Brussels": ["City Centre", "Ixelles", "Saint-Gilles", "Anderlecht", "Uccle"],
+        "Schaerbeek": ["Helmet", "Josaphat", "Pavillon", "Verboeckhoven", "Madou"]
+      }
+    },
+    "Sweden": {
+      "Stockholm County": {
+        "Stockholm": ["Gamla Stan", "Södermalm", "Östermalm", "Norrmalm", "Kungsholmen"]
+      },
+       "Västra Götaland County": {
+        "Gothenburg": ["Haga", "Majorna", "Linnéstaden", "Örgryte", "Eriksberg"]
+      }
+    },
+    "Poland": {
+      "Masovian Voivodeship": {
+        "Warsaw": ["Śródmieście", "Mokotów", "Praga Północ", "Wilanów", "Wola"],
+        "Radom": ["Ustronie", "Planty", "Gołębiów", "Południe", "Borki"]
+      },
+      "Silesian Voivodeship": {
+        "Katowice": ["Śródmieście", "Nikiszowiec", "Koszutka", "Podlesie", "Ligota"],
+        "Gliwice": ["Śródmieście", "Sośnica", "Ligota Zabrska", "Zatorze", "Trynek"]
+      },
+      "Greater Poland Voivodeship": {
+        "Poznań": ["Stare Miasto", "Grunwald", "Jeżyce", "Wilda", "Nowe Miasto"],
+        "Kalisz": ["Stare Miasto", "Dobrzec", "Rypinek", "Piaski", "Serbinów"]
+      },
+      "Lesser Poland Voivodeship": {
+        "Kraków": ["Stare Miasto", "Kazimierz", "Podgórze", "Dębniki", "Nowa Huta"],
+        "Tarnów": ["Stare Miasto", "Mościce", "Westerplatte", "Piaski", "Uroczysko"]
+      },
+      "Lower Silesian Voivodeship": {
+        "Wrocław": ["Stare Miasto", "Nadodrze", "Ołtaszyn", "Muchobór", "Biskupin"],
+        "Legnica": ["Stare Miasto", "Siedlce", "Piekary", "Azoty", "Zosinek"]
+      },
+      "Łódź Voivodeship": {
+        "Łódź": ["Śródmieście", "Bałuty", "Polesie", "Górna", "Widzew"],
+        "Piotrków Trybunalski": ["Stare Miasto", "Południe", "Północ", "Zatorze", "Sławomirów"]
+      },
+      "Pomeranian Voivodeship": {
+        "Gdańsk": ["Śródmieście", "Oliwa", "Wrzeszcz", "Przymorze", "Zaspa"],
+        "Gdynia": ["Śródmieście", "Redłowo", "Orłowo", "Chylonia", "Wielki Kack"]
+      },
+      "West Pomeranian Voivodeship": {
+        "Szczecin": ["Śródmieście", "Pogodno", "Niebuszewo", "Zdroje", "Gumieńce"],
+        "Koszalin": ["Śródmieście", "Jamno", "Wyszyńskiego", "Rokosowo", "Osiedle Bukowe"]
+      },
+      "Lublin Voivodeship": {
+        "Lublin": ["Stare Miasto", "Czechów", "Wieniawa", "Czuby", "Śródmieście"],
+        "Chełm": ["Stare Miasto", "Nowe Miasto", "Żółkiewka", "Sławin", "Pogodna"]
+      },
+      "Kuyavian-Pomeranian Voivodeship": {
+        "Bydgoszcz": ["Śródmieście", "Szwederowo", "Fordon", "Bocianowo", "Wyżyny"],
+        "Toruń": ["Stare Miasto", "Mokre", "Bydgoskie Przedmieście", "Koniuchy", "Rubinkowo"]
+      }
+    },
+    "Greece": {
+       "Attica": {
+         "Athens": ["Plaka", "Monastiraki", "Kolonaki", "Exarcheia", "Psiri"]
+       },
+       "Central Macedonia": {
+         "Thessaloniki": ["Ladadika", "Ano Poli", "Bit Bazaar", "Aristotelous", "Valaoritou"]
+       }
+    },
+    "Portugal": {
+      "Lisbon District": {
+        "Lisbon": ["Baixa", "Alfama", "Bairro Alto", "Belém", "Parque das Nações"],
+        "Sintra": ["Centro Histórico", "Colares", "Pena", "Queluz", "Monserrate"]
+      },
+      "Porto District": {
+        "Porto": ["Ribeira", "Boavista", "Foz do Douro", "Campanhã", "Cedofeita"],
+        "Vila Nova de Gaia": ["Miramar", "Lordelo do Ouro", "Canelas", "Grijo", "Oliveira do Douro"]
+      },
+      "Braga District": {
+        "Braga": ["Sé", "São Victor", "Maximinos", "Nogueiró", "Gualtar"],
+        "Guimarães": ["Centro", "Oliveira", "São Torcato", "Azurém", "Atães"]
+      },
+      "Aveiro District": {
+        "Aveiro": ["Centro", "São Jacinto", "Glória", "Vera Cruz", "Aradas"],
+        "Ílhavo": ["Gafanha da Nazaré", "Ílhavo", "São Salvador", "Costa Nova", "Vista Alegre"]
+      },
+      "Leiria District": {
+        "Leiria": ["Centro", "Barreira", "Caranguejeira", "Milagres", "Amorosa"],
+        "Pombal": ["Centro", "Carriço", "Maceira", "Pelariga", "Abiul"]
+      },
+      "Viseu District": {
+        "Viseu": ["Centro", "Bom Jesus", "Fontelo", "Quintela", "Mundão"],
+        "Lamego": ["Centro", "Britiande", "Ucanha", "Pretufe", "Sé"]
+      },
+      "Faro District": {
+        "Faro": ["Centro", "Gambelas", "Montenegro", "Penha", "Patacão"],
+        "Loulé": ["Centro Histórico", "Quarteira", "Almancil", "Boliqueime", "Vale Judeu"]
+      },
+      "Setúbal District": {
+        "Setúbal": ["Centro Histórico", "Troino", "São Julião", "Brejos", "Tróia"],
+        "Almada": ["Cova da Piedade", "Pragal", "Sobreda", "Costa Sul", "Trafaria"]
+      },
+      "Coimbra District": {
+        "Coimbra": ["Baixa", "Alta", "Sé Nova", "Solum", "Celas"],
+        "Figueira da Foz": ["Centro", "Buarcos", "Lavos", "Quiaios", "São Pedro"]
+      },
+      "Évora District": {
+        "Évora": ["Centro", "Horta das Figueiras", "Malagueira", "Bacelo", "Bairro do Torrão"],
+        "Estremoz": ["Centro", "São Domingos", "Santo Amaro", "São Bento", "Santa Clara"]
+      }
+    },
+    "Romania": {
+      "Cluj County": {
+        "Cluj-Napoca": ["Centru", "Mănăștur", "Gheorgheni", "Grigorescu", "Zorilor"],
+        "Turda": ["Centru", "Aleea Lindenilor", "Chișcani", "Valea Ghevelor", "Florilor"]
+      },
+      "Timiș County": {
+        "Timișoara": ["Cetate", "Iosefin", "Fabric", "Fratelia", "Lipovei"],
+        "Lugoj": ["Centru", "Vitrometan", "Calea Aradului", "Traian Vuia", "I.C. Drăgan"]
+      },
+      "Iași County": {
+        "Iași": ["Copou", "Tătărași", "Palas", "Cantemir", "Dacia"],
+        "Pașcani": ["Centru", "Andrieșeni", "Gara", "Podu Oprii", "Tabacaria"]
+      },
+      "Constanța County": {
+        "Constanța": ["Tomis Nord", "Tomis South", "Campus", "Inel I", "Inel II"],
+        "Mangalia": ["Centro", "Callatis", "23 August", "Cazino", "Delfinari"]
+      },
+      "Prahova County": {
+        "Ploiești": ["Nord", "Sud", "Vest", "Est", "Albăstrele"],
+        "Câmpina": ["Centru", "Mușcel", "Breaza", "Poiana Câmpina", "Filipeștii de Târg"]
+      },
+      "Brașov County": {
+        "Brașov": ["Centrul Vechi", "Șchei", "Bartolomeu", "Tractorul", "Astra"],
+        "Săcele": ["Centru", "Trei Stejari", "Lunca Mare", "Cazarma", "Inferior"]
+      },
+      "Dolj County": {
+        "Craiova": ["Centru", "Brazda lui Novac", "Rovine", "1 Mai", "Valea Roșie"],
+        "Calafat": ["Centru", "Băile", "Dunăreni", "Vișina", "Ciupercești"]
+      },
+      "Galați County": {
+        "Galați": ["Centru", "Micro 19", "Micro 21", "Micro 23", "Barboși"],
+        "Tecuci": ["Centru", "Dănuț", "Rediu", "Radar", "Termocentru"]
+      },
+      "Maramureș County": {
+        "Baia Mare": ["Centru", "Valea Borcutului", "Răsărit", "Viilor", "Dâmbul Morii"],
+        "Sighetu Marmației": ["Centru", "Drăgan", "Teceu", "Marmatiei", "1 Mai"]
+      },
+      "Bucharest Municipality": {
+        "Bucharest": ["Sector 1", "Sector 2", "Sector 3", "Sector 4", "Sector 5", "Sector 6"]
+      }
+    },
+    "Russia": {
+      "Moscow Federal City": {
+         "Moscow": ["Arbat", "Tverskoy", "Zamoskvorechye", "Presnensky", "Tagansky"]
+       },
+       "Moscow Oblast": {
+         "Khimki": ["Novogorsk", "Tishkovo", "Filimonkovskoye", "Yuzhny", "Levoberezhny"]
+       },
+       "Saint Petersburg Federal City": {
+         "Saint Petersburg": ["Tsentralny", "Admiralteysky", "Vasileostrovsky", "Petrogradsky", "Moskovsky"],
+         "Pushkin": ["Tsarskoye Selo", "Fontanka", "Sofiyskaya", "Babolovo", "Detskoe Selo"]
+       },
+      "Krasnodar Krai": {
+        "Krasnodar": ["Centro", "Gorny", "Yubileyny", "Jubileyniy", "Rodina"],
+        "Sochi": ["Adler", "Krasnaya Polyana", "Central District", "Khosta", "Lazarevskoye"]
+      },
+      "Sverdlovsk Oblast": {
+        "Yekaterinburg": ["Vysotsky", "Sevastyanova", "Leninsky", "Ordzonikidze", "Dzerzhinsky"],
+        "Nizhny Tagil": ["Centro", "Metallurgical", "Voroshilovsky", "Kuysky", "Severny"]
+      },
+      "Novosibirsk Oblast": {
+        "Novosibirsk": ["Leninsky", "Zheleznodorozhny", "Tsentralny", "Oktyabrsky", "Kirovsky"],
+        "Berdsk": ["Sovetsky", "Rabochiy", "Zavodsky", "Lesnoy", "Gagarinsky"]
+      },
+      "Rostov Oblast": {
+        "Rostov-on-Don": ["Centro", "Leninsky", "Oktyabrsky", "Vasilyevsky", "Sovetsky"],
+        "Taganrog": ["Centro", "North District", "East District", "South District", "West District"]
+      },
+      "Republic of Tatarstan": {
+        "Kazan": ["Kremlin", "Sovetsky", "Privolzhsky", "Kirovsky", "Moskovsky"],
+        "Naberezhnye Chelny": ["Centro", "Komsomolsky", "Avtozavodsky", "Kamatsky", "Azino"]
+      },
+      "Chelyabinsk Oblast": {
+        "Chelyabinsk": ["Tsentralny", "Traktorozavodsky", "Leninsky", "Kalininsky", "Sverdlovsky"],
+        "Magnitogorsk": ["Centro", "Zapadny", "Severny", "Pervomaysky", "Leninsky"]
+      },
+      "Krasnoyarsk Krai": {
+        "Krasnoyarsk": ["Tsentralny", "Zheleznodorozhny", "Oktyabrsky", "Sovetsky", "Leninsky"],
+        "Norilsk": ["Talnakh", "Oktyabrsky", "Central", "Tsentralny", "Industrial"]
+      },
+      "Primorsky Krai": {
+        "Vladivostok": ["Centro", "Pervorechensky", "Svetlanovsky", "Svetlanskaya", "Dynamo"],
+        "Nakhodka": ["Centro", "Vtoraya Rechka", "Yeiskaya", "Severo-Vostochny", "Strelnya"]
+      }
+    },
+    "Ukraine": {
+      "Kyiv Oblast": {
+        "Kyiv": ["Pecherskyi", "Shevchenkivskyi", "Darnytskyi", "Solomianskyi", "Podilskyi"],
+        "Brovary": ["Tsentralna", "Svobody", "Lisova", "Peremohy", "Krasylivka"]
+      },
+      "Lviv Oblast": {
+        "Lviv": ["Halytskyi", "Sykhiv", "Frankivskyi", "Shevchenkivskyi", "Zaliznychnyi"],
+        "Drohobych": ["Sambirska", "Zarechye", "Pekarska", "Horishnya", "Truskavetska"]
+      },
+      "Kharkiv Oblast": {
+        "Kharkiv": ["Saltivka", "Kholodnohirskyi", "Moskovskyi", "Shevchenkivskyi", "Industrialnyi"],
+        "Chuhuiv": ["Tsentralna", "Lisna", "Zavodska", "Myru", "Pivnichna"]
+      },
+      "Odessa Oblast": {
+        "Odessa": ["Prymorskyi", "Kyivskyi", "Suvorovskyi", "Malinovsky", "Arcadia"],
+        "Bilhorod-Dnistrovskyi": ["Tsentralna", "Zhovtneva", "Prymorska", "Slobidka", "Shkilna"]
+      },
+      "Dnipro Oblast": {
+        "Dnipro": ["Shevchenkivskyi", "Samarskyi", "Amur-Nyzhnodniprovskyi", "Industrialnyi", "Tsentralnyi"],
+        "Kamianske": ["Bamy", "Tsentralna", "Khimikiv", "Zhovtnevyi", "Zamkova"]
+      },
+      "Vinnytsia Oblast": {
+        "Vinnytsia": ["Tsentralna", "Khmelnitske", "Podillya", "Sabariv", "Stare Misto"],
+        "Zhmerynka": ["Tsentralna", "Zaliznychna", "Lisna", "Krasna", "Zhovtneva"]
+      },
+      "Ivano-Frankivsk Oblast": {
+        "Ivano-Frankivsk": ["Tsentralna", "Pasichna", "Mistechko", "Konovaltsia", "Bam"],
+        "Kalush": ["Tsentralna", "Zakhidna", "Promyslova", "Parkova", "Pivdenna"]
+      },
+      "Chernihiv Oblast": {
+        "Chernihiv": ["Tsentralnyi", "Bobrovytsia", "Desnianskyi", "Pryluky", "Masany"],
+        "Nizhyn": ["Tsentralna", "Lisna", "Pivnichna", "Myru", "Parkova"]
+      },
+      "Ternopil Oblast": {
+        "Ternopil": ["Druzhba", "Kievska", "Zamkova", "Levanevskoho", "Bam"],
+        "Chortkiv": ["Tsentralna", "Pidzamche", "Bereg", "Horishnia", "Zarichchia"]
+      },
+      "Zaporizhzhia Oblast": {
+        "Zaporizhzhia": ["Oleksandrivskyi", "Khortytskyi", "Shevchenkivskyi", "Komunarskyi", "Dniprovs'kyi"],
+        "Melitopol": ["Tsentralnyi", "Pivnichnyi", "Yuzhnyi", "Sadky", "Avtozavod"]
+      }
+    }
+  },
+  "North America": {
+    "USA": {
+      "California": {
+        "Los Angeles": ["Hollywood", "Venice", "Downtown", "Chinatown", "Westwood"],
+        "San Francisco": ["Mission District", "Chinatown", "Haight-Ashbury", "Castro", "Fisherman’s Wharf"]
+      },
+      "New York": {
+        "New York City": ["Manhattan", "Brooklyn", "Queens", "Harlem", "Chelsea"],
+        "Buffalo": ["Allentown", "Elmwood Village", "North Park", "Parkside", "Black Rock"]
+      },
+      "Texas": {
+        "Houston": ["Midtown", "Montrose", "Downtown", "The Heights", "River Oaks"],
+        "Dallas": ["Deep Ellum", "Uptown", "Downtown", "Oak Lawn", "Bishop Arts District"]
+      },
+      "Florida": {
+        "Miami": ["South Beach", "Wynwood", "Little Havana", "Brickell", "Coconut Grove"],
+        "Orlando": ["Downtown", "Lake Eola Heights", "Winter Park", "College Park", "Dr. Phillips"]
+      },
+      "Illinois": {
+        "Chicago": ["The Loop", "Lincoln Park", "Hyde Park", "Wicker Park", "Gold Coast"],
+        "Springfield": ["Downtown", "Old State Capitol", "Lincoln Home", "Archer Elevator", "East Side"]
+      },
+      "Pennsylvania": {
+        "Philadelphia": ["Center City", "Old City", "Fishtown", "South Philly", "University City"],
+        "Pittsburgh": ["Downtown", "Squirrel Hill", "Oakland", "Shadyside", "North Shore"]
+      },
+      "Ohio": {
+        "Columbus": ["Short North", "German Village", "Downtown", "Clintonville", "Franklinton"],
+        "Cleveland": ["Ohio City", "Tremont", "Shaker Heights", "Downtown", "University Circle"]
+      },
+      "Georgia": {
+        "Atlanta": ["Midtown", "Buckhead", "Downtown", "Old Fourth Ward", "Virginia-Highland"],
+        "Savannah": ["Historic District", "Ardsley Park", "Thomas Square", "Midtown", "Starland"]
+      },
+      "North Carolina": {
+        "Charlotte": ["Uptown", "NoDa", "South End", "Dilworth", "Plaza Midwood"],
+        "Raleigh": ["Downtown", "Glenwood South", "Cameron Village", "North Hills", "Five Points"]
+      },
+      "Michigan": {
+        "Detroit": ["Downtown", "Midtown", "Corktown", "New Center", "Mexicantown"],
+        "Ann Arbor": ["Downtown", "Kerrytown", "Burns Park", "West Side", "Old West Side"]
+      }
+    }
+  },
+  "South America": {
+    "Argentina": {
+      "Buenos Aires Province": {
+        "La Plata": ["Centro", "City Bell", "Ringuelet", "Tolosa", "Altos de San Lorenzo"],
+        "Mar del Plata": ["Centro", "La Perla", "Las Heras", "Balcarce", "Los Troncos"]
+      },
+      "Córdoba Province": {
+        "Córdoba City": ["Nueva Córdoba", "Alta Córdoba", "Centro", "Argüello", "Guillermo Paez"],
+        "Villa Carlos Paz": ["Centro", "Santa Rita", "San Roque", "Pueblo Nuevo", "Las Moreras"]
+      },
+      "Santa Fe Province": {
+        "Rosario": ["Centro", "Pichincha", "Echesortu", "Fisherton", "Alberdi"],
+        "Santa Fe City": ["Centro", "Guadalupe", "Mariano Comas", "25 de Mayo", "Barranquitas"]
+      },
+      "Mendoza Province": {
+        "Mendoza City": ["Godoy Cruz", "Guaymallén", "Luján de Cuyo", "Las Heras", "Palmares"],
+        "San Rafael": ["Buen Orden", "Villa Atuel", "El Sosneado", "Jaime Prats", "Cuadro Nacional"]
+      },
+      "Tucumán Province": {
+        "San Miguel de Tucumán": ["Centro", "Barrio Sur", "Yerba Buena", "Barrio Norte", "Villa 9 de Julio"],
+        "Tafí Viejo": ["El Molino", "Agua Dulce", "Villa Belgrano", "San Pablo", "Barrio Nuevo"]
+      },
+      "Salta Province": {
+        "Salta City": ["Balcarce", "Cerro San Bernardo", "9 de Julio", "Alte. Brown", "San Antonio"],
+        "Orán": ["Villa La Merced", "Presidente Castillo", "25 de Mayo", "El Milagro", "Balderrama"]
+      },
+      "Chaco Province": {
+        "Resistencia": ["Villa Río Negro", "San Miguel", "Parque Urbano", "Santa Inés", "Villa Libertad"],
+        "Sáenz Peña": ["Ceibas", "Batalla 9 de Julio", "San Martín", "Villa Progreso", "La Loma"]
+      },
+      "Corrientes Province": {
+        "Corrientes City": ["Centro", "Libertad", "Valle", "Berón de Astrada", "Tatacua"],
+        "Goya": ["Centro", "San Isidro", "Ferré", "Gregoria Matorras", "Barrio 4 de Junio"]
+      },
+      "Entre Ríos Province": {
+        "Paraná": ["Centro", "Bajada Grande", "Londín", "San Martín", "Santa Lucía"],
+        "Concepción del Uruguay": ["Centro", "Villa Zorraquín", "Ferré", "Villa María", "Arroyo Ancho"]
+      },
+      "Misiones Province": {
+        "Posadas": ["Centro", "Itaembé Miní", "Villa Cabello", "Miguel Lanús", "Itaembé Guazú"],
+        "Oberá": ["Centro", "Villa Crisol", "Sarmiento", "Arturo Illia", "Alem"]
+      }
+    },
+    "Colombia": {
+      "Antioquia Department": {
+        "Medellín": ["El Poblado", "Laureles", "Belén", "Castilla", "Robledo"],
+        "Envigado": ["La Sebastiana", "El Salado", "La Magnolia", "Alejandría", "Las Antillas"]
+      },
+      "Cundinamarca Department": {
+        "Bogotá D.C.": ["La Candelaria", "Chapinero", "Usaquén", "Teusaquillo", "Suba"],
+        "Soacha": ["Ciudad Verde", "La María", "General Santander", "San Mateíto", "Viña"]
+      },
+      "Valle del Cauca Department": {
+        "Cali": ["San Antonio", "Granada", "El Peñón", "Ciudad Jardín", "Pampalinda"],
+        "Buenaventura": ["Centro", "El Calipso", "San Cipriano", "La Independencia", "La Playa"]
+      },
+      "Atlántico Department": {
+        "Barranquilla": ["El Prado", "Riomar", "Norte", "Centro", "San Vicente"],
+        "Soledad": ["Simón Bolívar", "La Arboleda", "El Chircal", "Ciudadela 20 de Julio", "La Manga"]
+      },
+      "Bolívar Department": {
+        "Cartagena": ["Getsemaní", "Bocagrande", "Manga", "Castillo Grande", "Centro Histórico"],
+        "Magangué": ["Centro", "Río", "Gaitán", "Candelaria", "El Progreso"]
+      },
+      "Santander Department": {
+        "Bucaramanga": ["Cabecera", "Cañaveral", "Morrorico", "San Francisco", "Centro"],
+        "Floridablanca": ["Girardot", "El Solar", "Catama", "Canoas", "Los Almendros"]
+      },
+      "Nariño Department": {
+        "Pasto": ["Centro", "Chicalá", "Obonuco", "La Victoria", "San Juan"],
+        "Tumaco": ["Centro", "Santa Bárbara", "San Andrés", "La Playita", "El Progreso"]
+      },
+      "Tolima Department": {
+        "Ibagué": ["Centro", "La Pola", "Ricaurte", "Piedras", "San Simón"],
+        "Espinal": ["Alto de Nieva", "El Corazón", "Colver", "Ricaurte", "La Samaria"]
+      },
+      "Boyacá Department": {
+        "Tunja": ["Centro", "Belén", "Boyacá", "Rosales", "Cuenca"],
+        "Sogamoso": ["Centro", "Betania", "Los Andes", "La Libertad", "La Palma"]
+      },
+      "Caldas Department": {
+        "Manizales": ["Centro", "Chipre", "Palermo", "La Estancia", "Campohermoso"],
+        "Villamaría": ["Centro", "Santágueda", "La Cueva", "Alto Bonito", "Peñas Blancas"]
+      }
+    },
+    "Ecuador": {
+      "Pichincha Province": {
+        "Quito": ["Centro Histórico", "La Mariscal", "La Floresta", "El Batán", "Chillogallo"],
+        "Cayambe": ["Centro", "Electrificación", "San Pedro", "Llanganates", "La Dolorosa"]
+      },
+      "Guayas Province": {
+        "Guayaquil": ["Urdesa", "Las Peñas", "Guasmo", "Bastión Popular", "La Alborada"],
+        "Durán": ["Ciudadela Modelo", "Córdova", "La Cúrcuma", "Luz de América", "Florida"]
+      },
+      "Azuay Province": {
+        "Cuenca": ["Centro", "El Batán", "El Vecino", "Yanuncay", "El Valle"],
+        "Gualaceo": ["Centro", "San Ramón", "Naranjal", "Santa Lucía", "9 de Octubre"]
+      },
+      "Manabí Province": {
+        "Manta": ["Tarqui", "Miraflores", "La Floresta", "San Mateo", "El Castillo"],
+        "Portoviejo": ["Centro", "Las Vegas", "Rocafuerte", "El Arenal", "Santa Ana"]
+      },
+      "El Oro Province": {
+        "Machala": ["Centro", "Puerto Bolívar", "Barrio Bolívar", "El Retorno", "La Nazarenita"],
+        "Pasaje": ["Centro", "2 de Abril", "La Unión", "La Victoria", "Las Calcetas"]
+      },
+      "Loja Province": {
+        "Loja": ["Centro", "San Sebastián", "La Tebaida", "La Pradera", "El Valle"],
+        "Catamayo": ["Centro", "El Rosario", "Buenos Aires", "Luis Cordero", "La Victoria"]
+      },
+      "Imbabura Province": {
+        "Ibarra": ["Centro", "San Francisco", "Toctiuco", "Los Cuatro Mangas", "El Sagrario"],
+        "Otavalo": ["Centro", "San Luis", "La Columna", "Santa Rosa", "El Porvenir"]
+      },
+      "Tungurahua Province": {
+        "Ambato": ["Centro", "San Andrés", "La Merced", "El Villonaco", "La Veintimilla"],
+        "Pelileo": ["Centro", "Santo Domingo", "La Patria", "La Independencia", "La Arminda"]
+      },
+      "Santo Domingo de los Tsáchilas Province": {
+        "Santo Domingo": ["Centro", "La Y", "El Dorado", "Obraje", "Luz de América"],
+        "La Concordia": ["Centro", "Luis Tello", "3 de Mayo", "Luis Vargas Torres", "Comercial"]
+      },
+      "Esmeraldas Province": {
+        "Esmeraldas": ["Centro", "Siete de Julio", "San Mateo", "La Tola", "Eloy Alfaro"],
+        "Quinindé": ["Centro", "La Unión", "San Rafael", "Delta Amchay", "Los Bancos"]
+      }
+    },
+    "Peru": {
+      "Lima Region": {
+        "Lima": ["Miraflores", "San Isidro", "Barranco", "Surco", "Callao"],
+        "Huaral": ["Centro", "Pueblo Nuevo", "Chancay", "Paramonga", "Morrope"]
+      },
+      "Arequipa Region": {
+        "Arequipa": ["Cayma", "Yanahuara", "Cercado", "Selva Alegre", "José Luis Bustamante y Rivero"],
+        "Mollendo": ["Centro", "La Capilla", "La Punta", "Daniel Hoyle", "Quinta Lala"]
+      },
+      "Cusco Region": {
+        "Cusco": ["San Blas", "Wanchaq", "Centro", "San Sebastián", "Tambomachay"],
+        "Urubamba": ["Centro", "Yucay", "Ollantaytambo", "Chinchero", "Calca"]
+      },
+      "La Libertad Region": {
+        "Trujillo": ["El Porvenir", "Víctor Larco Herrera", "Centro", "La Esperanza", "Florencia de Mora"],
+        "Chepén": ["Centro", "Pacanga", "Guadalupito", "Manantial", "Machu Picchu"]
+      },
+      "Piura Region": {
+        "Piura": ["Carmen de la Legua", "Las Lomas", "Cercado", "Buenos Aires", "El Chipe"],
+        "Sullana": ["Miguel Checa", "La Victoria", "Parcoy", "Bellavista", "Querecotillo"]
+      },
+      "Junín Region": {
+        "Huancayo": ["El Tambo", "Quiullin", "Chupaca", "Sapallanga", "Cochas"],
+        "Tarma": ["Centro", "Huasahuasi", "La Unión", "Palca", "Acobamba"]
+      },
+      "Puno Region": {
+        "Puno": ["Juliaca", "Ilave", "Pomata", "Maure", "Capachica"],
+        "Juliaca": ["Miraflores", "Cuyo Cuyo", "San Román", "San Miguel", "San Antonio"]
+      },
+      "Cajamarca Region": {
+        "Cajamarca": ["Baños del Inca", "Centro", "San Juan", "San Nicolás", "Centro Poblado"],
+        "Jaén": ["Bellavista", "Las Delicias", "San Felipe", "Porcón", "Pomahuaca"]
+      },
+      "Loreto Region": {
+        "Iquitos": ["Belén", "San Juan", "Pizarro", "Cahuide", "Santa Clara"],
+        "Nauta": ["Centro", "San Pablo", "Santa Clara", "Madre de Dios", "Paraná"]
+      },
+      "Lambayeque Region": {
+        "Chiclayo": ["José Leonardo Ortiz", "Pimentel", "Santa Victoria", "Cayaltí", "La Victoria"],
+        "Ferreñafe": ["Centro", "Pitipo", "Pueblo Nuevo", "Incahuasi", "Manuel Antonio Mesones Muro"]
+      }
+    },
+    "Venezuela": {
+      "Distrito Capital": {
+        "Caracas": ["Chacao", "Petare", "La Candelaria", "El Hatillo", "San Bernardino"],
+        "El Junquito": ["Kilómetro 11", "Kilómetro 18", "El Rodeo", "Monte Alto", "El Trigo"]
+      },
+      "Zulia State": {
+        "Maracaibo": ["La Lago", "San Francisco", "Cañada Honda", "Cecilio Acosta", "Sabaneta"],
+        "Cabimas": ["Ambrosio", "La Rosa", "Punta Gorda", "Nueva Cabimas", "Campo Lara"]
+      },
+      "Lara State": {
+        "Barquisimeto": ["Centro", "Santa Rosa", "Cabudare", "El Ujano", "La Carucieña"],
+        "Carora": ["Centro", "Torrellas", "La Guzmana", "El Obelisco", "San Juan"]
+      },
+      "Anzoátegui State": {
+        "Barcelona": ["Centro", "Boyacá", "El Viñedo", "Los Cerezos", "Mesones"],
+        "Puerto La Cruz": ["Chuparín", "Pozuelos", "Las Charas", "Puerto del Este", "El Pensil"]
+      },
+      "Carabobo State": {
+        "Valencia": ["San Blas", "El Trigal", "Los Caobos", "Flor Amarillo", "Santa Rosa"],
+        "Guacara": ["Yagua", "Vigirima", "Ciudad Alianza", "Centro", "El Samán"]
+      },
+      "Aragua State": {
+        "Maracay": ["Las Delicias", "San Jacinto", "El Limón", "Caña de Azúcar", "La Soledad"],
+        "Turmero": ["La Candelaria", "El Macaro", "Guayabita", "La Julia", "El Limón"]
+      },
+      "Mérida State": {
+        "Mérida": ["Centro", "La Pedregosa", "Campo Claro", "Los Sauzales", "Pie del Llano"],
+        "Ejido": ["Santa Bárbara", "El Palmo", "San Buenaventura", "Avenida Bolívar", "Campo Elías"]
+      },
+      "Táchira State": {
+        "San Cristóbal": ["La Concordia", "Barrio Obrero", "Pueblo Nuevo", "Centro", "Puente Real"],
+        "Táriba": ["Centro", "El Diamante", "San Josecito", "El Terminal", "Loma del Viento"]
+      },
+      "Bolívar State": {
+        "Ciudad Bolívar": ["Vista Hermosa", "La Paragua", "Los Próceres", "El Perú", "Agua Salada"],
+        "Ciudad Guayana": ["Unare", "Villa Colombia", "Los Olivos", "Alta Vista", "El Gallo"]
+      },
+      "Nueva Esparta State": {
+        "Porlamar": ["Centro", "Conejeros", "Genovés", "Los Cocos", "La Arboleda"],
+        "Pampatar": ["Costa Azul", "Los Robles", "Agua de Vaca", "Avenida Bolívar", "Playa El Ángel"]
+      }
+    }
+  }
 }
-
