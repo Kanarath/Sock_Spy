@@ -1,0 +1,372 @@
+{
+  "algerian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "cameroonian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "egyptian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "ethiopian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "ghanaian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "kenyan": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "moroccan": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "nigerian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "senegalese": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "south african": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "tanzanian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "ugandan": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "american": {
+    "male": 312,
+    "female": 200,
+    "last": 200
+  },
+  "argentinian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "brazilian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "canadian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "colombian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "ecuatorian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "mexican": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "peruvian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "venezuelan": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "bahraini": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "bangladeshi": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "chinese": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "emirati": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "filipino": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "indian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "indonesian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "iranian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "iraqi": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "japanese": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "jordanian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "korean": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "kuwaiti": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "lebanese": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "malaysian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "nepalese": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "omani": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "pakistani": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "qatari": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "saudi arabian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "singaporean": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "sri lankan": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "thai": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "turkish": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "vietnamese": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "yemeni": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "austrian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "belgian": {
+    "male": 100,
+    "female": 71,
+    "last": 99
+  },
+  "danish": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "dutch": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "english": {
+    "male": 198,
+    "female": 197,
+    "last": 200
+  },
+  "finnish": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "french": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "german": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "greek": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "irish": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "italian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "norwegian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "polish": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "portuguese": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "romanian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "russian": {
+    "male": 100,
+    "female": 100,
+    "last": 100
+  },
+  "scottish": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "spanish": {
+    "male": 100,
+    "female": 100,
+    "last": 99
+  },
+  "swedish": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "swiss": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "ukranian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "welsh": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "australian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "fijian": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "new zealander": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "papua new guinean": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  },
+  "samoan": {
+    "male": 0,
+    "female": 0,
+    "last": 0
+  }
+}

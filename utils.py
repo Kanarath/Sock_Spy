@@ -27,6 +27,45 @@ import random
 import datetime
 import string
 
+# Define constants (optional but good practice)
+FILE_NOT_FOUND = None
+FILE_EMPTY = []
+
+def load_data_file(filepath):
+    """
+    Loads data from a text file, one item per line.
+
+    Args:
+        filepath (str): The full path to the text file.
+
+    Returns:
+        list: A list of non-empty strings from the file.
+        None: If the file does not exist or an error occurs during reading.
+        [] (empty list): If the file exists but is empty or contains only whitespace.
+    """
+    if not os.path.exists(filepath):
+        # print(f"Debug: File not found at {filepath}") # Optional debug print
+        return FILE_NOT_FOUND # Indicate file doesn't exist
+
+    lines = []
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            lines = [line.strip() for line in f if line.strip()] # Read and strip non-empty lines
+
+        if not lines:
+            # print(f"Debug: File exists but is empty: {filepath}") # Optional debug print
+            return FILE_EMPTY # Indicate file exists but yielded no data
+        else:
+            # print(f"Debug: File loaded successfully: {filepath}, Count: {len(lines)}") # Optional debug print
+            return lines # Return list with content
+
+    except IOError as e:
+        print(f"Error reading file {filepath}: {e}")
+        return FILE_NOT_FOUND # Indicate error during read
+    except Exception as e: # Catch other potential issues like encoding errors
+        print(f"An unexpected error occurred reading {filepath}: {e}")
+        return FILE_NOT_FOUND
+
 def clear_screen():
     """Clear the terminal screen based on operating system"""
     os.system('cls' if os.name == 'nt' else 'clear')
