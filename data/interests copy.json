@@ -1,0 +1,44 @@
+{
+  "General": {
+  "Technology": ["Programming", "Web Development", "Artificial Intelligence", "Cybersecurity", "Blockchain", "Video Games", "Hardware", "Software", "Networks", "Databases"],
+  "Art and Culture": ["Music", "Film", "Literature", "Painting", "Sculpture", "Photography", "Theater", "Dance", "Architecture", "Design"],
+  "Sports": ["Soccer", "Basketball", "Tennis", "Swimming", "Cycling", "Running", "Yoga", "Martial Arts", "Golf", "Climbing"],
+  "Science": ["Physics", "Chemistry", "Biology", "Astronomy", "Mathematics", "Medicine", "Psychology", "Neuroscience", "Ecology", "Geology"],
+  "Travel": ["Tourism", "Backpacking", "Camping", "Hiking", "Travel Photography", "International Gastronomy", "World Cultures", "Languages", "Local History", "World Architecture"]
+  },
+  "Technology": {
+  "Programming": ["Python", "JavaScript", "Java", "C++", "Ruby", "Go", "Rust", "PHP", "Swift", "Kotlin"],
+  "Web Development": ["Frontend", "Backend", "Fullstack", "Web Design", "UX/UI", "Frameworks", "Responsive Design", "SEO", "Hosting", "Domains"],
+  "Artificial Intelligence": ["Machine Learning", "Deep Learning", "Neural Networks", "Natural Language Processing", "Computer Vision", "Robotics", "Expert Systems", "Genetic Algorithms", "Logic", "Fuzzy", "Recommendation Systems"],
+  "Cybersecurity": ["Ethical Hacking", "Pentesting", "Cryptography", "Network Security", "Malware", "Digital Forensics", "OSINT", "Web Security", "Privacy", "Security Audit"],
+  "Blockchain": ["Cryptocurrencies", "Smart Contracts", "NFTs", "DeFi", "Web3", "Mining", "Consensus", "Wallets", "Exchanges", "Tokenomics"]
+  },
+  "Arts & Culture": {
+  "Music": ["Rock", "Pop", "Jazz", "Classical", "Hip Hop", "Electronic", "Folk", "Metal", "Indie", "R&B"],
+  "Film": ["Action Movies", "Comedies", "Dramas", "Science Fiction", "Horror", "Documentaries", "Animation", "Film [Independent", "Classic Cinema", "Directors"],
+  "Literature": ["Novels", "Poetry", "Essays", "Science Fiction", "Fantasy", "Mystery", "Romance", "Biographies", "History", "Philosophy"],
+  "Painting": ["Oil", "Watercolor", "Acrylic", "Abstract", "Realism", "Impressionism", "Surrealism", "Digital Art", "Portraits", "Landscapes"],
+  "Photography": ["Portraits", "Landscapes", "Urban", "Macro", "Night", "Documentary", "Fashion", "Sports", "Nature", "Architecture"]
+  },
+  "Sports": {
+  "Soccer": ["Spanish League", "Premier League", "Serie A", "Bundesliga", "Champions League", "World Cup", "Eurocup", "Copa América", "Tactics", "Training"],
+  "Basketball": ["NBA", "Euroleague", "ACB", "FIBA", "Technique", "Strategy", "Equipment", "History", "Legendary Players", "Training"],
+  "Tennis": ["Grand Slam", "ATP", "WTA", "Technique", "Equipment", "History", "Legendary Players", "Training", "Tactics", "Surfaces"],
+  "Swimming": ["Strategies", "Competitions", "Technique", "Training", "Equipment", "History", "Famous Swimmers", "Open Water", "Triathlon", "Health"],
+  "Cycling": ["Tour de France", "Giro d'Italia", "Vuelta a Espana", "MTB", "BMX", "Cyclocross", "Equipment", "Training", "Mechanics", "Routes"]
+  },
+  "Science": {
+  "Physics": ["Mechanics", "Thermodynamics", "Electromagnetism", "Relativity", "Quantum Physics", "Astrophysics", "Particle Physics", "Nuclear Physics", "Solid State Physics", "Theoretical Physics"],
+  "Chemistry": ["Organic Chemistry", "Inorganic Chemistry", "Biochemistry", "Analytical Chemistry", "Physical Chemistry", "Computational Chemistry", "Environmental Chemistry", "Materials Chemistry", "Pharmaceutical Chemistry", "Industrial Chemistry"],
+  "Biology": ["Genetics", "Ecology", "Evolution", "Microbiology", "Botany", "Zoology", "Cell Biology", "Molecular Biology", "Anatomy", "Physiology"],
+  "Astronomy": ["Solar System", "Stars", "Galaxies", "Cosmology", "Black Holes", "Exoplanets", "Telescopes", "Space Missions", "Astrophotography", "Astrobiology"],
+  "Medicine": ["Cardiology", "Neurology", "Oncology", "Pediatrics", "Surgery", "Psychiatry", "Dermatology", "Gynecology", "Traumatology", "Preventive Medicine"]
+  },
+  "Travel": {
+  "Tourism": ["Europe", "Asia", "Americas", "Africa", "Oceania", "Cities", "Beaches", "Mountains", "Islands", "National Parks"],
+  "Backpacking": ["Budget", "Hostels", "Transportation", "Equipment", "Safety", "Communities", "Work While Traveling", "Volunteering", "Visas", "Tips"],
+  "Camping": ["Tents", "Equipment", "Locations", "Survival", "Outdoor Cooking", "Campfires", "Winter Camping", "Beach Camping", "Mountain Camping", "Glamping"],
+  "Hiking": ["Trails", "Equipment", "Techniques", "Safety", "Orientation", "Mountaineering", "Trekking", "Urban Hiking", "Night Hiking", "Hiking with Kids"],
+  "International Gastronomy": ["Mediterranean Cuisine", "Asian Cuisine", "Latin American Cuisine", "African Cuisine", "European Cuisine", "Street Food", "Local Markets", "Restaurants", "Traditional Drinks", "Desserts of the World"]
+  }
+}

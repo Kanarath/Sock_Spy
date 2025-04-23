@@ -1,44 +1,48 @@
 {
-  "General": {
-    "Tecnología": ["Programación", "Desarrollo web", "Inteligencia artificial", "Ciberseguridad", "Blockchain", "Videojuegos", "Hardware", "Software", "Redes", "Bases de datos"],
-    "Arte y Cultura": ["Música", "Cine", "Literatura", "Pintura", "Escultura", "Fotografía", "Teatro", "Danza", "Arquitectura", "Diseño"],
-    "Deportes": ["Fútbol", "Baloncesto", "Tenis", "Natación", "Ciclismo", "Running", "Yoga", "Artes marciales", "Golf", "Escalada"],
-    "Ciencia": ["Física", "Química", "Biología", "Astronomía", "Matemáticas", "Medicina", "Psicología", "Neurociencia", "Ecología", "Geología"],
-    "Viajes": ["Turismo", "Mochilero", "Camping", "Senderismo", "Fotografía de viajes", "Gastronomía internacional", "Culturas del mundo", "Idiomas", "Historia local", "Arquitectura mundial"]
+  "Technology": {
+    "Programming": ["Python", "JavaScript", "Java", "C++", "Ruby", "Go", "Rust", "PHP", "Swift", "Kotlin", "AI Development", "Game Development", "Mobile App Dev"],
+    "Web Development": ["Frontend (React, Vue, Angular)", "Backend (Node, Django, Rails)", "Fullstack", "Web Design (CSS, Figma)", "UX/UI Principles", "REST APIs", "GraphQL", "Responsive Design", "SEO Basics", "Hosting & Deployment (AWS, Heroku)", "Database Management (SQL, NoSQL)"],
+    "Artificial Intelligence": ["Machine Learning Models", "Deep Learning Frameworks (TensorFlow, PyTorch)", "Neural Networks Architectures", "Natural Language Processing (NLP)", "Computer Vision Applications", "Robotics Fundamentals", "Expert Systems Design", "Genetic Algorithms", "Recommendation Systems", "AI Ethics"],
+    "Cybersecurity": ["Ethical Hacking (Pentesting)", "Cryptography Basics", "Network Security Protocols", "Malware Analysis", "Digital Forensics Tools", "OSINT Techniques", "Web Application Security (OWASP)", "Cloud Security", "Privacy Enhancing Technologies", "Security Auditing"],
+    "Hardware & Gadgets": ["PC Building", "CPU & GPU Technology", "Raspberry Pi Projects", "Arduino", "Smart Home Devices", "Wearable Tech", "Drones", "3D Printing", "Virtual Reality (VR)", "Augmented Reality (AR)"],
+    "Software & Platforms": ["Operating Systems (Windows, macOS, Linux)", "Cloud Computing (AWS, Azure, GCP)", "Database Systems (SQL, NoSQL)", "Version Control (Git)", "Containerization (Docker, Kubernetes)", "DevOps Practices", "Agile Methodologies", "Specific Software (e.g., Photoshop, Blender)", "Open Source Contribution"],
+    "Gaming": ["PC Gaming", "Console Gaming (PlayStation, Xbox, Nintendo)", "Mobile Gaming", "Esports", "Indie Games", "Retro Gaming", "Game Streaming (Twitch, YouTube)", "Game Design Concepts", "Virtual Reality Gaming", "MMORPGs", "Strategy Games"]
   },
-  "Tecnología": {
-    "Programación": ["Python", "JavaScript", "Java", "C++", "Ruby", "Go", "Rust", "PHP", "Swift", "Kotlin"],
-    "Desarrollo web": ["Frontend", "Backend", "Fullstack", "Diseño web", "UX/UI", "Frameworks", "Responsive design", "SEO", "Hosting", "Dominios"],
-    "Inteligencia artificial": ["Machine Learning", "Deep Learning", "Redes neuronales", "Procesamiento de lenguaje natural", "Visión por computadora", "Robótica", "Sistemas expertos", "Algoritmos genéticos", "Lógica difusa", "Sistemas de recomendación"],
-    "Ciberseguridad": ["Hacking ético", "Pentesting", "Criptografía", "Seguridad de redes", "Malware", "Forense digital", "OSINT", "Seguridad web", "Privacidad", "Auditoría de seguridad"],
-    "Blockchain": ["Criptomonedas", "Smart contracts", "NFTs", "DeFi", "Web3", "Minería", "Consenso", "Wallets", "Exchanges", "Tokenomics"]
+  "Arts & Culture": {
+    "Music Genres": ["Rock (Classic, Alternative, Punk)", "Pop", "Jazz (Swing, Bebop)", "Classical (Baroque, Romantic)", "Hip Hop / Rap", "Electronic (House, Techno, Ambient)", "Folk / Acoustic", "Metal (Heavy, Thrash, Death)", "Indie / Alternative", "R&B / Soul", "Blues", "Country", "World Music"],
+    "Film & Cinema": ["Action & Adventure", "Comedy", "Drama", "Science Fiction & Fantasy", "Horror & Thriller", "Documentaries", "Animation (Anime, Western)", "Independent Films", "Classic Cinema History", "Film Festivals", "Directors & Auteurs", "Cinematography"],
+    "Literature": ["Contemporary Novels", "Classic Novels", "Poetry", "Science Fiction Lit", "Fantasy Lit", "Mystery & Thrillers", "Historical Fiction", "Biographies & Memoirs", "Non-Fiction Essays", "Graphic Novels & Comics", "Philosophy Texts"],
+    "Visual Arts": ["Oil Painting", "Watercolor Painting", "Acrylic Painting", "Drawing (Sketching, Charcoal)", "Sculpture (Clay, Metal, Wood)", "Digital Art & Illustration", "Printmaking", "Abstract Art", "Realism", "Impressionism", "Surrealism", "Art History Movements"],
+    "Photography": ["Portrait Photography", "Landscape Photography", "Street Photography", "Macro Photography", "Night & Astrophotography", "Documentary Photography", "Fashion Photography", "Wildlife Photography", "Architectural Photography", "Photo Editing (Lightroom, Photoshop)"],
+    "Performing Arts": ["Theater (Plays, Musicals)", "Dance (Ballet, Contemporary, Hip Hop)", "Opera", "Stand-up Comedy", "Improvisation", "Performance Art", "Puppetry", "Circus Arts"],
+    "Design & Architecture": ["Graphic Design", "Interior Design", "Fashion Design", "Industrial Design", "Architectural History", "Modern Architecture", "Sustainable Design", "Urban Planning", "Typography", "User Interface (UI) Design"]
   },
-  "Arte y Cultura": {
-    "Música": ["Rock", "Pop", "Jazz", "Clásica", "Hip hop", "Electrónica", "Folk", "Metal", "Indie", "R&B"],
-    "Cine": ["Películas de acción", "Comedias", "Dramas", "Ciencia ficción", "Terror", "Documentales", "Animación", "Cine independiente", "Cine clásico", "Directores"],
-    "Literatura": ["Novelas", "Poesía", "Ensayos", "Ciencia ficción", "Fantasía", "Misterio", "Romance", "Biografías", "Historia", "Filosofía"],
-    "Pintura": ["Óleo", "Acuarela", "Acrílico", "Abstracto", "Realismo", "Impresionismo", "Surrealismo", "Arte digital", "Retratos", "Paisajes"],
-    "Fotografía": ["Retratos", "Paisajes", "Urbana", "Macro", "Nocturna", "Documental", "Moda", "Deportiva", "Naturaleza", "Arquitectura"]
+  "Sports & Fitness": {
+    "Team Sports": ["Soccer (Football)", "Basketball", "American Football", "Baseball", "Hockey (Ice, Field)", "Volleyball", "Rugby", "Cricket", "Lacrosse", "Water Polo"],
+    "Individual Sports": ["Tennis", "Golf", "Swimming", "Running / Jogging", "Cycling (Road, Mountain Biking)", "Track & Field", "Gymnastics", "Boxing", "Wrestling", "Skateboarding", "Surfing", "Skiing / Snowboarding"],
+    "Fitness & Wellness": ["Weightlifting / Strength Training", "Yoga / Pilates", "CrossFit", "Aerobics / Cardio", "Meditation & Mindfulness", "Nutrition & Healthy Eating", "Hiking", "Rock Climbing / Bouldering", "Martial Arts (Karate, Judo, BJJ)", "Endurance Training (Marathons, Triathlons)"],
+    "Major Leagues & Events": ["FIFA World Cup", "Olympics (Summer, Winter)", "NBA Finals", "Super Bowl", "World Series", "Stanley Cup", "Grand Slam Tennis (Wimbledon, US Open etc.)", "Tour de France", "Champions League", "Premier League / La Liga etc."],
+    "Sports Culture": ["Fantasy Sports", "Sports Analytics", "Sports History", "Collecting Memorabilia", "Attending Live Games", "Sports Journalism", "Coaching & Strategy", "Refereeing / Officiating", "Sports Medicine"]
   },
-  "Deportes": {
-    "Fútbol": ["Liga española", "Premier League", "Serie A", "Bundesliga", "Champions League", "Mundial", "Eurocopa", "Copa América", "Táctica", "Entrenamiento"],
-    "Baloncesto": ["NBA", "Euroliga", "ACB", "FIBA", "Técnica", "Estrategia", "Equipamiento", "Historia", "Jugadores legendarios", "Entrenamiento"],
-    "Tenis": ["Grand Slam", "ATP", "WTA", "Técnica", "Equipamiento", "Historia", "Jugadores legendarios", "Entrenamiento", "Tácticas", "Superficies"],
-    "Natación": ["Estilos", "Competiciones", "Técnica", "Entrenamiento", "Equipamiento", "Historia", "Nadadores famosos", "Aguas abiertas", "Triatlón", "Salud"],
-    "Ciclismo": ["Tour de France", "Giro de Italia", "Vuelta a España", "MTB", "BMX", "Ciclocross", "Equipamiento", "Entrenamiento", "Mecánica", "Rutas"]
+  "Science & Nature": {
+    "Physical Sciences": ["Fundamental Physics", "Thermodynamics", "Electromagnetism", "Relativity Theory", "Quantum Mechanics", "Astrophysics & Cosmology", "Particle Physics", "Condensed Matter Physics", "Optics", "Acoustics"],
+    "Chemical Sciences": ["Organic Chemistry Reactions", "Inorganic Chemistry Materials", "Biochemistry Pathways", "Analytical Chemistry Techniques", "Physical Chemistry Principles", "Computational Chemistry Modeling", "Environmental Chemistry Analysis", "Polymer Chemistry", "Medicinal Chemistry"],
+    "Life Sciences": ["Genetics & Genomics", "Ecology & Conservation", "Evolutionary Biology", "Microbiology & Virology", "Botany & Plant Science", "Zoology & Animal Behavior", "Cellular Biology", "Molecular Biology", "Human Anatomy & Physiology", "Neuroscience"],
+    "Earth & Space": ["Geology & Plate Tectonics", "Meteorology & Climatology", "Oceanography", "Paleontology", "Planetary Science", "Astronomy (Stars, Galaxies)", "Cosmology", "Space Exploration (NASA, SpaceX)", "Astrophotography", "Search for Extraterrestrial Life (SETI)"],
+    "Environment & Nature": ["Conservation Efforts", "Climate Change Science", "Renewable Energy", "Sustainable Living", "National Parks & Wildlife", "Birdwatching", "Gardening", "Mycology (Fungi)", "Entomology (Insects)", "Marine Biology"]
   },
-  "Ciencia": {
-    "Física": ["Mecánica", "Termodinámica", "Electromagnetismo", "Relatividad", "Física cuántica", "Astrofísica", "Física de partículas", "Física nuclear", "Física de estado sólido", "Física teórica"],
-    "Química": ["Química orgánica", "Química inorgánica", "Bioquímica", "Química analítica", "Química física", "Química computacional", "Química ambiental", "Química de materiales", "Química farmacéutica", "Química industrial"],
-    "Biología": ["Genética", "Ecología", "Evolución", "Microbiología", "Botánica", "Zoología", "Biología celular", "Biología molecular", "Anatomía", "Fisiología"],
-    "Astronomía": ["Sistema solar", "Estrellas", "Galaxias", "Cosmología", "Agujeros negros", "Exoplanetas", "Telescopios", "Misiones espaciales", "Astrofotografía", "Astrobiología"],
-    "Medicina": ["Cardiología", "Neurología", "Oncología", "Pediatría", "Cirugía", "Psiquiatría", "Dermatología", "Ginecología", "Traumatología", "Medicina preventiva"]
+  "Travel & Exploration": {
+    "Destinations by Region": ["European Cities (Paris, Rome, London)", "Asian Adventures (Tokyo, Bangkok, Bali)", "North American Road Trips", "South American Landscapes (Andes, Amazon)", "African Safaris", "Oceania & Pacific Islands", "Middle Eastern History", "Arctic & Antarctic Exploration"],
+    "Travel Styles": ["Budget Backpacking", "Luxury Travel", "Adventure Travel (Hiking, Diving)", "Cultural Immersion", "Family Vacations", "Solo Travel", "Digital Nomad Lifestyle", "Cruises", "Train Journeys", "Weekend Getaways"],
+    "Practical Aspects": ["Travel Hacking (Points & Miles)", "Finding Cheap Flights & Accommodation", "Packing Light", "Visa Requirements", "Travel Insurance", "Safety Tips", "Learning Basic Phrases", "Travel Photography Gear", "Travel Blogging / Vlogging", "Working Abroad"],
+    "Experiences": ["Trying Local Cuisine", "Visiting Historical Sites & Museums", "Hiking & Nature Walks", "Attending Local Festivals", "Learning Local Crafts", "Scuba Diving / Snorkeling", "Skiing / Snowboarding", "Volunteering Abroad", "Language Exchange", "Exploring Local Markets"],
+    "Outdoor & Adventure": ["Camping Techniques", "Hiking Trails & Gear", "Mountaineering", "Kayaking / Canoeing", "Rock Climbing Gear", "Survival Skills", "Navigation (Map & Compass)", "National Park Visits", "Wildlife Spotting", "Stargazing in Remote Areas"]
   },
-  "Viajes": {
-    "Turismo": ["Europa", "Asia", "América", "África", "Oceanía", "Ciudades", "Playas", "Montañas", "Islas", "Parques nacionales"],
-    "Mochilero": ["Presupuesto", "Albergues", "Transporte", "Equipamiento", "Seguridad", "Comunidades", "Trabajo mientras viajas", "Voluntariado", "Visados", "Consejos"],
-    "Camping": ["Tiendas", "Equipamiento", "Lugares", "Supervivencia", "Cocina al aire libre", "Fogatas", "Acampada invernal", "Acampada en playa", "Acampada en montaña", "Glamping"],
-    "Senderismo": ["Rutas", "Equipamiento", "Técnicas", "Seguridad", "Orientación", "Montañismo", "Trekking", "Senderismo urbano", "Senderismo nocturno", "Senderismo con niños"],
-    "Gastronomía internacional": ["Cocina mediterránea", "Cocina asiática", "Cocina latinoamericana", "Cocina africana", "Cocina europea", "Street food", "Mercados locales", "Restaurantes", "Bebidas típicas", "Postres del mundo"]
+  "Hobbies & Lifestyle": {
+    "Creative Hobbies": ["Writing (Fiction, Poetry, Blogging)", "Drawing / Painting", "Playing Musical Instruments (Guitar, Piano, etc.)", "Crafting (Knitting, Sewing, Woodworking)", "Photography", "Cooking & Baking", "Gardening", "Model Building", "Calligraphy", "Origami"],
+    "Collecting": ["Stamps", "Coins", "Action Figures / Toys", "Vinyl Records", "Antiques", "Comic Books", "Trading Cards", "Art Prints", "Wine / Whiskey", "Watches"],
+    "Games & Puzzles": ["Board Games", "Card Games (Poker, Magic)", "Puzzles (Jigsaw, Crossword, Sudoku)", "Role-Playing Games (D&D)", "Trivia", "Escape Rooms", "Chess", "Go"],
+    "Food & Drink": ["Home Cooking", "Baking Bread & Pastries", "Coffee Brewing & Tasting", "Craft Beer / Homebrewing", "Wine Tasting", "Cocktail Making", "Grilling & BBQ", "International Cuisine Exploration", "Food Blogging", "Visiting Farmers Markets"],
+    "Personal Development": ["Reading Non-Fiction", "Learning New Languages", "Online Courses (Coursera, Udemy)", "Meditation & Mindfulness Practice", "Journaling", "Public Speaking (Toastmasters)", "Financial Literacy", "Productivity Hacks", "Goal Setting", "Learning a New Skill"]
   }
 }
