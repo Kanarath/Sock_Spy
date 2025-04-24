@@ -54,7 +54,7 @@ python3 main.py
 
 ---
 
-## 🕵️♂️ Become an Intelligence Asset
+## 🕵️ Become an Intelligence Asset
 
 ### Agent Hierarchy System
 | Rank              | Missions Required | Badge                                                                 |
