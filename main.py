@@ -89,7 +89,7 @@ TEXTS = {
         "main_menu": "Main Menu:",
         "main_menu_options": ["Create new persona", "Create random persona", "Load existing persona", "View program information", "Exit"],
         "random_level_select": "Select level of random persona detail:",
-        "random_level_options": ["1. Minimal (Name, Gender, Age, Nationality, Profession)", "2. Standard (Adds Basic Location, Username, Password)", "3. Detailed (Adds Specific Location, Platforms, Interests)", "4. Full (Adds Phrases, Picture)"],
+        "random_level_options": ["Minimal (Name, Gender, Age, Nationality, Profession)", "Standard (Adds Basic Location, Username, Password)", "Detailed (Adds Specific Location, Platforms, Interests)", "Full (Adds Phrases, Picture)"],
         "random_generating": "Generating {item}...",
         "random_generation_complete": "Random persona generation complete.",
         "confirm_save_random": "Do you want to save this generated profile? (y/n):",
