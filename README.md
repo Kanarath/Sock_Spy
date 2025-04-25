@@ -49,7 +49,7 @@ Here you can check the [GNU v3.0 License](license.md) for Sock Spy.
 ```bash
 git clone https://github.com/Kanarath/Sock_Spy.git
 cd Sock_Spy
-python3 main.py
+python main.py
 ```
 
 ---
