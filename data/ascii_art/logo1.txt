@@ -15,7 +15,7 @@
 #                  `---`      \   \ .'  ;   |,'                       `---'.|           \  ' ;   #
 #                              `---`    '---'                           `---`            `--`    #
 #                                                                                                #
-# Sock Spy v0.0.1                                                                                #
+# Sock Spy v1.0.0                                                                                #
 # Made by G.M.S "Kanarath"                                                                       #
 # Under GNU v3.0 License                                                                         #
 #                                                                                                #

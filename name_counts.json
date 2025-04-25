@@ -335,9 +335,9 @@
     "last": 0
   },
   "ukranian": {
-    "male": 0,
-    "female": 0,
-    "last": 0
+    "male": 100,
+    "female": 100,
+    "last": 100
   },
   "welsh": {
     "male": 0,
